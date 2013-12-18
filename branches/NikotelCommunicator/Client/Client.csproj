@@ -1,0 +1,828 @@
+﻿<Project DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003" ToolsVersion="3.5">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>9.0.30729</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{301D3D4E-D6E9-4B2B-9A4E-8F69F631C684}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>Remwave.Client</RootNamespace>
+    <AssemblyName>Nikotel</AssemblyName>
+    <ApplicationIcon>desktop.ico</ApplicationIcon>
+    <StartupObject>
+    </StartupObject>
+    <FileUpgradeFlags>
+    </FileUpgradeFlags>
+    <UpgradeBackupLocation>
+    </UpgradeBackupLocation>
+    <OldToolsVersion>2.0</OldToolsVersion>
+    <PublishUrl>publish\</PublishUrl>
+    <Install>true</Install>
+    <InstallFrom>Disk</InstallFrom>
+    <UpdateEnabled>false</UpdateEnabled>
+    <UpdateMode>Foreground</UpdateMode>
+    <UpdateInterval>7</UpdateInterval>
+    <UpdateIntervalUnits>Days</UpdateIntervalUnits>
+    <UpdatePeriodically>false</UpdatePeriodically>
+    <UpdateRequired>false</UpdateRequired>
+    <MapFileExtensions>true</MapFileExtensions>
+    <ApplicationRevision>0</ApplicationRevision>
+    <ApplicationVersion>1.0.0.%2a</ApplicationVersion>
+    <IsWebBootstrapper>false</IsWebBootstrapper>
+    <UseApplicationTrust>false</UseApplicationTrust>
+    <BootstrapperEnabled>true</BootstrapperEnabled>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>TRACE;DEBUG;BRAND_NIKOTEL NOUSERSEARCH NOVOICEMAIL</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>BRAND_NIKOTEL NOUSERSEARCH NOVOICEMAIL</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <GenerateSerializationAssemblies>Off</GenerateSerializationAssemblies>
+    <AllowUnsafeBlocks>true</AllowUnsafeBlocks>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="Microsoft.DirectX.AudioVideoPlayback, Version=1.0.2902.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35" />
+    <Reference Include="Microsoft.DirectX.DirectSound, Version=1.0.2902.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35" />
+    <Reference Include="Microsoft.Web.Services3, Version=3.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL" />
+    <Reference Include="nsoftware.IPWorksSSL, Version=6.2.2837.0, Culture=neutral, PublicKeyToken=cdc168f89cffe9cf">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\..\..\..\..\..\..\Program Files\nsoftware\IPWorks SSL V6 .NET Edition\lib\nsoftware.IPWorksSSL.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.Configuration" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.EnterpriseServices" />
+    <Reference Include="System.Security" />
+    <Reference Include="System.Web.Services" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+    <Reference Include="Telerik.WinControls, Version=2.2.0.0, Culture=neutral, PublicKeyToken=5bb2a467cbec794e, processorArchitecture=MSIL" />
+    <Reference Include="Telerik.WinControls.UI, Version=2.2.0.0, Culture=neutral, PublicKeyToken=5bb2a467cbec794e, processorArchitecture=MSIL" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="..\..\..\..\REMWAVE Nikotalkie\trunk\Common\AMRCodec.cs">
+      <Link>Nikotalkie\AMRCodec.cs</Link>
+    </Compile>
+    <Compile Include="..\..\..\..\REMWAVE Nikotalkie\trunk\Common\DXSound.cs">
+      <Link>Nikotalkie\DXSound.cs</Link>
+    </Compile>
+    <Compile Include="..\..\..\..\REMWAVE Nikotalkie\trunk\Common\NConfiguration.cs">
+      <Link>Nikotalkie\NConfiguration.cs</Link>
+    </Compile>
+    <Compile Include="..\..\..\..\REMWAVE Nikotalkie\trunk\Common\NDeliveryWorker.cs">
+      <Link>Nikotalkie\NDeliveryWorker.cs</Link>
+    </Compile>
+    <Compile Include="..\..\..\..\REMWAVE Nikotalkie\trunk\Common\NSettings.cs">
+      <Link>Nikotalkie\NSettings.cs</Link>
+    </Compile>
+    <Compile Include="..\..\..\..\REMWAVE Nikotalkie\trunk\Common\NStorage.cs">
+      <Link>Nikotalkie\NStorage.cs</Link>
+    </Compile>
+    <Compile Include="..\..\..\..\REMWAVE Nikotalkie\trunk\Common\NStorageIndex.cs">
+      <Link>Nikotalkie\NStorageIndex.cs</Link>
+    </Compile>
+    <Compile Include="..\..\..\..\REMWAVE Nikotalkie\trunk\Common\NTransport.cs">
+      <Link>Nikotalkie\NTransport.cs</Link>
+    </Compile>
+    <Compile Include="..\..\..\..\REMWAVE Nikotalkie\trunk\WebService\App_Code\Message.cs">
+      <Link>Entities\Message.cs</Link>
+    </Compile>
+    <Compile Include="..\..\..\..\REMWAVE Nikotalkie\trunk\WebService\App_Code\MessageAttachement.cs">
+      <Link>Entities\MessageAttachement.cs</Link>
+    </Compile>
+    <Compile Include="..\..\..\..\REMWAVE Nikotalkie\trunk\WebService\App_Code\MessageBody.cs">
+      <Link>Entities\MessageBody.cs</Link>
+    </Compile>
+    <Compile Include="..\..\..\..\REMWAVE Nikotalkie\trunk\WebService\App_Code\MessageHeader.cs">
+      <Link>Entities\MessageHeader.cs</Link>
+    </Compile>
+    <Compile Include="..\..\..\trunk\Common\ChatController.cs">
+      <Link>Common\ChatController.cs</Link>
+    </Compile>
+    <Compile Include="..\..\..\trunk\Common\ClientEvents.cs">
+      <Link>Common\ClientEvents.cs</Link>
+    </Compile>
+    <Compile Include="..\..\..\trunk\Common\ClientSettings.cs">
+      <Link>Common\ClientSettings.cs</Link>
+    </Compile>
+    <Compile Include="..\..\..\trunk\Common\ContactContainer.cs">
+      <Link>Common\ContactContainer.cs</Link>
+    </Compile>
+    <Compile Include="..\..\..\trunk\Common\ContactsBook.cs">
+      <Link>Common\ContactsBook.cs</Link>
+    </Compile>
+    <Compile Include="..\..\..\trunk\Common\ContactsList.cs">
+      <Link>Common\ContactsList.cs</Link>
+    </Compile>
+    <Compile Include="..\..\..\trunk\Common\Emoticons.cs">
+      <Link>Common\Emoticons.cs</Link>
+    </Compile>
+    <Compile Include="..\..\..\trunk\Common\FileTransfer.cs">
+      <Link>Common\FileTransfer.cs</Link>
+    </Compile>
+    <Compile Include="..\..\..\trunk\Common\FirewallSetup.cs">
+      <Link>Common\FirewallSetup.cs</Link>
+    </Compile>
+    <Compile Include="..\..\..\trunk\Common\ImageProcessing.cs">
+      <Link>Common\ImageProcessing.cs</Link>
+    </Compile>
+    <Compile Include="..\..\..\trunk\Common\InfoFile.cs">
+      <Link>Common\InfoFile.cs</Link>
+    </Compile>
+    <Compile Include="..\..\..\trunk\Common\IQ.cs">
+      <Link>Common\IQ.cs</Link>
+    </Compile>
+    <Compile Include="..\..\..\trunk\Common\MAPI.cs">
+      <Link>Common\MAPI.cs</Link>
+    </Compile>
+    <Compile Include="..\..\..\trunk\Common\PhoneLineState.cs">
+      <Link>Common\PhoneLineState.cs</Link>
+    </Compile>
+    <Compile Include="..\..\..\trunk\Common\QualityAgentLogger.cs">
+      <Link>Common\QualityAgentLogger.cs</Link>
+    </Compile>
+    <Compile Include="..\..\..\trunk\Common\Serializable.cs">
+      <Link>Common\Serializable.cs</Link>
+    </Compile>
+    <Compile Include="..\..\..\trunk\Common\Services.cs">
+      <Link>Common\Services.cs</Link>
+    </Compile>
+    <Compile Include="..\..\..\trunk\Common\Storage.cs">
+      <Link>Common\Storage.cs</Link>
+    </Compile>
+    <Compile Include="..\..\..\trunk\Common\VideoPlugin.cs">
+      <Link>Common\VideoPlugin.cs</Link>
+    </Compile>
+    <Compile Include="..\..\..\trunk\Common\XMPPIQ.cs">
+      <Link>Common\XMPPIQ.cs</Link>
+    </Compile>
+    <Compile Include="..\..\..\trunk\Controls\ChatBox.cs">
+      <Link>Controls\ChatBox.cs</Link>
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="..\..\..\trunk\Controls\ChatBox.designer.cs">
+      <Link>Controls\ChatBox.designer.cs</Link>
+      <DependentUpon>ChatBox.cs</DependentUpon>
+    </Compile>
+    <Compile Include="..\..\..\trunk\Controls\NikotalkieComposeMessageView.cs">
+      <Link>Controls\NikotalkieComposeMessageView.cs</Link>
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="..\..\..\trunk\Controls\NikotalkieComposeMessageView.Designer.cs">
+      <Link>Controls\NikotalkieComposeMessageView.Designer.cs</Link>
+      <DependentUpon>NikotalkieComposeMessageView.cs</DependentUpon>
+    </Compile>
+    <Compile Include="..\..\..\trunk\Controls\NikotalkieControl.cs">
+      <Link>Controls\NikotalkieControl.cs</Link>
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="..\..\..\trunk\Controls\NikotalkieControl.Designer.cs">
+      <Link>Controls\NikotalkieControl.Designer.cs</Link>
+      <DependentUpon>NikotalkieControl.cs</DependentUpon>
+    </Compile>
+    <Compile Include="..\..\..\trunk\Controls\NikotalkieFolderView.cs">
+      <Link>Controls\NikotalkieFolderView.cs</Link>
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="..\..\..\trunk\Controls\NikotalkieFolderView.Designer.cs">
+      <Link>Controls\NikotalkieFolderView.Designer.cs</Link>
+      <DependentUpon>NikotalkieFolderView.cs</DependentUpon>
+    </Compile>
+    <Compile Include="..\..\..\trunk\Controls\NikotalkieItem.cs">
+      <Link>Controls\NikotalkieItem.cs</Link>
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="..\..\..\trunk\Controls\NikotalkieItem.Designer.cs">
+      <Link>Controls\NikotalkieItem.Designer.cs</Link>
+      <DependentUpon>NikotalkieItem.cs</DependentUpon>
+    </Compile>
+    <Compile Include="..\..\..\trunk\Controls\NikotalkieRecordingView.cs">
+      <Link>Controls\NikotalkieRecordingView.cs</Link>
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="..\..\..\trunk\Controls\NikotalkieRecordingView.Designer.cs">
+      <Link>Controls\NikotalkieRecordingView.Designer.cs</Link>
+      <DependentUpon>NikotalkieRecordingView.cs</DependentUpon>
+    </Compile>
+    <Compile Include="..\..\..\trunk\Controls\TransparentTextBox.cs">
+      <Link>Controls\TransparentTextBox.cs</Link>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="..\..\..\trunk\Controls\TransparentTextBox.designer.cs">
+      <Link>Controls\TransparentTextBox.designer.cs</Link>
+      <DependentUpon>TransparentTextBox.cs</DependentUpon>
+    </Compile>
+    <Compile Include="..\..\..\trunk\Controls\VoiceMailEntry.cs">
+      <Link>Controls\VoiceMailEntry.cs</Link>
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="..\..\..\trunk\Controls\VoiceMailEntry.designer.cs">
+      <Link>Controls\VoiceMailEntry.designer.cs</Link>
+      <DependentUpon>VoiceMailEntry.cs</DependentUpon>
+    </Compile>
+    <Compile Include="..\..\..\trunk\Controls\WebVoiceMailControl.cs">
+      <Link>Controls\WebVoiceMailControl.cs</Link>
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="..\..\..\trunk\Controls\WebVoiceMailControl.designer.cs">
+      <Link>Controls\WebVoiceMailControl.designer.cs</Link>
+      <DependentUpon>WebVoiceMailControl.cs</DependentUpon>
+    </Compile>
+    <Compile Include="..\..\..\trunk\Core\AboutBox.cs">
+      <Link>Core\AboutBox.cs</Link>
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="..\..\..\trunk\Core\AboutBox.designer.cs">
+      <Link>Core\AboutBox.designer.cs</Link>
+      <DependentUpon>AboutBox.cs</DependentUpon>
+    </Compile>
+    <Compile Include="..\..\..\trunk\Core\ArchiveWindow.cs">
+      <Link>Core\ArchiveWindow.cs</Link>
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="..\..\..\trunk\Core\ArchiveWindow.designer.cs">
+      <Link>Core\ArchiveWindow.designer.cs</Link>
+      <DependentUpon>ArchiveWindow.cs</DependentUpon>
+    </Compile>
+    <Compile Include="..\..\..\trunk\Core\ChatWindow.cs">
+      <Link>Core\ChatWindow.cs</Link>
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="..\..\..\trunk\Core\ChatWindow.designer.cs">
+      <Link>Core\ChatWindow.designer.cs</Link>
+      <DependentUpon>ChatWindow.cs</DependentUpon>
+    </Compile>
+    <Compile Include="..\..\..\trunk\Core\ContactsSearch.cs">
+      <Link>Core\ContactsSearch.cs</Link>
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="..\..\..\trunk\Core\ContactsSearch.designer.cs">
+      <Link>Core\ContactsSearch.designer.cs</Link>
+      <DependentUpon>ContactsSearch.cs</DependentUpon>
+    </Compile>
+    <Compile Include="..\..\..\trunk\Core\ContactsWindow.cs">
+      <Link>Core\ContactsWindow.cs</Link>
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="..\..\..\trunk\Core\ContactsWindow.designer.cs">
+      <Link>Core\ContactsWindow.designer.cs</Link>
+      <DependentUpon>ContactsWindow.cs</DependentUpon>
+    </Compile>
+    <Compile Include="..\..\..\trunk\Core\IMAccountWindow.cs">
+      <Link>Core\IMAccountWindow.cs</Link>
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="..\..\..\trunk\Core\IMAccountWindow.Designer.cs">
+      <Link>Core\IMAccountWindow.Designer.cs</Link>
+      <DependentUpon>IMAccountWindow.cs</DependentUpon>
+    </Compile>
+    <Compile Include="..\..\..\trunk\Core\MainForm.cs">
+      <Link>Core\MainForm.cs</Link>
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="..\..\..\trunk\Core\MainForm.Designer.cs">
+      <Link>Core\MainForm.Designer.cs</Link>
+      <DependentUpon>MainForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="..\..\..\trunk\Core\NikotalkieForm.cs">
+      <Link>Core\NikotalkieForm.cs</Link>
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="..\..\..\trunk\Core\NikotalkieForm.designer.cs">
+      <Link>Core\NikotalkieForm.designer.cs</Link>
+      <DependentUpon>NikotalkieForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="..\..\..\trunk\Core\Phone2PhoneWindow.cs">
+      <Link>Core\Phone2PhoneWindow.cs</Link>
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="..\..\..\trunk\Core\Phone2PhoneWindow.Designer.cs">
+      <Link>Core\Phone2PhoneWindow.Designer.cs</Link>
+      <DependentUpon>Phone2PhoneWindow.cs</DependentUpon>
+    </Compile>
+    <Compile Include="..\..\..\trunk\Core\Program.cs">
+      <Link>Program.cs</Link>
+    </Compile>
+    <Compile Include="..\..\..\trunk\Core\SettingsWindow.cs">
+      <Link>Core\SettingsWindow.cs</Link>
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="..\..\..\trunk\Core\SettingsWindow.Designer.cs">
+      <Link>Core\SettingsWindow.Designer.cs</Link>
+      <DependentUpon>SettingsWindow.cs</DependentUpon>
+    </Compile>
+    <Compile Include="..\..\..\trunk\Core\SpeedDialWindow.cs">
+      <Link>Core\SpeedDialWindow.cs</Link>
+    </Compile>
+    <Compile Include="..\..\..\trunk\Core\SpeedDialWindow.designer.cs">
+      <Link>Core\SpeedDialWindow.designer.cs</Link>
+      <DependentUpon>SpeedDialWindow.cs</DependentUpon>
+    </Compile>
+    <Compile Include="..\..\..\trunk\Core\Splash.cs">
+      <Link>Core\Splash.cs</Link>
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="..\..\..\trunk\Core\Splash.Designer.cs">
+      <Link>Core\Splash.Designer.cs</Link>
+      <DependentUpon>Splash.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Common\AudioPlayer.cs" />
+    <Compile Include="Configuration\Configuration.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <EmbeddedResource Include="..\..\..\trunk\Controls\ChatBox.resx">
+      <Link>Controls\ChatBox.resx</Link>
+      <DependentUpon>ChatBox.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="..\..\..\trunk\Controls\NikotalkieComposeMessageView.resx">
+      <Link>Controls\NikotalkieComposeMessageView.resx</Link>
+      <DependentUpon>NikotalkieComposeMessageView.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="..\..\..\trunk\Controls\NikotalkieControl.resx">
+      <Link>Controls\NikotalkieControl.resx</Link>
+      <DependentUpon>NikotalkieControl.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="..\..\..\trunk\Controls\NikotalkieFolderView.resx">
+      <Link>Controls\NikotalkieFolderView.resx</Link>
+      <DependentUpon>NikotalkieFolderView.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="..\..\..\trunk\Controls\NikotalkieItem.resx">
+      <Link>Controls\NikotalkieItem.resx</Link>
+      <DependentUpon>NikotalkieItem.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="..\..\..\trunk\Controls\NikotalkieRecordingView.resx">
+      <Link>Controls\NikotalkieRecordingView.resx</Link>
+      <DependentUpon>NikotalkieRecordingView.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="..\..\..\trunk\Controls\TransparentTextBox.resx">
+      <Link>Controls\TransparentTextBox.resx</Link>
+      <DependentUpon>TransparentTextBox.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="..\..\..\trunk\Controls\VoiceMailEntry.resx">
+      <Link>Controls\VoiceMailEntry.resx</Link>
+      <DependentUpon>VoiceMailEntry.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="..\..\..\trunk\Controls\WebVoiceMailControl.resx">
+      <Link>Controls\WebVoiceMailControl.resx</Link>
+      <DependentUpon>WebVoiceMailControl.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="..\..\..\trunk\Core\AboutBox.resx">
+      <Link>Core\AboutBox.resx</Link>
+      <DependentUpon>AboutBox.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="..\..\..\trunk\Core\ArchiveWindow.resx">
+      <Link>Core\ArchiveWindow.resx</Link>
+      <DependentUpon>ArchiveWindow.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="..\..\..\trunk\Core\ChatWindow.resx">
+      <Link>Core\ChatWindow.resx</Link>
+      <DependentUpon>ChatWindow.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="..\..\..\trunk\Core\ContactsSearch.resx">
+      <Link>Core\ContactsSearch.resx</Link>
+      <DependentUpon>ContactsSearch.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="..\..\..\trunk\Core\ContactsWindow.resx">
+      <Link>Core\ContactsWindow.resx</Link>
+      <DependentUpon>ContactsWindow.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="..\..\..\trunk\Core\IMAccountWindow.resx">
+      <Link>Core\IMAccountWindow.resx</Link>
+      <DependentUpon>IMAccountWindow.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="..\..\..\trunk\Core\MainForm.resx">
+      <Link>Core\MainForm.resx</Link>
+      <DependentUpon>MainForm.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="..\..\..\trunk\Core\NikotalkieForm.resx">
+      <Link>Core\NikotalkieForm.resx</Link>
+      <DependentUpon>NikotalkieForm.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="..\..\..\trunk\Core\Phone2PhoneWindow.resx">
+      <Link>Core\Phone2PhoneWindow.resx</Link>
+      <DependentUpon>Phone2PhoneWindow.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="..\..\..\trunk\Core\SettingsWindow.resx">
+      <Link>Core\SettingsWindow.resx</Link>
+      <DependentUpon>SettingsWindow.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="..\..\..\trunk\Core\SpeedDialWindow.resx">
+      <Link>Core\SpeedDialWindow.resx</Link>
+      <DependentUpon>SpeedDialWindow.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="..\..\..\trunk\Core\Splash.resx">
+      <Link>Core\Splash.resx</Link>
+      <DependentUpon>Splash.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\licenses.licx" />
+    <EmbeddedResource Include="Properties\Localization.de-DE.resx">
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Localization.es-ES.resx">
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Localization.fr-FR.resx">
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Localization.pl-PL.resx">
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Localization.resx">
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <Compile Include="Properties\Localization.Designer.cs" />
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+    <Compile Include="Web References\ClientUpdateWS\Reference.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Reference.map</DependentUpon>
+    </Compile>
+    <Compile Include="Web References\FileTransferWS\Reference.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Reference.map</DependentUpon>
+    </Compile>
+    <Compile Include="Web References\MailService\Reference.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Reference.map</DependentUpon>
+    </Compile>
+    <Compile Include="Web References\RSIFeaturesWS\Reference.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Reference.map</DependentUpon>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <COMReference Include="Microsoft.Office.Core">
+      <Guid>{2DF8D04C-5BFA-101B-BDE5-00AA0044DE52}</Guid>
+      <VersionMajor>2</VersionMajor>
+      <VersionMinor>4</VersionMinor>
+      <Lcid>0</Lcid>
+      <WrapperTool>primary</WrapperTool>
+      <Isolated>False</Isolated>
+    </COMReference>
+    <COMReference Include="Microsoft.Office.Interop.Outlook">
+      <Guid>{00062FFF-0000-0000-C000-000000000046}</Guid>
+      <VersionMajor>9</VersionMajor>
+      <VersionMinor>3</VersionMinor>
+      <Lcid>0</Lcid>
+      <WrapperTool>primary</WrapperTool>
+      <Isolated>False</Isolated>
+    </COMReference>
+    <COMReference Include="NATUPNPLib">
+      <Guid>{1C565858-F302-471E-B409-F180AA4ABEC6}</Guid>
+      <VersionMajor>1</VersionMajor>
+      <VersionMinor>0</VersionMinor>
+      <Lcid>0</Lcid>
+      <WrapperTool>tlbimp</WrapperTool>
+      <Isolated>False</Isolated>
+    </COMReference>
+    <COMReference Include="NETCONLib">
+      <Guid>{43E734CA-043D-4A70-9A2C-A8F254063D91}</Guid>
+      <VersionMajor>1</VersionMajor>
+      <VersionMinor>0</VersionMinor>
+      <Lcid>0</Lcid>
+      <WrapperTool>tlbimp</WrapperTool>
+      <Isolated>False</Isolated>
+    </COMReference>
+    <COMReference Include="NetFwTypeLib">
+      <Guid>{58FBCF7C-E7A9-467C-80B3-FC65E8FCCA08}</Guid>
+      <VersionMajor>1</VersionMajor>
+      <VersionMinor>0</VersionMinor>
+      <Lcid>0</Lcid>
+      <WrapperTool>tlbimp</WrapperTool>
+      <Isolated>False</Isolated>
+    </COMReference>
+    <COMReference Include="stdole">
+      <Guid>{00020430-0000-0000-C000-000000000046}</Guid>
+      <VersionMajor>2</VersionMajor>
+      <VersionMinor>0</VersionMinor>
+      <Lcid>0</Lcid>
+      <WrapperTool>primary</WrapperTool>
+      <Isolated>False</Isolated>
+    </COMReference>
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="..\..\..\trunk\Core\fbembed.dll">
+      <Link>fbembed.dll</Link>
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="..\..\..\trunk\Core\icudt30.dll">
+      <Link>icudt30.dll</Link>
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="..\..\..\trunk\Core\icuin30.dll">
+      <Link>icuin30.dll</Link>
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="..\..\..\trunk\Core\icuuc30.dll">
+      <Link>icuuc30.dll</Link>
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="desktop.ico" />
+    <Content Include="Emoticons\emoticon_evilgrin.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Emoticons\emoticon_grin.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Emoticons\emoticon_happy.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Emoticons\emoticon_smile.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Emoticons\emoticon_surprised.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Emoticons\emoticon_tongue.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Emoticons\emoticon_unhappy.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Emoticons\emoticon_waii.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Emoticons\emoticon_wink.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Emoticons\messageIn.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Emoticons\messageOut.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="nvideo.bmp">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <None Include="Resources\CallAnswerButton.png" />
+    <None Include="Resources\CallAnswerButtonDown.png" />
+    <None Include="Resources\CallAnswerButtonOver.png" />
+    <None Include="Resources\CallCancelButton.png" />
+    <None Include="Resources\CallCancelButtonDown.png" />
+    <None Include="Resources\CallCancelButtonOver.png" />
+    <None Include="Resources\NikotalkieButtonDoneDown.png" />
+    <None Include="Resources\NikotalkieButtonDoneOver.png" />
+    <None Include="Resources\NikotalkieButtonInbox.png" />
+    <None Include="Resources\NikotalkieButtonInboxPressed.png" />
+    <None Include="Resources\NikotalkieButtonOutbox.png" />
+    <None Include="Resources\NikotalkieButtonOutboxPressed.png" />
+    <None Include="Resources\NikotalkieButtonPlay.png" />
+    <None Include="Resources\NikotalkieButtonPlayDown.png" />
+    <None Include="Resources\NikotalkieButtonPlayOver.png" />
+    <None Include="Resources\NikotalkieButtonReply.png" />
+    <None Include="Resources\NikotalkieButtonReplyDown.png" />
+    <None Include="Resources\NikotalkieButtonReplyOver.png" />
+    <None Include="Resources\NikotalkieButtonReview.png" />
+    <None Include="Resources\NikotalkieButtonReviewDown.png" />
+    <None Include="Resources\NikotalkieButtonReviewOver.png" />
+    <None Include="Resources\NikotalkieButtonSend.png" />
+    <None Include="Resources\NikotalkieButtonSendDown.png" />
+    <None Include="Resources\NikotalkieButtonSendOver.png" />
+    <None Include="Resources\NikotalkieButtonSendPressed.png" />
+    <None Include="Resources\NikotalkieButtonSentbox.png" />
+    <None Include="Resources\NikotalkieButtonSentboxPressed.png" />
+    <None Include="Resources\NikotalkieButtonStop.png" />
+    <None Include="Resources\NikotalkieButtonStopDown.png" />
+    <None Include="Resources\NikotalkieButtonStopOver.png" />
+    <None Include="Resources\NikotalkieButtonStopPressed.png" />
+    <None Include="Resources\NikotalkieButtonTalk.png" />
+    <None Include="Resources\NikotalkieButtonTalkDown.png" />
+    <None Include="Resources\NikotalkieButtonTalkOver.png" />
+    <None Include="Resources\NikotalkieButtonTalkPresed.png" />
+    <None Include="Resources\NikotalkieControlBackground.png" />
+    <None Include="Resources\NikotalkieFormBackground.png" />
+    <None Include="Resources\NikotalkieIconMessage20.png" />
+    <None Include="Resources\NikotalkieItemBackgroundBlack.png" />
+    <None Include="Resources\NikotalkieItemBackgroundBlackSelected.png" />
+    <None Include="Resources\NikotalkieItemBackgroundWhite.png" />
+    <None Include="Resources\NikotalkieRecordingIcon.png" />
+    <None Include="Resources\NikotalkieButtonCancel.png" />
+    <None Include="Resources\NikotalkieButtonCancelDown.png" />
+    <None Include="Resources\NikotalkieButtonCancelOver.png" />
+    <None Include="Resources\NikotalkieButtonContacts.png" />
+    <None Include="Resources\NikotalkieButtonContactsPressed.png" />
+    <None Include="Resources\NikotalkieButtonDelete.png" />
+    <None Include="Resources\NikotalkieButtonDeleteDown.png" />
+    <None Include="Resources\NikotalkieButtonDeleteOver.png" />
+    <None Include="Resources\NikotalkieButtonDone.png" />
+    <None Include="Resources\statusTyping.png" />
+    <None Include="Resources\DialPad_4.png" />
+    <None Include="Resources\DialPad_5.png" />
+    <None Include="Resources\DialPad_6.png" />
+    <None Include="Resources\DialPad_7.png" />
+    <None Include="Resources\DialPad_8.png" />
+    <None Include="Resources\DialPad_9.png" />
+    <None Include="Resources\DialPad_Ast.png" />
+    <None Include="Resources\DialPad_Pnd.png" />
+    <None Include="Resources\DialPad_0.png" />
+    <None Include="Resources\DialPad_1.png" />
+    <None Include="Resources\DialPad_2.png" />
+    <None Include="Resources\DialPad_3.png" />
+    <None Include="Resources\DialPadBackground.png" />
+    <None Include="Resources\iconContacts.png" />
+    <None Include="Resources\DialPadBackgroundSmall.png" />
+    <None Include="Resources\fbDDL_1_0_5.sql" />
+    <None Include="Resources\fbDDL_1_0_6.sql" />
+    <None Include="Resources\logo.png" />
+    <Content Include="Sounds\im.mp3">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Sounds\nudge.mp3">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Sounds\ringin.mp3">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Sounds\silence.mp3">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <None Include="Resources\desktop.ico" />
+    <None Include="Web References\FileTransferWS\Reference.map">
+      <Generator>MSDiscoCodeGenerator</Generator>
+      <LastGenOutput>Reference.cs</LastGenOutput>
+    </None>
+    <None Include="Web References\FileTransferWS\Service.disco" />
+    <None Include="Web References\FileTransferWS\Service.wsdl" />
+    <None Include="Web References\MailService\FileInfo.datasource">
+      <DependentUpon>Reference.map</DependentUpon>
+    </None>
+    <None Include="Web References\MailService\MessageReturn.datasource">
+      <DependentUpon>Reference.map</DependentUpon>
+    </None>
+    <None Include="Web References\MailService\Reference.map">
+      <Generator>MSDiscoCodeGenerator</Generator>
+      <LastGenOutput>Reference.cs</LastGenOutput>
+    </None>
+    <None Include="Web References\MailService\ReturnStatus.datasource">
+      <DependentUpon>Reference.map</DependentUpon>
+    </None>
+    <None Include="Web References\MailService\Service.disco" />
+    <None Include="Web References\ClientUpdateWS\Reference.map">
+      <Generator>MSDiscoCodeGenerator</Generator>
+      <LastGenOutput>Reference.cs</LastGenOutput>
+    </None>
+    <None Include="Web References\ClientUpdateWS\Service.disco" />
+    <None Include="Web References\ClientUpdateWS\Service.wsdl" />
+    <None Include="app.config" />
+    <None Include="Web References\MailService\Service.wsdl" />
+    <None Include="Web References\RSIFeaturesWS\Reference.map">
+      <Generator>MSDiscoCodeGenerator</Generator>
+      <LastGenOutput>Reference.cs</LastGenOutput>
+    </None>
+    <None Include="Web References\RSIFeaturesWS\RSI.wsdl" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\..\..\..\..\..\Desktop\FireBird\Current\FirebirdClient-2.1.0-Src\NETProvider\source\FirebirdSql\FirebirdSql.Data.FirebirdClient.csproj">
+      <Project>{326A24F9-6259-45DB-835C-18DB80728460}</Project>
+      <Name>FirebirdSql.Data.FirebirdClient</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\..\..\trunk\RVoIPLib\RVoIPLib.vcproj">
+      <Project>{0F7ED67B-A25D-4F9B-B36C-D18704A44AAA}</Project>
+      <Name>RVoIPLib</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <WebReferences Include="Web References\" />
+  </ItemGroup>
+  <ItemGroup>
+    <WebReferenceUrl Include="http://63.214.186.103/TerraMailWebService/Service.asmx">
+      <UrlBehavior>Static</UrlBehavior>
+      <RelPath>Web References\MailService\</RelPath>
+      <UpdateFromURL>http://63.214.186.103/TerraMailWebService/Service.asmx</UpdateFromURL>
+      <ServiceLocationURL>
+      </ServiceLocationURL>
+      <CachedDynamicPropName>
+      </CachedDynamicPropName>
+      <CachedAppSettingsObjectName>Settings</CachedAppSettingsObjectName>
+      <CachedSettingsPropName>Client_MailService_Service</CachedSettingsPropName>
+    </WebReferenceUrl>
+    <WebReferenceUrl Include="http://api.remwave.com/NikotelClientWS/Service.asmx">
+      <UrlBehavior>Static</UrlBehavior>
+      <RelPath>Web References\ClientUpdateWS\</RelPath>
+      <UpdateFromURL>http://api.remwave.com/NikotelClientWS/Service.asmx</UpdateFromURL>
+      <ServiceLocationURL>
+      </ServiceLocationURL>
+      <CachedDynamicPropName>
+      </CachedDynamicPropName>
+      <CachedAppSettingsObjectName>Settings</CachedAppSettingsObjectName>
+      <CachedSettingsPropName>Client_ClientUpdateWS_Service</CachedSettingsPropName>
+    </WebReferenceUrl>
+    <WebReferenceUrl Include="http://api.remwave.com/FileTransferWS/Service.asmx">
+      <UrlBehavior>Static</UrlBehavior>
+      <RelPath>Web References\FileTransferWS\</RelPath>
+      <UpdateFromURL>http://api.remwave.com/FileTransferWS/Service.asmx</UpdateFromURL>
+      <ServiceLocationURL>
+      </ServiceLocationURL>
+      <CachedDynamicPropName>
+      </CachedDynamicPropName>
+      <CachedAppSettingsObjectName>Settings</CachedAppSettingsObjectName>
+      <CachedSettingsPropName>Client_FileTransferWS_Service</CachedSettingsPropName>
+    </WebReferenceUrl>
+    <WebReferenceUrl Include="https://api.nikotel.com/soap/nikotel-2.0/index.wsdl">
+      <UrlBehavior>Static</UrlBehavior>
+      <RelPath>Web References\RSIFeaturesWS\</RelPath>
+      <UpdateFromURL>https://api.nikotel.com/soap/nikotel-2.0/index.wsdl</UpdateFromURL>
+      <ServiceLocationURL>
+      </ServiceLocationURL>
+      <CachedDynamicPropName>
+      </CachedDynamicPropName>
+      <CachedAppSettingsObjectName>Settings</CachedAppSettingsObjectName>
+      <CachedSettingsPropName>Client_RSIFeaturesWS_RSIService</CachedSettingsPropName>
+    </WebReferenceUrl>
+  </ItemGroup>
+  <ItemGroup>
+    <BootstrapperPackage Include="Microsoft.Net.Client.3.5">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework Client Profile</ProductName>
+      <Install>false</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Net.Framework.2.0">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 2.0 %28x86%29</ProductName>
+      <Install>true</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Net.Framework.3.0">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.0 %28x86%29</ProductName>
+      <Install>false</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Net.Framework.3.5">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.5</ProductName>
+      <Install>false</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Net.Framework.3.5.SP1">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.5 SP1</ProductName>
+      <Install>false</Install>
+    </BootstrapperPackage>
+  </ItemGroup>
+  <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+  <PropertyGroup>
+    <PostBuildEvent>
+    </PostBuildEvent>
+    <PreBuildEvent>copy "C:\Documents and Settings\Andrzej Dzius\My Documents\Remwave\REMWAVE Communication Suite\trunk\AMRCodec\$(ConfigurationName)\libamr.dll" "$(TargetDir)libamr.dll"</PreBuildEvent>
+  </PropertyGroup>
+</Project>

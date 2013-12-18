@@ -1,0 +1,937 @@
+<?xml version="1.0" encoding="utf-8"?>
+<root>
+  <!-- 
+    Microsoft ResX Schema 
+    
+    Version 2.0
+    
+    The primary goals of this format is to allow a simple XML format 
+    that is mostly human readable. The generation and parsing of the 
+    various data types are done through the TypeConverter classes 
+    associated with the data types.
+    
+    Example:
+    
+    ... ado.net/XML headers & schema ...
+    <resheader name="resmimetype">text/microsoft-resx</resheader>
+    <resheader name="version">2.0</resheader>
+    <resheader name="reader">System.Resources.ResXResourceReader, System.Windows.Forms, ...</resheader>
+    <resheader name="writer">System.Resources.ResXResourceWriter, System.Windows.Forms, ...</resheader>
+    <data name="Name1"><value>this is my long string</value><comment>this is a comment</comment></data>
+    <data name="Color1" type="System.Drawing.Color, System.Drawing">Blue</data>
+    <data name="Bitmap1" mimetype="application/x-microsoft.net.object.binary.base64">
+        <value>[base64 mime encoded serialized .NET Framework object]</value>
+    </data>
+    <data name="Icon1" type="System.Drawing.Icon, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+        <value>[base64 mime encoded string representing a byte array form of the .NET Framework object]</value>
+        <comment>This is a comment</comment>
+    </data>
+                
+    There are any number of "resheader" rows that contain simple 
+    name/value pairs.
+    
+    Each data row contains a name, and value. The row also contains a 
+    type or mimetype. Type corresponds to a .NET class that support 
+    text/value conversion through the TypeConverter architecture. 
+    Classes that don't support this are serialized and stored with the 
+    mimetype set.
+    
+    The mimetype is used for serialized objects, and tells the 
+    ResXResourceReader how to depersist the object. This is currently not 
+    extensible. For a given mimetype the value must be set accordingly:
+    
+    Note - application/x-microsoft.net.object.binary.base64 is the format 
+    that the ResXResourceWriter will generate, however the reader can 
+    read any of the formats listed below.
+    
+    mimetype: application/x-microsoft.net.object.binary.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Binary.BinaryFormatter
+            : and then encoded with base64 encoding.
+    
+    mimetype: application/x-microsoft.net.object.soap.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Soap.SoapFormatter
+            : and then encoded with base64 encoding.
+
+    mimetype: application/x-microsoft.net.object.bytearray.base64
+    value   : The object must be serialized into a byte array 
+            : using a System.ComponentModel.TypeConverter
+            : and then encoded with base64 encoding.
+    -->
+  <xsd:schema id="root" xmlns="" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+    <xsd:import namespace="http://www.w3.org/XML/1998/namespace" />
+    <xsd:element name="root" msdata:IsDataSet="true">
+      <xsd:complexType>
+        <xsd:choice maxOccurs="unbounded">
+          <xsd:element name="metadata">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" />
+              </xsd:sequence>
+              <xsd:attribute name="name" use="required" type="xsd:string" />
+              <xsd:attribute name="type" type="xsd:string" />
+              <xsd:attribute name="mimetype" type="xsd:string" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="assembly">
+            <xsd:complexType>
+              <xsd:attribute name="alias" type="xsd:string" />
+              <xsd:attribute name="name" type="xsd:string" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="data">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+                <xsd:element name="comment" type="xsd:string" minOccurs="0" msdata:Ordinal="2" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" msdata:Ordinal="1" />
+              <xsd:attribute name="type" type="xsd:string" msdata:Ordinal="3" />
+              <xsd:attribute name="mimetype" type="xsd:string" msdata:Ordinal="4" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="resheader">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" />
+            </xsd:complexType>
+          </xsd:element>
+        </xsd:choice>
+      </xsd:complexType>
+    </xsd:element>
+  </xsd:schema>
+  <resheader name="resmimetype">
+    <value>text/microsoft-resx</value>
+  </resheader>
+  <resheader name="version">
+    <value>2.0</value>
+  </resheader>
+  <resheader name="reader">
+    <value>System.Resources.ResXResourceReader, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <resheader name="writer">
+    <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <data name="txtBtnConf" xml:space="preserve">
+    <value>Conf</value>
+  </data>
+  <data name="txtBtnConfLine1" xml:space="preserve">
+    <value>Conf Line 1</value>
+  </data>
+  <data name="txtBtnConfLine2" xml:space="preserve">
+    <value>Conf Line 2</value>
+  </data>
+  <data name="txtBtnConfLine3" xml:space="preserve">
+    <value>Conf Line 3</value>
+  </data>
+  <data name="txtBtnConfLine4" xml:space="preserve">
+    <value>Conf Line 4</value>
+  </data>
+  <data name="txtBtnDialPad0" xml:space="preserve">
+    <value />
+  </data>
+  <data name="txtBtnDialPad1" xml:space="preserve">
+    <value />
+  </data>
+  <data name="txtBtnDialPad2" xml:space="preserve">
+    <value>abc</value>
+  </data>
+  <data name="txtBtnDialPad3" xml:space="preserve">
+    <value>def</value>
+  </data>
+  <data name="txtBtnDialPad4" xml:space="preserve">
+    <value>ghi</value>
+  </data>
+  <data name="txtBtnDialPad5" xml:space="preserve">
+    <value>jkl</value>
+  </data>
+  <data name="txtBtnDialPad6" xml:space="preserve">
+    <value>mno</value>
+  </data>
+  <data name="txtBtnDialPad7" xml:space="preserve">
+    <value>pqrs</value>
+  </data>
+  <data name="txtBtnDialPad8" xml:space="preserve">
+    <value>tuv</value>
+  </data>
+  <data name="txtBtnDialPad9" xml:space="preserve">
+    <value>wxyz</value>
+  </data>
+  <data name="txtBtnDialPadPound" xml:space="preserve">
+    <value />
+  </data>
+  <data name="txtBtnHold" xml:space="preserve">
+    <value>Parar</value>
+  </data>
+  <data name="txtBtnHoldLine1" xml:space="preserve">
+    <value>Parar Línea 1</value>
+  </data>
+  <data name="txtBtnHoldLine2" xml:space="preserve">
+    <value>Parar Línea 2</value>
+  </data>
+  <data name="txtBtnHoldLine3" xml:space="preserve">
+    <value>Parar Línea 3</value>
+  </data>
+  <data name="txtBtnHoldLine4" xml:space="preserve">
+    <value>Parar Línea 4</value>
+  </data>
+  <data name="txtBtnLogin" xml:space="preserve">
+    <value>Entrar</value>
+  </data>
+  <data name="txtBtnRec" xml:space="preserve">
+    <value>Registro</value>
+  </data>
+  <data name="txtBtnShow1AB" xml:space="preserve">
+    <value>#AB</value>
+  </data>
+  <data name="txtBtnShowAll" xml:space="preserve">
+    <value>Todos</value>
+  </data>
+  <data name="txtBtnShowCDE" xml:space="preserve">
+    <value>CDE</value>
+  </data>
+  <data name="txtBtnShowFGH" xml:space="preserve">
+    <value>FGH</value>
+  </data>
+  <data name="txtBtnShowIJK" xml:space="preserve">
+    <value>IJK</value>
+  </data>
+  <data name="txtBtnShowLMN" xml:space="preserve">
+    <value>LMN</value>
+  </data>
+  <data name="txtBtnShowOPQ" xml:space="preserve">
+    <value>OPQ</value>
+  </data>
+  <data name="txtBtnShowRST" xml:space="preserve">
+    <value>RST</value>
+  </data>
+  <data name="txtBtnShowUVW" xml:space="preserve">
+    <value>UVW</value>
+  </data>
+  <data name="txtBtnShowXYZ" xml:space="preserve">
+    <value>XYZ</value>
+  </data>
+  <data name="txtBtnXfer" xml:space="preserve">
+    <value>Xfer</value>
+  </data>
+  <data name="txtCMenuAddContact" xml:space="preserve">
+    <value>Añadir Contacto</value>
+  </data>
+  <data name="txtCMenuAddtoContacts" xml:space="preserve">
+    <value>Añadir a Contacto ...</value>
+  </data>
+  <data name="txtCMenuCall" xml:space="preserve">
+    <value>Llame ...</value>
+  </data>
+  <data name="txtCMenuCallComputer" xml:space="preserve">
+    <value>Llame Computadora...</value>
+  </data>
+  <data name="txtCMenuCallHome" xml:space="preserve">
+    <value>Llame Casa ...</value>
+  </data>
+  <data name="txtCMenuCallMobile" xml:space="preserve">
+    <value>Llame Celular ...</value>
+  </data>
+  <data name="txtCMenuCallPhone2Phone" xml:space="preserve">
+    <value>Llame Telephono ...</value>
+  </data>
+  <data name="txtCmenuCallVoIP" xml:space="preserve">
+    <value>Llame VoIP ...</value>
+  </data>
+  <data name="txtCMenuCallWork" xml:space="preserve">
+    <value>Llame Trabajo ...</value>
+  </data>
+  <data name="txtCMenuChat" xml:space="preserve">
+    <value>Enviar Mensaje</value>
+  </data>
+  <data name="txtCMenuContacts" xml:space="preserve">
+    <value>Contacto</value>
+  </data>
+  <data name="txtCMenuDelete" xml:space="preserve">
+    <value>Eliminar</value>
+  </data>
+  <data name="txtCMenuPrepaidAmount" xml:space="preserve">
+    <value>$ 0.00</value>
+  </data>
+  <data name="txtCMenuPrepaidAmountRefresh" xml:space="preserve">
+    <value>Actualización de prepago</value>
+  </data>
+  <data name="txtCMenuSearchforUsers" xml:space="preserve">
+    <value>Buscar usuarios</value>
+  </data>
+  <data name="txtCMenuSendMessage" xml:space="preserve">
+    <value>Enviar mensaje</value>
+  </data>
+  <data name="txtCMenuStartVideoCall" xml:space="preserve">
+    <value>Inicio Llamada Video ...</value>
+  </data>
+  <data name="txtCMenuVideoCall" xml:space="preserve">
+    <value>Llamada Video</value>
+  </data>
+  <data name="txtCMenuViewContactProperties" xml:space="preserve">
+    <value>Ver propiedades de contacto</value>
+  </data>
+  <data name="txtContact" xml:space="preserve">
+    <value>Contacto</value>
+  </data>
+  <data name="txtIMAIM" xml:space="preserve">
+    <value>AIM</value>
+  </data>
+  <data name="txtInfoCallDuration" xml:space="preserve">
+    <value>Duración de Llamada</value>
+  </data>
+  <data name="txtInfoCalling" xml:space="preserve">
+    <value>Llamando</value>
+  </data>
+  <data name="txtInfoCallingValue" xml:space="preserve">
+    <value>1234567890</value>
+  </data>
+  <data name="txtInfoStatusLable" xml:space="preserve">
+    <value>Condición:</value>
+  </data>
+  <data name="txtInfoStatusValue" xml:space="preserve">
+    <value>Listo:</value>
+  </data>
+  <data name="txtLinkCreateAccount" xml:space="preserve">
+    <value>Crear Cuenta ...</value>
+  </data>
+  <data name="txtLinkForgotPassword" xml:space="preserve">
+    <value>¿Olvidó su Contraseña?</value>
+  </data>
+  <data name="txtLinkLoginAutomatically" xml:space="preserve">
+    <value>Entrara Automático</value>
+  </data>
+  <data name="txtLinkPassword" xml:space="preserve">
+    <value>Contraseña :</value>
+  </data>
+  <data name="txtLinkRememberMe" xml:space="preserve">
+    <value>Recordar Me</value>
+  </data>
+  <data name="txtLinkUsername" xml:space="preserve">
+    <value>Usuario :</value>
+  </data>
+  <data name="txtMenu" xml:space="preserve">
+    <value>Menú</value>
+  </data>
+  <data name="txtMenuAbout" xml:space="preserve">
+    <value>Acerca de</value>
+  </data>
+  <data name="txtMenuExit" xml:space="preserve">
+    <value>Salida</value>
+  </data>
+  <data name="txtMenuFile" xml:space="preserve">
+    <value>Archivo</value>
+  </data>
+  <data name="txtMenuHelp" xml:space="preserve">
+    <value>Ayuda</value>
+  </data>
+  <data name="txtMenuIMGG" xml:space="preserve">
+    <value>Gadu Gadu</value>
+  </data>
+  <data name="txtMenuIMICQ" xml:space="preserve">
+    <value>ICQ</value>
+  </data>
+  <data name="txtMenuIMDefault" xml:space="preserve">
+    <value>Home Network</value>
+  </data>
+  <data name="txtMenuIMMSN" xml:space="preserve">
+    <value>MSN</value>
+  </data>
+  <data name="txtMenuIMYahoo" xml:space="preserve">
+    <value>Yahoo</value>
+  </data>
+  <data name="txtMenuMe" xml:space="preserve">
+    <value>Yo</value>
+  </data>
+  <data name="txtMenuSignOut" xml:space="preserve">
+    <value>Desconectar</value>
+  </data>
+  <data name="txtStatusAway" xml:space="preserve">
+    <value>Lejos</value>
+  </data>
+  <data name="txtStatusDND" xml:space="preserve">
+    <value>No Molesta</value>
+  </data>
+  <data name="txtStatusExtendedAway" xml:space="preserve">
+    <value>Lejos</value>
+  </data>
+  <data name="txtStatusOffline" xml:space="preserve">
+    <value>Desconectado</value>
+  </data>
+  <data name="txtStatusOnline" xml:space="preserve">
+    <value>En Línea</value>
+  </data>
+  <data name="txtTabLine0" xml:space="preserve">
+    <value>Línea 1</value>
+  </data>
+  <data name="txtTabLine1" xml:space="preserve">
+    <value>Línea 2</value>
+  </data>
+  <data name="txtTabLine2" xml:space="preserve">
+    <value>Línea 3</value>
+  </data>
+  <data name="txtTabLine3" xml:space="preserve">
+    <value>Línea 4</value>
+  </data>
+  <data name="txtTitleCallHistory" xml:space="preserve">
+    <value>Llamadas</value>
+  </data>
+  <data name="txtTitleDialPad" xml:space="preserve">
+    <value>Botones</value>
+  </data>
+  <data name="txtTitleDialPadTabPage" xml:space="preserve">
+    <value>Teléfono</value>
+  </data>
+  <data name="txtTitleLines" xml:space="preserve">
+    <value>Líneas</value>
+  </data>
+  <data name="txtTitleMainContactsTabPage" xml:space="preserve">
+    <value>Contacto</value>
+  </data>
+  <data name="txtTitleMainMyAccountTabPage" xml:space="preserve">
+    <value>My Account</value>
+  </data>
+  <data name="txtTitleMainTabControl" xml:space="preserve">
+    <value />
+  </data>
+  <data name="txtTitleMainTabOnlinePage" xml:space="preserve">
+    <value>En Línea</value>
+  </data>
+  <data name="txtTitleNotifyIcon" xml:space="preserve">
+    <value>Client</value>
+  </data>
+  <data name="txtTitleStatus" xml:space="preserve">
+    <value>Condición</value>
+  </data>
+  <data name="txtTitleVoiceMail" xml:space="preserve">
+    <value>Maquina de Vos</value>
+  </data>
+  <data name="txtInfoAbout" xml:space="preserve">
+    <value>Sobre</value>
+  </data>
+  <data name="txtInfoAboutDesc" xml:space="preserve">
+    <value>ver. 2.2</value>
+  </data>
+  <data name="txtInfoAddToContact" xml:space="preserve">
+    <value>Organizar Contactos</value>
+  </data>
+  <data name="txtInfoAddToContactDesc" xml:space="preserve">
+    <value>Le gustaría añadir {0} a su contactos</value>
+  </data>
+  <data name="txtInfoApplicationClosing" xml:space="preserve">
+    <value>Este programa es ahora terminaría</value>
+  </data>
+  <data name="txtInfoApplicationClosingDesc" xml:space="preserve">
+    <value>¿Está seguro de que desea cerrar el programa?</value>
+  </data>
+  <data name="txtInfoIMFileTransfer" xml:space="preserve">
+    <value>{0} Enviar un archivo {1}</value>
+  </data>
+  <data name="txtInfoIMFileTransferAccepted" xml:space="preserve">
+    <value>{0} Aceptar archivo</value>
+  </data>
+  <data name="txtInfoIMFileTransferDenied" xml:space="preserve">
+    <value>{0} No aceptamos archivo</value>
+  </data>
+  <data name="txtInfoIMFileTransferDownloading" xml:space="preserve">
+    <value>Archivo de descarga {0} Nombre de archivo...</value>
+  </data>
+  <data name="txtInfoIMFileTransferInvitation" xml:space="preserve">
+    <value>Transferencia de archivos</value>
+  </data>
+  <data name="txtInfoIMFileTransferInvitationDesc" xml:space="preserve">
+    <value>Usuario {0} desea enviar el archivo: Archivo: {1} Tamaño: {2} ¿Usted desea aceptar?</value>
+  </data>
+  <data name="txtInfoIMMessageSendError" xml:space="preserve">
+    <value>Error en el envío de mensaje</value>
+  </data>
+  <data name="txtInfoIMMessageSendErrorDesc" xml:space="preserve">
+    <value>Error en el envío de mensaje: {0}</value>
+  </data>
+  <data name="txtInfoIMNotification" xml:space="preserve">
+    <value>Notificación</value>
+  </data>
+  <data name="txtInfoIMSendYouNudge" xml:space="preserve">
+    <value>{0} Le envió una Empuja</value>
+  </data>
+  <data name="txtInfoIMSubcriptionRequest" xml:space="preserve">
+    <value>Solicitud de suscripción</value>
+  </data>
+  <data name="txtInfoIMSubcriptionRequestDesc" xml:space="preserve">
+    <value>Usuario {0} desea añadir a su lista de contactos. ¿Acepta usted?</value>
+  </data>
+  <data name="txtInfoIMVideoCallAccepted" xml:space="preserve">
+    <value>{0} aceptado su invitación para  llamada vídeo</value>
+  </data>
+  <data name="txtInfoIMVideoCallDenied" xml:space="preserve">
+    <value>{0} no aceptado su invitación para  llamada vídeo</value>
+  </data>
+  <data name="txtInfoIMVideoCallInvitationRecived" xml:space="preserve">
+    <value>Usuario{0} le invita para una llamada vídeo.</value>
+  </data>
+  <data name="txtInfoIncomingCall" xml:space="preserve">
+    <value>Llamada entrantes</value>
+  </data>
+  <data name="txtInfoIncomingCallDesc" xml:space="preserve">
+    <value>Usted tiene una llamada de: {0}</value>
+  </data>
+  <data name="txtInfoLineBusy" xml:space="preserve">
+    <value>Ocupado</value>
+  </data>
+  <data name="txtInfoLineCallFrom" xml:space="preserve">
+    <value>Llamada de:</value>
+  </data>
+  <data name="txtInfoLineCalling" xml:space="preserve">
+    <value>Llamado Hoy</value>
+  </data>
+  <data name="txtInfoLineConnected" xml:space="preserve">
+    <value>Conectado </value>
+  </data>
+  <data name="txtInfoLineDialing" xml:space="preserve">
+    <value>Marcación</value>
+  </data>
+  <data name="txtInfoLineFree" xml:space="preserve">
+    <value>Libre</value>
+  </data>
+  <data name="txtInfoLineInCall" xml:space="preserve">
+    <value>En el teléfono</value>
+  </data>
+  <data name="txtInfoLineIncomingCall" xml:space="preserve">
+    <value>Llamada entrantes...</value>
+  </data>
+  <data name="txtInfoLineReady" xml:space="preserve">
+    <value>Listo</value>
+  </data>
+  <data name="txtInfoNewVersion" xml:space="preserve">
+    <value>Una nueva versión de {0} está disponible para su descarga!
+     Haga clic en [OK] para abrir la página de descarga.</value>
+  </data>
+  <data name="txtInfoPhone2Phone" xml:space="preserve">
+    <value>teléfono a teléfono</value>
+  </data>
+  <data name="txtInfoPhone2PhonePaymentRequired" xml:space="preserve">
+    <value>Pago Obligatorio: {0} to {1}</value>
+  </data>
+  <data name="txtInfoPhone2PhoneTrying" xml:space="preserve">
+    <value>Intento de llamada: {0} to {1}</value>
+  </data>
+  <data name="txtInfoPhone2PhoneUnableToStartCall" xml:space="preserve">
+    <value>No se ha podido llamar: {0} to {1}</value>
+  </data>
+  <data name="txtInfoPresenceNotificationDesc" xml:space="preserve">
+    <value>{0} es ahora {1} ({2})</value>
+  </data>
+  <data name="txtInfoServiceConnected" xml:space="preserve">
+    <value>IM - Conectado</value>
+  </data>
+  <data name="txtInfoServiceConnectedDesc" xml:space="preserve">
+    <value>Estás Conectado!</value>
+  </data>
+  <data name="txtInfoServiceNotReachable" xml:space="preserve">
+    <value>IM - No puede ser alcanzado</value>
+  </data>
+  <data name="txtInfoServiceNotReachableDesc" xml:space="preserve">
+    <value>Servicio no responde, por favor, compruebe su configuración de red o inténtelo de nuevo más tarde.</value>
+  </data>
+  <data name="txtInfoServiceUnavailable" xml:space="preserve">
+    <value>IM - Red no disponible</value>
+  </data>
+  <data name="txtInfoServiceUnavailableDesc" xml:space="preserve">
+    <value>{0} tiene una mala conexión. Por favor, compruebe su Red</value>
+  </data>
+  <data name="txtInfoSipEngineAudioInError" xml:space="preserve">
+    <value>Error de audio de entrada</value>
+  </data>
+  <data name="txtInfoSipEngineAudioInErrorDesc" xml:space="preserve">
+    <value>No se puede inicializar el subsistema de audio de la captura.</value>
+  </data>
+  <data name="txtInfoSipEngineAudioOutError" xml:space="preserve">
+    <value>Error de audio de salida</value>
+  </data>
+  <data name="txtInfoSipEngineAudioOutErrorDesc" xml:space="preserve">
+    <value>No puede iniciar la reproducción de audio subsistema.</value>
+  </data>
+  <data name="txtInfoSipEngineGeneralError" xml:space="preserve">
+    <value>Error de inicialización</value>
+  </data>
+  <data name="txtInfoSipEngineGeneralErrorDesc" xml:space="preserve">
+    <value>No ha sido posible iniciar teléfono SIP - Error ({0})</value>
+  </data>
+  <data name="txtInfoStorageEngineError" xml:space="preserve">
+    <value>Remwave Unificada de Almacenamiento - Error</value>
+  </data>
+  <data name="txtInfoStorageEngineErrorDesc" xml:space="preserve">
+    <value>Remwave Unificado de Almacenamiento No se pudo acceder a asegurarse de que sólo se ejecute una instancia del cliente.
+    
+     ¿Quieres crear nuevas almacenamiento de archivos?</value>
+  </data>
+  <data name="txtInfoUpdateAvailable" xml:space="preserve">
+    <value>Actualización está disponible</value>
+  </data>
+  <data name="txtInfoWebsite" xml:space="preserve">
+    <value>Página de Internet de {0}</value>
+  </data>
+  <data name="txtInfoWebsiteDesc" xml:space="preserve">
+    <value>¿Le gustaría abrir a Mi {0} en la zona de su navegador?</value>
+  </data>
+  <data name="txtInfoWrongUsernamePassword" xml:space="preserve">
+    <value>Error en la autorización</value>
+  </data>
+  <data name="txtInfoWrongUsernamePasswordDesc" xml:space="preserve">
+    <value>Nombre de usuario / Contraseña no válido!
+     Asegúrese de que dispone de su nombre de usuario escrito en letras minúsculas y que su contraseña está correctamente escrita.</value>
+  </data>
+  <data name="txtOtherGroup" xml:space="preserve">
+    <value>Otros</value>
+  </data>
+  <data name="txtTitleAIMNetwork" xml:space="preserve">
+    <value>Red de AOL</value>
+  </data>
+  <data name="txtTitleGGNetwork" xml:space="preserve">
+    <value>Red de Gadu Gadu</value>
+  </data>
+  <data name="txtTitleICQNetwork" xml:space="preserve">
+    <value>Red de IRQ</value>
+  </data>
+  <data name="txtTitleIRCNetwork" xml:space="preserve">
+    <value>Red de IRC</value>
+  </data>
+  <data name="txtTitleMSNNetwork" xml:space="preserve">
+    <value>Red de MSN</value>
+  </data>
+  <data name="txtTitleYahooNetwork" xml:space="preserve">
+    <value>Red de Yahoo</value>
+  </data>
+  <data name="txtArchiveInfoNoHistoryFound" xml:space="preserve">
+    <value>No hay historial de chat.</value>
+  </data>
+  <data name="txtCFormBtnSave" xml:space="preserve">
+    <value>Guardar</value>
+  </data>
+  <data name="txtCFormInfo" xml:space="preserve">
+    <value>Agregar en la libreta de teléfonos de contacto</value>
+  </data>
+  <data name="txtCFormInfoDesc" xml:space="preserve">
+    <value>Añadir esta persona a sus contactos con el número de teléfono información.</value>
+  </data>
+  <data name="txtCFormTitle" xml:space="preserve">
+    <value>Lista de Contactos</value>
+  </data>
+  <data name="txtCFormTitleAddress" xml:space="preserve">
+    <value>Dirección</value>
+  </data>
+  <data name="txtCFormTitleAddressCity" xml:space="preserve">
+    <value>Ciudad</value>
+  </data>
+  <data name="txtCFormTitleAddressCountry" xml:space="preserve">
+    <value>País</value>
+  </data>
+  <data name="txtCFormTitleAddressEmail" xml:space="preserve">
+    <value>Email</value>
+  </data>
+  <data name="txtCFormTitleAddressState" xml:space="preserve">
+    <value>Estado</value>
+  </data>
+  <data name="txtCFormTitleAddressStreet" xml:space="preserve">
+    <value>Calle</value>
+  </data>
+  <data name="txtCFormTitleAddressZipCode" xml:space="preserve">
+    <value>Código postal</value>
+  </data>
+  <data name="txtCFormTitleFirstName" xml:space="preserve">
+    <value>Nombre</value>
+  </data>
+  <data name="txtCFormTitleIMAddress" xml:space="preserve">
+    <value>Nombre de Pantalla</value>
+  </data>
+  <data name="txtCFormTitleIMGroup" xml:space="preserve">
+    <value>Groupo</value>
+  </data>
+  <data name="txtCFormTitleIMNetwork" xml:space="preserve">
+    <value>Red de Mensajería Instantánea</value>
+  </data>
+  <data name="txtCFormTitleIMUsername" xml:space="preserve">
+    <value>Usuario</value>
+  </data>
+  <data name="txtCFormTitleLastName" xml:space="preserve">
+    <value>Apellido</value>
+  </data>
+  <data name="txtCFormTitleMiddleName" xml:space="preserve">
+    <value>Nombre Segundo</value>
+  </data>
+  <data name="txtCFormTitleNameDetails" xml:space="preserve">
+    <value>Nombre Detalles</value>
+  </data>
+  <data name="txtCFormTitlePhoneBusiness" xml:space="preserve">
+    <value>Número de Negocios</value>
+  </data>
+  <data name="txtCFormTitlePhoneHome" xml:space="preserve">
+    <value>Inicio Número</value>
+  </data>
+  <data name="txtCFormTitlePhoneMobile" xml:space="preserve">
+    <value>Número de Teléfono Móvil</value>
+  </data>
+  <data name="txtCFormTitlePhones" xml:space="preserve">
+    <value>Número de Teléfono</value>
+  </data>
+  <data name="txtCFormTitlePhoneVoIP" xml:space="preserve">
+    <value>VoIP</value>
+  </data>
+  <data name="txtCFormTitlePicture" xml:space="preserve">
+    <value>Imagen</value>
+  </data>
+  <data name="txtCFormTitlePictureChange" xml:space="preserve">
+    <value>Cambia</value>
+  </data>
+  <data name="txtChatCMenuSearch" xml:space="preserve">
+    <value>Búsqueda</value>
+  </data>
+  <data name="txtChatFileTransferFailed" xml:space="preserve">
+    <value>Transferencia de archivos de error</value>
+  </data>
+  <data name="txtChatFileTransferFailedDesc" xml:space="preserve">
+    <value>Transferencia de archivos ha fallado. ¿Deseas volver a obtener el archivo? </value>
+  </data>
+  <data name="txtChatInfoCloseTab" xml:space="preserve">
+    <value>Cerrar Pestaña</value>
+  </data>
+  <data name="txtChatInfoNudgeAgain" xml:space="preserve">
+    <value>Puede Empujar en {0} segundo(s)</value>
+  </data>
+  <data name="txtChatInfoNudgeSent" xml:space="preserve">
+    <value>Empujar se ha enviado</value>
+  </data>
+  <data name="txtChatInfoSenderSystem" xml:space="preserve">
+    <value>Sistema</value>
+  </data>
+  <data name="txtChatInfoSenderUser" xml:space="preserve">
+    <value>Usuario</value>
+  </data>
+  <data name="txtChatTitle" xml:space="preserve">
+    <value>Chat</value>
+  </data>
+  <data name="txtChatTitleControl" xml:space="preserve">
+    <value>Sesiones de Chat</value>
+  </data>
+  <data name="txtChatTitleOpenFileDialog" xml:space="preserve">
+    <value>Abrir Archivo</value>
+  </data>
+  <data name="txtChatTitleSaveFileDialog" xml:space="preserve">
+    <value>Guardar Archivo</value>
+  </data>
+  <data name="txtCMenuScreenSharing" xml:space="preserve">
+    <value>Pantalla Inicial Compartir</value>
+  </data>
+  <data name="txtCMenuSendEmail" xml:space="preserve">
+    <value>Enviar Correo Electrónico</value>
+  </data>
+  <data name="txtCSearchBtnAddUser" xml:space="preserve">
+    <value>Añadir Usuario</value>
+  </data>
+  <data name="txtCSearchInfo" xml:space="preserve">
+    <value>Buscar Usuarios de {0}</value>
+  </data>
+  <data name="txtCSearchInfoDesc" xml:space="preserve">
+    <value>Si conozca nombre de su amigo, el correo electrónico o el nombre completo escríbala en el cuadro siguiente.</value>
+  </data>
+  <data name="txtCSearchInfoGenderFemale" xml:space="preserve">
+    <value />
+  </data>
+  <data name="txtCSearchInfoGenderMale" xml:space="preserve">
+    <value>Hombre</value>
+  </data>
+  <data name="txtCSearchInfoGenderNA" xml:space="preserve">
+    <value>No esta Especificado</value>
+  </data>
+  <data name="txtCSearchInfoSearching" xml:space="preserve">
+    <value>Buscando</value>
+  </data>
+  <data name="txtCSearchTilte" xml:space="preserve">
+    <value>Buscar Contactos</value>
+  </data>
+  <data name="txtCSearchTitleAgeRange" xml:space="preserve">
+    <value>Gama Años</value>
+  </data>
+  <data name="txtCSearchTitleCity" xml:space="preserve">
+    <value />
+  </data>
+  <data name="txtCSearchTitleComment" xml:space="preserve">
+    <value>Comentario</value>
+  </data>
+  <data name="txtCSearchTitleCompany" xml:space="preserve">
+    <value>Empresa</value>
+  </data>
+  <data name="txtCSearchTitleCountry" xml:space="preserve">
+    <value>País</value>
+  </data>
+  <data name="txtCSearchTitleFind" xml:space="preserve">
+    <value>Buscar</value>
+  </data>
+  <data name="txtCSearchTitleFirstName" xml:space="preserve">
+    <value>Nombre</value>
+  </data>
+  <data name="txtCSearchTitleLanguage" xml:space="preserve">
+    <value>Idioma</value>
+  </data>
+  <data name="txtCSearchTitleLastName" xml:space="preserve">
+    <value>Apellido</value>
+  </data>
+  <data name="txtCSearchTitleRegion" xml:space="preserve">
+    <value>Región</value>
+  </data>
+  <data name="txtCSearchTitleState" xml:space="preserve">
+    <value />
+  </data>
+  <data name="txtCSearchTitleUsername" xml:space="preserve">
+    <value>Nombre de Usuario</value>
+  </data>
+  <data name="txtIMAccountBtnDelete" xml:space="preserve">
+    <value>Eliminar</value>
+  </data>
+  <data name="txtIMAccountBtnSave" xml:space="preserve">
+    <value>Guardar</value>
+  </data>
+  <data name="txtIMAccountTitle" xml:space="preserve">
+    <value>Cuenta de Mensajería Instantánea</value>
+  </data>
+  <data name="txtIMAccountTitleNetwork" xml:space="preserve">
+    <value>Red</value>
+  </data>
+  <data name="txtIMAccountTitlePassword" xml:space="preserve">
+    <value>Contraseña</value>
+  </data>
+  <data name="txtIMAccountTitleUsername" xml:space="preserve">
+    <value>Usuario</value>
+  </data>
+  <data name="txtInfoIMFileTransferInitialized" xml:space="preserve">
+    <value>Transferencia de {1} a usuarios {0} ha empezado</value>
+  </data>
+  <data name="txtRACBtnCall" xml:space="preserve">
+    <value>Llame</value>
+  </data>
+  <data name="txtRACInfo" xml:space="preserve">
+    <value>Empezar a llamar teléfono a teléfono</value>
+  </data>
+  <data name="txtRACTitle" xml:space="preserve">
+    <value>teléfono a teléfono</value>
+  </data>
+  <data name="txtRACTitleCallFrom" xml:space="preserve">
+    <value>Llame...</value>
+  </data>
+  <data name="txtRACTitleCallTo" xml:space="preserve">
+    <value>y...</value>
+  </data>
+  <data name="txtRACTitleEnd" xml:space="preserve">
+    <value>Termina</value>
+  </data>
+  <data name="txtRACTitlePhoneFromName" xml:space="preserve">
+    <value>Número de Teléfono</value>
+  </data>
+  <data name="txtRACTitlePhoneToName" xml:space="preserve">
+    <value>Número de Teléfono</value>
+  </data>
+  <data name="txtSDInfoNoRecordsFound" xml:space="preserve">
+    <value>Encontró ningún registro</value>
+  </data>
+  <data name="txtSDInfoNoRecordsFoundDesc" xml:space="preserve">
+    <value>Añadir {0} a su lista de contactos</value>
+  </data>
+  <data name="txtSDTitleSearchDefault" xml:space="preserve">
+    <value>Entrar el nombre o número de teléfono</value>
+  </data>
+  <data name="txtConfirmBeforeClosing" xml:space="preserve">
+    <value>Confirmar antes de cerrar</value>
+  </data>
+  <data name="txtMenuMessageHistroy" xml:space="preserve">
+    <value>Últimos mensajes</value>
+  </data>
+  <data name="txtMenuSettings" xml:space="preserve">
+    <value>Establecimiento</value>
+  </data>
+  <data name="txtSettingsBasicSettings" xml:space="preserve">
+    <value>Establecimiento</value>
+  </data>
+  <data name="txtSettingsCancelButton" xml:space="preserve">
+    <value>Cancelar</value>
+  </data>
+  <data name="txtSettingsEnableQAReporting" xml:space="preserve">
+    <value>Informe de Control de Calidad</value>
+  </data>
+  <data name="txtSettingsGeneralTab" xml:space="preserve">
+    <value>General</value>
+  </data>
+  <data name="txtSettingsLaunchWhenWindowsStarts" xml:space="preserve">
+    <value>Comienzan con Windows</value>
+  </data>
+  <data name="txtSettingsOKButton" xml:space="preserve">
+    <value>Ok</value>
+  </data>
+  <data name="txtSettingsPhoneAudioCodecs" xml:space="preserve">
+    <value>Codecs Audio</value>
+  </data>
+  <data name="txtSettingsPhoneAudioVolume" xml:space="preserve">
+    <value>Volumen Audio</value>
+  </data>
+  <data name="txtSettingsPhoneAvailableCodecs" xml:space="preserve">
+    <value>Codecs Disponible</value>
+  </data>
+  <data name="txtSettingsPhoneEnabledCodecs" xml:space="preserve">
+    <value>Codecs Permitido</value>
+  </data>
+  <data name="txtSettingsPhoneEnableSIPLogging" xml:space="preserve">
+    <value>Permitir registro de diagnóstico a SIP</value>
+  </data>
+  <data name="txtSettingsPhoneMicrophoneVolume" xml:space="preserve">
+    <value>Micrófono</value>
+  </data>
+  <data name="txtSettingsPhoneRingTone" xml:space="preserve">
+    <value>Tono de llamada</value>
+  </data>
+  <data name="txtSettingsPhoneRingToneCustom" xml:space="preserve">
+    <value>Costumbre</value>
+  </data>
+  <data name="txtSettingsPhoneRingToneDefault" xml:space="preserve">
+    <value>Por defecto</value>
+  </data>
+  <data name="txtSettingsPhoneRingToneSelect" xml:space="preserve">
+    <value>Seleccionar</value>
+  </data>
+  <data name="txtSettingsPhoneSpeakerVolume" xml:space="preserve">
+    <value>Altavoces</value>
+  </data>
+  <data name="txtSettingsPhoneTab" xml:space="preserve">
+    <value>Teléfono</value>
+  </data>
+  <data name="txtSettingsContactsLocalStore" xml:space="preserve">
+    <value>Almacenar en Computadora</value>
+  </data>
+  <data name="txtSettingsContactsOutlookStore" xml:space="preserve">
+    <value>Usar contactos de Outlook</value>
+  </data>
+  <data name="txtSettingsContactsServerStore" xml:space="preserve">
+    <value>Almacenar en servidor {0}</value>
+  </data>
+  <data name="txtTitleStoreLocal" xml:space="preserve">
+    <value>Local</value>
+  </data>
+  <data name="txtTitleStoreOutlook" xml:space="preserve">
+    <value>Outlook</value>
+  </data>
+  <data name="txtTitleStoreServer" xml:space="preserve">
+    <value>Servidor</value>
+  </data>
+  <data name="txtSettingsLanguage" xml:space="preserve">
+    <value>Espanol</value>
+  </data>
+  <data name="txtChatFeatureOnlyHomeNetwork" xml:space="preserve">
+    <value>Esta función sólo está disponible entre {0} usuarios.</value>
+  </data>
+  <data name="txtChatInfoUserOfflineMessage" xml:space="preserve">
+    <value>El usuario parece estar fuera de la red, los mensajes se entregarán cuando el usuario esta connectado.</value>
+  </data>
+</root>

@@ -1,0 +1,860 @@
+<?xml version="1.0" encoding="utf-8"?>
+<root>
+  <!-- 
+    Microsoft ResX Schema 
+    
+    Version 2.0
+    
+    The primary goals of this format is to allow a simple XML format 
+    that is mostly human readable. The generation and parsing of the 
+    various data types are done through the TypeConverter classes 
+    associated with the data types.
+    
+    Example:
+    
+    ... ado.net/XML headers & schema ...
+    <resheader name="resmimetype">text/microsoft-resx</resheader>
+    <resheader name="version">2.0</resheader>
+    <resheader name="reader">System.Resources.ResXResourceReader, System.Windows.Forms, ...</resheader>
+    <resheader name="writer">System.Resources.ResXResourceWriter, System.Windows.Forms, ...</resheader>
+    <data name="Name1"><value>this is my long string</value><comment>this is a comment</comment></data>
+    <data name="Color1" type="System.Drawing.Color, System.Drawing">Blue</data>
+    <data name="Bitmap1" mimetype="application/x-microsoft.net.object.binary.base64">
+        <value>[base64 mime encoded serialized .NET Framework object]</value>
+    </data>
+    <data name="Icon1" type="System.Drawing.Icon, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+        <value>[base64 mime encoded string representing a byte array form of the .NET Framework object]</value>
+        <comment>This is a comment</comment>
+    </data>
+                
+    There are any number of "resheader" rows that contain simple 
+    name/value pairs.
+    
+    Each data row contains a name, and value. The row also contains a 
+    type or mimetype. Type corresponds to a .NET class that support 
+    text/value conversion through the TypeConverter architecture. 
+    Classes that don't support this are serialized and stored with the 
+    mimetype set.
+    
+    The mimetype is used for serialized objects, and tells the 
+    ResXResourceReader how to depersist the object. This is currently not 
+    extensible. For a given mimetype the value must be set accordingly:
+    
+    Note - application/x-microsoft.net.object.binary.base64 is the format 
+    that the ResXResourceWriter will generate, however the reader can 
+    read any of the formats listed below.
+    
+    mimetype: application/x-microsoft.net.object.binary.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Binary.BinaryFormatter
+            : and then encoded with base64 encoding.
+    
+    mimetype: application/x-microsoft.net.object.soap.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Soap.SoapFormatter
+            : and then encoded with base64 encoding.
+
+    mimetype: application/x-microsoft.net.object.bytearray.base64
+    value   : The object must be serialized into a byte array 
+            : using a System.ComponentModel.TypeConverter
+            : and then encoded with base64 encoding.
+    -->
+  <xsd:schema id="root" xmlns="" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+    <xsd:import namespace="http://www.w3.org/XML/1998/namespace" />
+    <xsd:element name="root" msdata:IsDataSet="true">
+      <xsd:complexType>
+        <xsd:choice maxOccurs="unbounded">
+          <xsd:element name="metadata">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" />
+              </xsd:sequence>
+              <xsd:attribute name="name" use="required" type="xsd:string" />
+              <xsd:attribute name="type" type="xsd:string" />
+              <xsd:attribute name="mimetype" type="xsd:string" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="assembly">
+            <xsd:complexType>
+              <xsd:attribute name="alias" type="xsd:string" />
+              <xsd:attribute name="name" type="xsd:string" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="data">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+                <xsd:element name="comment" type="xsd:string" minOccurs="0" msdata:Ordinal="2" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" msdata:Ordinal="1" />
+              <xsd:attribute name="type" type="xsd:string" msdata:Ordinal="3" />
+              <xsd:attribute name="mimetype" type="xsd:string" msdata:Ordinal="4" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="resheader">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" />
+            </xsd:complexType>
+          </xsd:element>
+        </xsd:choice>
+      </xsd:complexType>
+    </xsd:element>
+  </xsd:schema>
+  <resheader name="resmimetype">
+    <value>text/microsoft-resx</value>
+  </resheader>
+  <resheader name="version">
+    <value>2.0</value>
+  </resheader>
+  <resheader name="reader">
+    <value>System.Resources.ResXResourceReader, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <resheader name="writer">
+    <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <data name="txtArchiveInfoNoHistoryFound" xml:space="preserve">
+    <value>No chat history found.</value>
+  </data>
+  <data name="txtBtnConf" xml:space="preserve">
+    <value>Conf</value>
+  </data>
+  <data name="txtBtnConfLine1" xml:space="preserve">
+    <value>Line 1</value>
+  </data>
+  <data name="txtBtnConfLine2" xml:space="preserve">
+    <value>Line 2</value>
+  </data>
+  <data name="txtBtnConfLine3" xml:space="preserve">
+    <value>Line 3</value>
+  </data>
+  <data name="txtBtnConfLine4" xml:space="preserve">
+    <value>Line 4</value>
+  </data>
+  <data name="txtBtnDialPad0" xml:space="preserve">
+    <value />
+  </data>
+  <data name="txtBtnDialPad1" xml:space="preserve">
+    <value />
+  </data>
+  <data name="txtBtnDialPad2" xml:space="preserve">
+    <value>abc</value>
+  </data>
+  <data name="txtBtnDialPad3" xml:space="preserve">
+    <value>def</value>
+  </data>
+  <data name="txtBtnDialPad4" xml:space="preserve">
+    <value>ghi</value>
+  </data>
+  <data name="txtBtnDialPad5" xml:space="preserve">
+    <value>ijk</value>
+  </data>
+  <data name="txtBtnDialPad6" xml:space="preserve">
+    <value>mno</value>
+  </data>
+  <data name="txtBtnDialPad7" xml:space="preserve">
+    <value>pqrs</value>
+  </data>
+  <data name="txtBtnDialPad8" xml:space="preserve">
+    <value>tuv</value>
+  </data>
+  <data name="txtBtnDialPad9" xml:space="preserve">
+    <value>wxyz</value>
+  </data>
+  <data name="txtBtnDialPadPound" xml:space="preserve">
+    <value />
+  </data>
+  <data name="txtBtnHold" xml:space="preserve">
+    <value>Hold</value>
+  </data>
+  <data name="txtBtnHoldLine1" xml:space="preserve">
+    <value>Line 1</value>
+  </data>
+  <data name="txtBtnHoldLine2" xml:space="preserve">
+    <value>Line 2</value>
+  </data>
+  <data name="txtBtnHoldLine3" xml:space="preserve">
+    <value>Line 3</value>
+  </data>
+  <data name="txtBtnHoldLine4" xml:space="preserve">
+    <value>Line 4</value>
+  </data>
+  <data name="txtBtnLogin" xml:space="preserve">
+    <value>Login</value>
+  </data>
+  <data name="txtBtnRec" xml:space="preserve">
+    <value>Rec</value>
+  </data>
+  <data name="txtBtnShow1AB" xml:space="preserve">
+    <value>#AB</value>
+  </data>
+  <data name="txtBtnShowAll" xml:space="preserve">
+    <value>All</value>
+  </data>
+  <data name="txtBtnShowCDE" xml:space="preserve">
+    <value>CDE</value>
+  </data>
+  <data name="txtBtnShowFGH" xml:space="preserve">
+    <value>FGH</value>
+  </data>
+  <data name="txtBtnShowIJK" xml:space="preserve">
+    <value>IJK</value>
+  </data>
+  <data name="txtBtnShowLMN" xml:space="preserve">
+    <value>LMN</value>
+  </data>
+  <data name="txtBtnShowOPQ" xml:space="preserve">
+    <value>OPQ</value>
+  </data>
+  <data name="txtBtnShowRST" xml:space="preserve">
+    <value>RST</value>
+  </data>
+  <data name="txtBtnShowUVW" xml:space="preserve">
+    <value>UVW</value>
+  </data>
+  <data name="txtBtnShowXYZ" xml:space="preserve">
+    <value>XYZ</value>
+  </data>
+  <data name="txtBtnXfer" xml:space="preserve">
+    <value>Xfer</value>
+  </data>
+  <data name="txtCFormBtnSave" xml:space="preserve">
+    <value>Save</value>
+  </data>
+  <data name="txtCFormInfo" xml:space="preserve">
+    <value>Add an ordinary phone book contact</value>
+  </data>
+  <data name="txtCFormInfoDesc" xml:space="preserve">
+    <value>Add a contact to your contacts with  phone numbers information.</value>
+  </data>
+  <data name="txtCFormTitle" xml:space="preserve">
+    <value>Contacts Book</value>
+  </data>
+  <data name="txtCFormTitleAddress" xml:space="preserve">
+    <value>Address</value>
+  </data>
+  <data name="txtCFormTitleAddressCity" xml:space="preserve">
+    <value>City</value>
+  </data>
+  <data name="txtCFormTitleAddressCountry" xml:space="preserve">
+    <value>Country</value>
+  </data>
+  <data name="txtCFormTitleAddressEmail" xml:space="preserve">
+    <value>Email</value>
+  </data>
+  <data name="txtCFormTitleAddressState" xml:space="preserve">
+    <value>State</value>
+  </data>
+  <data name="txtCFormTitleAddressStreet" xml:space="preserve">
+    <value>Street</value>
+  </data>
+  <data name="txtCFormTitleAddressZipCode" xml:space="preserve">
+    <value>Zip Code</value>
+  </data>
+  <data name="txtCFormTitleFirstName" xml:space="preserve">
+    <value>First :</value>
+  </data>
+  <data name="txtCFormTitleIMAddress" xml:space="preserve">
+    <value>IM Address</value>
+  </data>
+  <data name="txtCFormTitleIMGroup" xml:space="preserve">
+    <value>Group</value>
+  </data>
+  <data name="txtCFormTitleIMNetwork" xml:space="preserve">
+    <value>IM Network</value>
+  </data>
+  <data name="txtCFormTitleIMUsername" xml:space="preserve">
+    <value>Username</value>
+  </data>
+  <data name="txtCFormTitleLastName" xml:space="preserve">
+    <value>Last :</value>
+  </data>
+  <data name="txtCFormTitleMiddleName" xml:space="preserve">
+    <value>Middle :</value>
+  </data>
+  <data name="txtCFormTitleNameDetails" xml:space="preserve">
+    <value>Name details</value>
+  </data>
+  <data name="txtCFormTitlePhoneBusiness" xml:space="preserve">
+    <value>Business</value>
+  </data>
+  <data name="txtCFormTitlePhoneHome" xml:space="preserve">
+    <value>Home</value>
+  </data>
+  <data name="txtCFormTitlePhoneMobile" xml:space="preserve">
+    <value>Mobile</value>
+  </data>
+  <data name="txtCFormTitlePhones" xml:space="preserve">
+    <value>Phone numbers</value>
+  </data>
+  <data name="txtCFormTitlePhoneVoIP" xml:space="preserve">
+    <value>VoIP</value>
+  </data>
+  <data name="txtCFormTitlePicture" xml:space="preserve">
+    <value>Picture</value>
+  </data>
+  <data name="txtCFormTitlePictureChange" xml:space="preserve">
+    <value>Change</value>
+  </data>
+  <data name="txtChatCMenuSearch" xml:space="preserve">
+    <value>Search</value>
+  </data>
+  <data name="txtChatFileTransferFailed" xml:space="preserve">
+    <value>File transfer error</value>
+  </data>
+  <data name="txtChatFileTransferFailedDesc" xml:space="preserve">
+    <value>File transfer failed. Do you want to retry to get the file?</value>
+  </data>
+  <data name="txtChatInfoCloseTab" xml:space="preserve">
+    <value>Close Tab</value>
+  </data>
+  <data name="txtChatInfoNudgeAgain" xml:space="preserve">
+    <value>You can nudge again, in {0} second(s)</value>
+  </data>
+  <data name="txtChatInfoNudgeSent" xml:space="preserve">
+    <value>Nudge has been sent.</value>
+  </data>
+  <data name="txtChatInfoSenderSystem" xml:space="preserve">
+    <value>System</value>
+  </data>
+  <data name="txtChatInfoSenderUser" xml:space="preserve">
+    <value>User</value>
+  </data>
+  <data name="txtChatTitle" xml:space="preserve">
+    <value>JOCCOme - Chat</value>
+  </data>
+  <data name="txtChatTitleControl" xml:space="preserve">
+    <value>Chat Sessions</value>
+  </data>
+  <data name="txtChatTitleOpenFileDialog" xml:space="preserve">
+    <value>Open file </value>
+  </data>
+  <data name="txtChatTitleSaveFileDialog" xml:space="preserve">
+    <value>Save file</value>
+  </data>
+  <data name="txtCMenuAddContact" xml:space="preserve">
+    <value>Add Contact</value>
+  </data>
+  <data name="txtCMenuAddtoContacts" xml:space="preserve">
+    <value>Add to Contacts ...</value>
+  </data>
+  <data name="txtCMenuCall" xml:space="preserve">
+    <value>Call ...</value>
+  </data>
+  <data name="txtCMenuCallComputer" xml:space="preserve">
+    <value>Call Computer...</value>
+  </data>
+  <data name="txtCMenuCallHome" xml:space="preserve">
+    <value>Call Home ...</value>
+  </data>
+  <data name="txtCMenuCallMobile" xml:space="preserve">
+    <value>Call Mobile ...</value>
+  </data>
+  <data name="txtCMenuCallPhone2Phone" xml:space="preserve">
+    <value>Call Phone2Phone ...</value>
+  </data>
+  <data name="txtCmenuCallVoIP" xml:space="preserve">
+    <value>Call VoIP ...</value>
+  </data>
+  <data name="txtCMenuCallWork" xml:space="preserve">
+    <value>Call Work ...</value>
+  </data>
+  <data name="txtCMenuChat" xml:space="preserve">
+    <value>Send Instant Message</value>
+  </data>
+  <data name="txtCMenuContacts" xml:space="preserve">
+    <value>Contacts</value>
+  </data>
+  <data name="txtCMenuDelete" xml:space="preserve">
+    <value>Delete</value>
+  </data>
+  <data name="txtCMenuPrepaidAmount" xml:space="preserve">
+    <value>$ 0.00</value>
+  </data>
+  <data name="txtCMenuPrepaidAmountRefresh" xml:space="preserve">
+    <value>Update prepaid status</value>
+  </data>
+  <data name="txtCMenuScreenSharing" xml:space="preserve">
+    <value>Start Screen Sharing</value>
+  </data>
+  <data name="txtCMenuSearchforUsers" xml:space="preserve">
+    <value>Search for Users</value>
+  </data>
+  <data name="txtCMenuSendEmail" xml:space="preserve">
+    <value>Send Email</value>
+  </data>
+  <data name="txtCMenuSendMessage" xml:space="preserve">
+    <value>Send Message...</value>
+  </data>
+  <data name="txtCMenuStartVideoCall" xml:space="preserve">
+    <value>Start Video Call ...</value>
+  </data>
+  <data name="txtCMenuVideoCall" xml:space="preserve">
+    <value>Video Call</value>
+  </data>
+  <data name="txtCMenuViewContactProperties" xml:space="preserve">
+    <value>View Contact Properties</value>
+  </data>
+  <data name="txtContact" xml:space="preserve">
+    <value>Contact</value>
+  </data>
+  <data name="txtCSearchBtnAddUser" xml:space="preserve">
+    <value>Add User</value>
+  </data>
+  <data name="txtCSearchInfo" xml:space="preserve">
+    <value>Search for JOCCOme Users</value>
+  </data>
+  <data name="txtCSearchInfoDesc" xml:space="preserve">
+    <value>If you know your friend nick, e-mail or full name enter it in the box below.</value>
+  </data>
+  <data name="txtCSearchInfoGenderFemale" xml:space="preserve">
+    <value />
+  </data>
+  <data name="txtCSearchInfoGenderMale" xml:space="preserve">
+    <value>Male</value>
+  </data>
+  <data name="txtCSearchInfoGenderNA" xml:space="preserve">
+    <value>not specified</value>
+  </data>
+  <data name="txtCSearchInfoSearching" xml:space="preserve">
+    <value>Searching ...</value>
+  </data>
+  <data name="txtCSearchTilte" xml:space="preserve">
+    <value>Contacts Search</value>
+  </data>
+  <data name="txtCSearchTitleAgeRange" xml:space="preserve">
+    <value>Age range</value>
+  </data>
+  <data name="txtCSearchTitleCity" xml:space="preserve">
+    <value />
+  </data>
+  <data name="txtCSearchTitleComment" xml:space="preserve">
+    <value>Comment</value>
+  </data>
+  <data name="txtCSearchTitleCompany" xml:space="preserve">
+    <value>Company</value>
+  </data>
+  <data name="txtCSearchTitleCountry" xml:space="preserve">
+    <value>Country</value>
+  </data>
+  <data name="txtCSearchTitleFind" xml:space="preserve">
+    <value>Find</value>
+  </data>
+  <data name="txtCSearchTitleFirstName" xml:space="preserve">
+    <value>First name</value>
+  </data>
+  <data name="txtCSearchTitleLanguage" xml:space="preserve">
+    <value>Language</value>
+  </data>
+  <data name="txtCSearchTitleLastName" xml:space="preserve">
+    <value>Last name</value>
+  </data>
+  <data name="txtCSearchTitleRegion" xml:space="preserve">
+    <value>Region</value>
+  </data>
+  <data name="txtCSearchTitleState" xml:space="preserve">
+    <value />
+  </data>
+  <data name="txtCSearchTitleUsername" xml:space="preserve">
+    <value>Username</value>
+  </data>
+  <data name="txtIMAccountBtnDelete" xml:space="preserve">
+    <value>Delete</value>
+  </data>
+  <data name="txtIMAccountBtnSave" xml:space="preserve">
+    <value>Save</value>
+  </data>
+  <data name="txtIMAccountTitle" xml:space="preserve">
+    <value>IM Account</value>
+  </data>
+  <data name="txtIMAccountTitleNetwork" xml:space="preserve">
+    <value>Network</value>
+  </data>
+  <data name="txtIMAccountTitlePassword" xml:space="preserve">
+    <value>Password :</value>
+  </data>
+  <data name="txtIMAccountTitleUsername" xml:space="preserve">
+    <value>Username :</value>
+  </data>
+  <data name="txtIMAIM" xml:space="preserve">
+    <value>AMI</value>
+  </data>
+  <data name="txtInfoAbout" xml:space="preserve">
+    <value>About</value>
+  </data>
+  <data name="txtInfoAboutDesc" xml:space="preserve">
+    <value>
+      Free your inner voice !
+      
+      JOCCOme ver. 2.0
+      </value>
+  </data>
+  <data name="txtInfoAddToContact" xml:space="preserve">
+    <value>Manage contact</value>
+  </data>
+  <data name="txtInfoAddToContactDesc" xml:space="preserve">
+    <value>Would you like to add {0} to your own contact list</value>
+  </data>
+  <data name="txtInfoApplicationClosing" xml:space="preserve">
+    <value>Application Closing</value>
+  </data>
+  <data name="txtInfoApplicationClosingDesc" xml:space="preserve">
+    <value>Are you sure you want to close the application.</value>
+  </data>
+  <data name="txtInfoCallDuration" xml:space="preserve">
+    <value>Call Duration</value>
+  </data>
+  <data name="txtInfoCalling" xml:space="preserve">
+    <value>Calling</value>
+  </data>
+  <data name="txtInfoCallingValue" xml:space="preserve">
+    <value>1234567890</value>
+  </data>
+  <data name="txtInfoIMFileTransfer" xml:space="preserve">
+    <value> {0} send you a file : {1}</value>
+  </data>
+  <data name="txtInfoIMFileTransferAccepted" xml:space="preserve">
+    <value> {0} accepted file transfer</value>
+  </data>
+  <data name="txtInfoIMFileTransferDenied" xml:space="preserve">
+    <value> {0}  denied file transfer</value>
+  </data>
+  <data name="txtInfoIMFileTransferDownloading" xml:space="preserve">
+    <value>Downloading file {0} filename...</value>
+  </data>
+  <data name="txtInfoIMFileTransferInitialized" xml:space="preserve">
+    <value>Transfer of {1} ({2}) to user {0} has been initialized.</value>
+  </data>
+  <data name="txtInfoIMFileTransferInvitation" xml:space="preserve">
+    <value>File Transfer</value>
+  </data>
+  <data name="txtInfoIMFileTransferInvitationDesc" xml:space="preserve">
+    <value>User {0} would like to send you a file : 
+    File:{1}
+    Size:{2}
+    Do you wish to accept?</value>
+  </data>
+  <data name="txtInfoIMMessageSendError" xml:space="preserve">
+    <value>Error sending message.</value>
+  </data>
+  <data name="txtInfoIMMessageSendErrorDesc" xml:space="preserve">
+    <value>Error sending message: {0}</value>
+  </data>
+  <data name="txtInfoIMNotification" xml:space="preserve">
+    <value>Notification</value>
+  </data>
+  <data name="txtInfoIMSendYouNudge" xml:space="preserve">
+    <value>{0} send you a nudge</value>
+  </data>
+  <data name="txtInfoIMSubcriptionRequest" xml:space="preserve">
+    <value>Subscription Request</value>
+  </data>
+  <data name="txtInfoIMSubcriptionRequestDesc" xml:space="preserve">
+    <value>User {0} would like to add you to his/her contact list.  Do you wish to accept?</value>
+  </data>
+  <data name="txtInfoIMVideoCallAccepted" xml:space="preserve">
+    <value> {0} accepted your invitation for video call</value>
+  </data>
+  <data name="txtInfoIMVideoCallDenied" xml:space="preserve">
+    <value> {0} denied your invitation for video call</value>
+  </data>
+  <data name="txtInfoIMVideoCallInvitation" xml:space="preserve">
+    <value>Video Call Invitation</value>
+  </data>
+  <data name="txtInfoIMVideoCallInvitationDesc" xml:space="preserve">
+    <value>User {0} would like to invite you for video call.  Do you wish to accept?</value>
+  </data>
+  <data name="txtInfoIMVideoCallInvite" xml:space="preserve">
+    <value> {0} invites you for video call</value>
+  </data>
+  <data name="txtInfoIncomingCall" xml:space="preserve">
+    <value>Incoming Call</value>
+  </data>
+  <data name="txtInfoIncomingCallDesc" xml:space="preserve">
+    <value>You have a call from : {0}</value>
+  </data>
+  <data name="txtInfoLineBusy" xml:space="preserve">
+    <value>Busy</value>
+  </data>
+  <data name="txtInfoLineCallFrom" xml:space="preserve">
+    <value>Call from :</value>
+  </data>
+  <data name="txtInfoLineCalling" xml:space="preserve">
+    <value>Calling :</value>
+  </data>
+  <data name="txtInfoLineConnected" xml:space="preserve">
+    <value>Connected</value>
+  </data>
+  <data name="txtInfoLineDialing" xml:space="preserve">
+    <value>Dialing...</value>
+  </data>
+  <data name="txtInfoLineFree" xml:space="preserve">
+    <value>Free</value>
+  </data>
+  <data name="txtInfoLineInCall" xml:space="preserve">
+    <value>In call:</value>
+  </data>
+  <data name="txtInfoLineIncomingCall" xml:space="preserve">
+    <value>Incoming Call ...</value>
+  </data>
+  <data name="txtInfoLineReady" xml:space="preserve">
+    <value>Ready</value>
+  </data>
+  <data name="txtInfoNewVersion" xml:space="preserve">
+    <value>New Version of JOCCOme is  avaliable for download!
+    Click [OK] to open the download page.</value>
+  </data>
+  <data name="txtInfoPhone2Phone" xml:space="preserve">
+    <value>Phone 2 Phone</value>
+  </data>
+  <data name="txtInfoPhone2PhonePaymentRequired" xml:space="preserve">
+    <value>Unable to start call - Payment Required : {0} to {1}</value>
+  </data>
+  <data name="txtInfoPhone2PhoneTrying" xml:space="preserve">
+    <value>Trying call  : {0} to {1}</value>
+  </data>
+  <data name="txtInfoPhone2PhoneUnableToStartCall" xml:space="preserve">
+    <value>Unable to start call : {0} to {1}</value>
+  </data>
+  <data name="txtInfoPresenceNotificationDesc" xml:space="preserve">
+    <value>{0} is now {1} ({2})</value>
+  </data>
+  <data name="txtInfoServiceConnected" xml:space="preserve">
+    <value>JOCCOme IM - Connected</value>
+  </data>
+  <data name="txtInfoServiceConnectedDesc" xml:space="preserve">
+    <value>You are online!</value>
+  </data>
+  <data name="txtInfoServiceNotReachable" xml:space="preserve">
+    <value>JOCCOme IM - Service not reachable</value>
+  </data>
+  <data name="txtInfoServiceNotReachableDesc" xml:space="preserve">
+    <value>Service does not respond, please check your network settings or try again later.</value>
+  </data>
+  <data name="txtInfoServiceUnavaliable" xml:space="preserve">
+    <value>JOCCOme IM - Network Unavaliable</value>
+  </data>
+  <data name="txtInfoServiceUnavaliableDesc" xml:space="preserve">
+    <value>JOCCOme functionality will be limited, check your network.</value>
+  </data>
+  <data name="txtInfoSipEngineAudioInError" xml:space="preserve">
+    <value>Audio In Error</value>
+  </data>
+  <data name="txtInfoSipEngineAudioInErrorDesc" xml:space="preserve">
+    <value>Could not initialize the audio capture subsystem.</value>
+  </data>
+  <data name="txtInfoSipEngineAudioOutError" xml:space="preserve">
+    <value>Audio Out Error</value>
+  </data>
+  <data name="txtInfoSipEngineAudioOutErrorDesc" xml:space="preserve">
+    <value>Could not initialize the audio playback subsystem.</value>
+  </data>
+  <data name="txtInfoSipEngineGeneralError" xml:space="preserve">
+    <value>Initialization Error</value>
+  </data>
+  <data name="txtInfoSipEngineGeneralErrorDesc" xml:space="preserve">
+    <value>Could not initialize sip phone engine - Error ({0})</value>
+  </data>
+  <data name="txtInfoStatusLable" xml:space="preserve">
+    <value>Status:</value>
+  </data>
+  <data name="txtInfoStatusValue" xml:space="preserve">
+    <value>Ready.</value>
+  </data>
+  <data name="txtInfoStorageEngineError" xml:space="preserve">
+    <value>Remwave Unified Storage - Error</value>
+  </data>
+  <data name="txtInfoStorageEngineErrorDesc" xml:space="preserve">
+    <value>Remwave Unified Storage could not be accessed make sure you run only one instance of the client. 
+    
+    Do you want to create new storage file?</value>
+  </data>
+  <data name="txtInfoUpdateAvaliable" xml:space="preserve">
+    <value>Update avaliable.</value>
+  </data>
+  <data name="txtInfoWebsite" xml:space="preserve">
+    <value>JOCCOme Website</value>
+  </data>
+  <data name="txtInfoWebsiteDesc" xml:space="preserve">
+    <value>Would you like to open My JOCCOme area in your browser?</value>
+  </data>
+  <data name="txtInfoWrongUsernamePassword" xml:space="preserve">
+    <value>Authorization Failed</value>
+  </data>
+  <data name="txtInfoWrongUsernamePasswordDesc" xml:space="preserve">
+    <value>Username / Password invalid!
+    Make sure you have your username typed in all lowercase letters and that your password is typed correctly.</value>
+  </data>
+  <data name="txtLinkCreateAccount" xml:space="preserve">
+    <value>Create account ...</value>
+  </data>
+  <data name="txtLinkForgotPassword" xml:space="preserve">
+    <value>Forgot password?</value>
+  </data>
+  <data name="txtLinkLoginAutomatically" xml:space="preserve">
+    <value>Login Automatically</value>
+  </data>
+  <data name="txtLinkPassword" xml:space="preserve">
+    <value>Password :</value>
+  </data>
+  <data name="txtLinkRememberMe" xml:space="preserve">
+    <value>Remember Me</value>
+  </data>
+  <data name="txtLinkUsername" xml:space="preserve">
+    <value>User name :</value>
+  </data>
+  <data name="txtMenu" xml:space="preserve">
+    <value>Menu</value>
+  </data>
+  <data name="txtMenuAbout" xml:space="preserve">
+    <value>About</value>
+  </data>
+  <data name="txtMenuExit" xml:space="preserve">
+    <value>E&amp;xit</value>
+  </data>
+  <data name="txtMenuFile" xml:space="preserve">
+    <value>&amp;File</value>
+  </data>
+  <data name="txtMenuHelp" xml:space="preserve">
+    <value>&amp;Help</value>
+  </data>
+  <data name="txtMenuIMGG" xml:space="preserve">
+    <value>Gadu Gadu</value>
+  </data>
+  <data name="txtMenuIMICQ" xml:space="preserve">
+    <value>ICQ</value>
+  </data>
+  <data name="txtMenuIMJOCCOme" xml:space="preserve">
+    <value>JOCCOme</value>
+  </data>
+  <data name="txtMenuIMMSN" xml:space="preserve">
+    <value>MSN</value>
+  </data>
+  <data name="txtMenuIMYahoo" xml:space="preserve">
+    <value>Yahoo</value>
+  </data>
+  <data name="txtMenuMe" xml:space="preserve">
+    <value>&amp;Me</value>
+  </data>
+  <data name="txtMenuSignOut" xml:space="preserve">
+    <value>Sign Out</value>
+  </data>
+  <data name="txtOtherGroup" xml:space="preserve">
+    <value>Other</value>
+  </data>
+  <data name="txtRACBtnCall" xml:space="preserve">
+    <value>Call</value>
+  </data>
+  <data name="txtRACInfo" xml:space="preserve">
+    <value>Start Phone to Phone call</value>
+  </data>
+  <data name="txtRACTitle" xml:space="preserve">
+    <value>JOCCOme - Phone2Phone</value>
+  </data>
+  <data name="txtRACTitleCallFrom" xml:space="preserve">
+    <value>Call ...</value>
+  </data>
+  <data name="txtRACTitleCallTo" xml:space="preserve">
+    <value>and ...</value>
+  </data>
+  <data name="txtRACTitleEnd" xml:space="preserve">
+    <value>End</value>
+  </data>
+  <data name="txtRACTitlePhoneFromName" xml:space="preserve">
+    <value>Phone Number</value>
+  </data>
+  <data name="txtRACTitlePhoneToName" xml:space="preserve">
+    <value>Phone Number</value>
+  </data>
+  <data name="txtSDInfoNoRecordsFound" xml:space="preserve">
+    <value>No record found</value>
+  </data>
+  <data name="txtSDInfoNoRecordsFoundDesc" xml:space="preserve">
+    <value>Add {0} to your contacts.</value>
+  </data>
+  <data name="txtSDTitleSearchDefault" xml:space="preserve">
+    <value>Enter a name or phone number</value>
+  </data>
+  <data name="txtStatusAway" xml:space="preserve">
+    <value>Away</value>
+  </data>
+  <data name="txtStatusDND" xml:space="preserve">
+    <value>Do Not Disturb</value>
+  </data>
+  <data name="txtStatusExtendedAway" xml:space="preserve">
+    <value>Extended Away</value>
+  </data>
+  <data name="txtStatusOffline" xml:space="preserve">
+    <value>Offline</value>
+  </data>
+  <data name="txtStatusOnline" xml:space="preserve">
+    <value>Online</value>
+  </data>
+  <data name="txtTabLine0" xml:space="preserve">
+    <value>Line 1</value>
+  </data>
+  <data name="txtTabLine1" xml:space="preserve">
+    <value>Line 2</value>
+  </data>
+  <data name="txtTabLine2" xml:space="preserve">
+    <value>Line 3</value>
+  </data>
+  <data name="txtTabLine3" xml:space="preserve">
+    <value>Line 4</value>
+  </data>
+  <data name="txtTitleAIMNetwork" xml:space="preserve">
+    <value>AOL IM Network</value>
+  </data>
+  <data name="txtTitleCallHistory" xml:space="preserve">
+    <value>Call History</value>
+  </data>
+  <data name="txtTitleDialPad" xml:space="preserve">
+    <value>Dial Pad</value>
+  </data>
+  <data name="txtTitleDialPadTabPage" xml:space="preserve">
+    <value>Phone</value>
+  </data>
+  <data name="txtTitleGGNetwork" xml:space="preserve">
+    <value>Gadu Gadu Network</value>
+  </data>
+  <data name="txtTitleICQNetwork" xml:space="preserve">
+    <value>ICQ Netwrok</value>
+  </data>
+  <data name="txtTitleIRCNetwork" xml:space="preserve">
+    <value>IRC Network</value>
+  </data>
+  <data name="txtTitleLines" xml:space="preserve">
+    <value>Lines</value>
+  </data>
+  <data name="txtTitleMainContactsTabPage" xml:space="preserve">
+    <value>Contacts</value>
+  </data>
+  <data name="txtTitleMainJOCCOmeTabPage" xml:space="preserve">
+    <value>JOCCOme</value>
+  </data>
+  <data name="txtTitleMainTabControl" xml:space="preserve">
+    <value />
+  </data>
+  <data name="txtTitleMainTabOnlinePage" xml:space="preserve">
+    <value>Online</value>
+  </data>
+  <data name="txtTitleMSNNetwork" xml:space="preserve">
+    <value>MSN Network</value>
+  </data>
+  <data name="txtTitleNotifyIcon" xml:space="preserve">
+    <value>JOCCOme</value>
+  </data>
+  <data name="txtTitleStatus" xml:space="preserve">
+    <value>Status</value>
+  </data>
+  <data name="txtTitleVoiceMail" xml:space="preserve">
+    <value>Voice Mail</value>
+  </data>
+  <data name="txtTitleYahooNetwork" xml:space="preserve">
+    <value>Yahoo Network</value>
+  </data>
+</root>

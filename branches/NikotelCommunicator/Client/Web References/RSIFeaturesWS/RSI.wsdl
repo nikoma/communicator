@@ -1,0 +1,214 @@
+<?xml version="1.0" encoding="utf-8"?>
+<wsdl:definitions xmlns:soap="http://schemas.xmlsoap.org/wsdl/soap/" xmlns:typens="urn:RSI" xmlns:soapenc="http://schemas.xmlsoap.org/soap/encoding/" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns="http://schemas.xmlsoap.org/wsdl/" name="RSI" targetNamespace="urn:RSI" xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">
+  <wsdl:types>
+    <xsd:schema xmlns="http://www.w3.org/2001/XMLSchema" targetNamespace="urn:RSI">
+      <xsd:complexType name="stringArray">
+        <xsd:complexContent mixed="false">
+          <xsd:restriction base="soapenc:Array">
+            <xsd:attribute wsdl:arrayType="xsd:string[]" ref="soapenc:arrayType" />
+          </xsd:restriction>
+        </xsd:complexContent>
+      </xsd:complexType>
+    </xsd:schema>
+  </wsdl:types>
+  <wsdl:message name="serviceBillingRecords">
+    <wsdl:part name="username" type="xsd:string" />
+    <wsdl:part name="password" type="xsd:string" />
+    <wsdl:part name="timezone" type="xsd:string" />
+  </wsdl:message>
+  <wsdl:message name="serviceBillingRecordsResponse">
+    <wsdl:part name="serviceBillingRecordsReturn" type="typens:stringArray" />
+  </wsdl:message>
+  <wsdl:message name="serviceCallNow">
+    <wsdl:part name="username" type="xsd:string" />
+    <wsdl:part name="password" type="xsd:string" />
+    <wsdl:part name="callfrom" type="xsd:string" />
+    <wsdl:part name="callto" type="xsd:string" />
+  </wsdl:message>
+  <wsdl:message name="serviceCallNowResponse">
+    <wsdl:part name="serviceCallNowReturn" type="xsd:integer" />
+  </wsdl:message>
+  <wsdl:message name="serviceCallNowRates">
+    <wsdl:part name="secret" type="xsd:string" />
+  </wsdl:message>
+  <wsdl:message name="serviceCallNowRatesResponse">
+    <wsdl:part name="serviceCallNowRatesReturn" type="typens:stringArray" />
+  </wsdl:message>
+  <wsdl:message name="serviceCallNowRatesVer">
+    <wsdl:part name="secret1" type="xsd:string" />
+  </wsdl:message>
+  <wsdl:message name="serviceCallNowRatesVerResponse">
+    <wsdl:part name="serviceCallNowRatesVerReturn" type="xsd:string" />
+  </wsdl:message>
+  <wsdl:message name="servicePhonebookGet">
+    <wsdl:part name="username" type="xsd:string" />
+    <wsdl:part name="password" type="xsd:string" />
+    <wsdl:part name="properties" type="typens:stringArray" />
+    <wsdl:part name="items" type="typens:stringArray" />
+  </wsdl:message>
+  <wsdl:message name="servicePhonebookGetResponse">
+    <wsdl:part name="servicePhonebookGetReturn" type="xsd:string" />
+  </wsdl:message>
+  <wsdl:message name="servicePhonebookPut">
+    <wsdl:part name="username" type="xsd:string" />
+    <wsdl:part name="password" type="xsd:string" />
+    <wsdl:part name="properties" type="typens:stringArray" />
+    <wsdl:part name="phonebook" type="xsd:string" />
+  </wsdl:message>
+  <wsdl:message name="servicePhonebookPutResponse">
+    <wsdl:part name="servicePhonebookPutReturn" type="xsd:string" />
+  </wsdl:message>
+  <wsdl:message name="servicePrepaidAmount">
+    <wsdl:part name="username" type="xsd:string" />
+    <wsdl:part name="password" type="xsd:string" />
+  </wsdl:message>
+  <wsdl:message name="servicePrepaidAmountResponse">
+    <wsdl:part name="servicePrepaidAmountReturn" type="xsd:string" />
+  </wsdl:message>
+  <wsdl:message name="utilsSearchUser">
+    <wsdl:part name="username" type="xsd:string" />
+    <wsdl:part name="password" type="xsd:string" />
+    <wsdl:part name="search" type="xsd:string" />
+  </wsdl:message>
+  <wsdl:message name="utilsSearchUserResponse">
+    <wsdl:part name="utilsSearchUserReturn" type="typens:stringArray" />
+  </wsdl:message>
+  <wsdl:portType name="RSIPortType">
+    <wsdl:operation name="serviceBillingRecords">
+      <documentation>
+				Get latest 50 Billing Records
+			</documentation>
+      <wsdl:input message="typens:serviceBillingRecords" />
+      <wsdl:output message="typens:serviceBillingRecordsResponse" />
+    </wsdl:operation>
+    <wsdl:operation name="serviceCallNow">
+      <documentation>
+				Start CallNow service
+			</documentation>
+      <wsdl:input message="typens:serviceCallNow" />
+      <wsdl:output message="typens:serviceCallNowResponse" />
+    </wsdl:operation>
+    <wsdl:operation name="serviceCallNowRates">
+      <documentation>
+				Retuns CallNow rates
+			</documentation>
+      <wsdl:input message="typens:serviceCallNowRates" />
+      <wsdl:output message="typens:serviceCallNowRatesResponse" />
+    </wsdl:operation>
+    <wsdl:operation name="serviceCallNowRatesVer">
+      <documentation>
+				Returns CallNow rates version time stamp
+			</documentation>
+      <wsdl:input message="typens:serviceCallNowRatesVer" />
+      <wsdl:output message="typens:serviceCallNowRatesVerResponse" />
+    </wsdl:operation>
+    <wsdl:operation name="servicePhonebookGet">
+      <documentation>
+				Retuns Phonebook records
+			</documentation>
+      <wsdl:input message="typens:servicePhonebookGet" />
+      <wsdl:output message="typens:servicePhonebookGetResponse" />
+    </wsdl:operation>
+    <wsdl:operation name="servicePhonebookPut">
+      <documentation>
+				Saves Phonebook records
+			</documentation>
+      <wsdl:input message="typens:servicePhonebookPut" />
+      <wsdl:output message="typens:servicePhonebookPutResponse" />
+    </wsdl:operation>
+    <wsdl:operation name="servicePrepaidAmount">
+      <documentation>
+				Get Prepaid Amount
+			</documentation>
+      <wsdl:input message="typens:servicePrepaidAmount" />
+      <wsdl:output message="typens:servicePrepaidAmountResponse" />
+    </wsdl:operation>
+    <wsdl:operation name="utilsSearchUser">
+      <documentation>
+				Get 50 user search results
+			</documentation>
+      <wsdl:input message="typens:utilsSearchUser" />
+      <wsdl:output message="typens:utilsSearchUserResponse" />
+    </wsdl:operation>
+  </wsdl:portType>
+  <wsdl:binding name="RSIBinding" type="typens:RSIPortType">
+    <soap:binding transport="http://schemas.xmlsoap.org/soap/http" style="rpc" />
+    <wsdl:operation name="serviceBillingRecords">
+      <soap:operation soapAction="urn:RSIAction" />
+      <wsdl:input>
+        <soap:body use="encoded" namespace="urn:RSI" encodingStyle="http://schemas.xmlsoap.org/soap/encoding/" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="encoded" namespace="urn:RSI" encodingStyle="http://schemas.xmlsoap.org/soap/encoding/" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="serviceCallNow">
+      <soap:operation soapAction="urn:RSIAction" />
+      <wsdl:input>
+        <soap:body use="encoded" namespace="urn:RSI" encodingStyle="http://schemas.xmlsoap.org/soap/encoding/" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="encoded" namespace="urn:RSI" encodingStyle="http://schemas.xmlsoap.org/soap/encoding/" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="serviceCallNowRates">
+      <soap:operation soapAction="urn:RSIAction" />
+      <wsdl:input>
+        <soap:body use="encoded" namespace="urn:RSI" encodingStyle="http://schemas.xmlsoap.org/soap/encoding/" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="encoded" namespace="urn:RSI" encodingStyle="http://schemas.xmlsoap.org/soap/encoding/" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="serviceCallNowRatesVer">
+      <soap:operation soapAction="urn:RSIAction" />
+      <wsdl:input>
+        <soap:body use="encoded" namespace="urn:RSI" encodingStyle="http://schemas.xmlsoap.org/soap/encoding/" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="encoded" namespace="urn:RSI" encodingStyle="http://schemas.xmlsoap.org/soap/encoding/" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="servicePhonebookGet">
+      <soap:operation soapAction="urn:RSIAction" />
+      <wsdl:input>
+        <soap:body use="encoded" namespace="urn:RSI" encodingStyle="http://schemas.xmlsoap.org/soap/encoding/" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="encoded" namespace="urn:RSI" encodingStyle="http://schemas.xmlsoap.org/soap/encoding/" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="servicePhonebookPut">
+      <soap:operation soapAction="urn:RSIAction" />
+      <wsdl:input>
+        <soap:body use="encoded" namespace="urn:RSI" encodingStyle="http://schemas.xmlsoap.org/soap/encoding/" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="encoded" namespace="urn:RSI" encodingStyle="http://schemas.xmlsoap.org/soap/encoding/" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="servicePrepaidAmount">
+      <soap:operation soapAction="urn:RSIAction" />
+      <wsdl:input>
+        <soap:body use="encoded" namespace="urn:RSI" encodingStyle="http://schemas.xmlsoap.org/soap/encoding/" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="encoded" namespace="urn:RSI" encodingStyle="http://schemas.xmlsoap.org/soap/encoding/" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="utilsSearchUser">
+      <soap:operation soapAction="urn:RSIAction" />
+      <wsdl:input>
+        <soap:body use="encoded" namespace="urn:RSI" encodingStyle="http://schemas.xmlsoap.org/soap/encoding/" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="encoded" namespace="urn:RSI" encodingStyle="http://schemas.xmlsoap.org/soap/encoding/" />
+      </wsdl:output>
+    </wsdl:operation>
+  </wsdl:binding>
+  <wsdl:service name="RSIService">
+    <wsdl:port name="RSIPort" binding="typens:RSIBinding">
+      <soap:address location="http://api.nikotel.com/soap/nikotel-2.0/" />
+    </wsdl:port>
+  </wsdl:service>
+</wsdl:definitions>

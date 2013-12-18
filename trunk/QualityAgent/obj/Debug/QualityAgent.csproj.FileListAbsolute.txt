@@ -1,0 +1,12 @@
+C:\Users\nikolai\REMWAVE Communication Suite\trunk\Client\bin\Debug\QualityAgentForm.resx
+C:\Users\nikolai\REMWAVE Communication Suite\trunk\Client\bin\Debug\QualityAgentForm.cs
+C:\Users\nikolai\REMWAVE Communication Suite\trunk\Client\bin\Debug\QualityAgentForm.Designer.cs
+C:\Users\nikolai\REMWAVE Communication Suite\trunk\Client\bin\Debug\QualityAgent.exe.config
+C:\Users\nikolai\REMWAVE Communication Suite\trunk\Client\bin\Debug\QualityAgent.exe
+C:\Users\nikolai\REMWAVE Communication Suite\trunk\Client\bin\Debug\QualityAgent.pdb
+C:\Users\nikolai\REMWAVE Communication Suite\trunk\QualityAgent\obj\Debug\ResolveAssemblyReference.cache
+C:\Users\nikolai\REMWAVE Communication Suite\trunk\QualityAgent\obj\Debug\QualityAgent.QualityAgentForm.resources
+C:\Users\nikolai\REMWAVE Communication Suite\trunk\QualityAgent\obj\Debug\QualityAgent.Properties.Resources.resources
+C:\Users\nikolai\REMWAVE Communication Suite\trunk\QualityAgent\obj\Debug\QualityAgent.csproj.GenerateResource.Cache
+C:\Users\nikolai\REMWAVE Communication Suite\trunk\QualityAgent\obj\Debug\QualityAgent.exe
+C:\Users\nikolai\REMWAVE Communication Suite\trunk\QualityAgent\obj\Debug\QualityAgent.pdb

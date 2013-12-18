@@ -1,0 +1,255 @@
+<?xml version="1.0" encoding="utf-8"?>
+<wsdl:definitions xmlns:soap="http://schemas.xmlsoap.org/wsdl/soap/" xmlns:tm="http://microsoft.com/wsdl/mime/textMatching/" xmlns:soapenc="http://schemas.xmlsoap.org/soap/encoding/" xmlns:mime="http://schemas.xmlsoap.org/wsdl/mime/" xmlns:tns="http://vmservice.remwave.com/" xmlns:s="http://www.w3.org/2001/XMLSchema" xmlns:soap12="http://schemas.xmlsoap.org/wsdl/soap12/" xmlns:http="http://schemas.xmlsoap.org/wsdl/http/" targetNamespace="http://vmservice.remwave.com/" xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">
+  <wsdl:types>
+    <s:schema elementFormDefault="qualified" targetNamespace="http://vmservice.remwave.com/">
+      <s:element name="VoiceMail_GetMessageList">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="username" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="password" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="VoiceMail_GetMessageListResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="VoiceMail_GetMessageListResult" type="tns:ArrayOfFileInfo" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:complexType name="ArrayOfFileInfo">
+        <s:sequence>
+          <s:element minOccurs="0" maxOccurs="unbounded" name="FileInfo" nillable="true" type="tns:FileInfo" />
+        </s:sequence>
+      </s:complexType>
+      <s:complexType name="FileInfo">
+        <s:sequence>
+          <s:element minOccurs="1" maxOccurs="1" name="Location" type="tns:LocationType" />
+          <s:element minOccurs="0" maxOccurs="1" name="FileName" type="s:string" />
+          <s:element minOccurs="1" maxOccurs="1" name="FileSize" type="s:long" />
+          <s:element minOccurs="1" maxOccurs="1" name="Time" type="s:double" />
+          <s:element minOccurs="0" maxOccurs="1" name="Day" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="Month" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="Year" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="From" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="Tags" type="s:string" />
+        </s:sequence>
+      </s:complexType>
+      <s:simpleType name="LocationType">
+        <s:restriction base="s:string">
+          <s:enumeration value="ARCHIVE" />
+          <s:enumeration value="INBOX" />
+        </s:restriction>
+      </s:simpleType>
+      <s:element name="VoiceMail_GetMessage">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="username" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="password" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="messageid" type="s:string" />
+            <s:element minOccurs="1" maxOccurs="1" name="type" type="tns:LocationType" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="VoiceMail_GetMessageResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="VoiceMail_GetMessageResult" type="tns:MessageReturn" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:complexType name="MessageReturn">
+        <s:sequence>
+          <s:element minOccurs="1" maxOccurs="1" name="Error" type="tns:ReturnStatus" />
+          <s:element minOccurs="1" maxOccurs="1" name="CompressedFormat" type="tns:CompressionType" />
+          <s:element minOccurs="1" maxOccurs="1" name="ActualFileSize" type="s:long" />
+          <s:element minOccurs="1" maxOccurs="1" name="CompressedFileSize" type="s:long" />
+          <s:element minOccurs="0" maxOccurs="1" name="Bytes" type="s:base64Binary" />
+        </s:sequence>
+      </s:complexType>
+      <s:simpleType name="ReturnStatus">
+        <s:restriction base="s:string">
+          <s:enumeration value="Success" />
+          <s:enumeration value="FileNotFound" />
+          <s:enumeration value="UserNamePasswordOrIdNull" />
+          <s:enumeration value="UserNamePasswordOrIdTooLarge" />
+          <s:enumeration value="UserNameInvalid" />
+          <s:enumeration value="InavlidID" />
+          <s:enumeration value="Unknown" />
+          <s:enumeration value="WaveFileNotDeleted" />
+          <s:enumeration value="WaveInfoFileNotDeleted" />
+          <s:enumeration value="WaveFileNotFound" />
+          <s:enumeration value="WaveInfoFileNotFound" />
+        </s:restriction>
+      </s:simpleType>
+      <s:simpleType name="CompressionType">
+        <s:restriction base="s:string">
+          <s:enumeration value="None" />
+          <s:enumeration value="Zip" />
+          <s:enumeration value="BZip" />
+        </s:restriction>
+      </s:simpleType>
+      <s:element name="VoiceMail_DeleteMessage">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="username" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="password" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="messageid" type="s:string" />
+            <s:element minOccurs="1" maxOccurs="1" name="type" type="tns:LocationType" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="VoiceMail_DeleteMessageResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="1" maxOccurs="1" name="VoiceMail_DeleteMessageResult" type="tns:ReturnStatus" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="VoiceMail_ArchiveMessage">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="username" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="password" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="messageid" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="VoiceMail_ArchiveMessageResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="1" maxOccurs="1" name="VoiceMail_ArchiveMessageResult" type="tns:ReturnStatus" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+    </s:schema>
+  </wsdl:types>
+  <wsdl:message name="VoiceMail_GetMessageListSoapIn">
+    <wsdl:part name="parameters" element="tns:VoiceMail_GetMessageList" />
+  </wsdl:message>
+  <wsdl:message name="VoiceMail_GetMessageListSoapOut">
+    <wsdl:part name="parameters" element="tns:VoiceMail_GetMessageListResponse" />
+  </wsdl:message>
+  <wsdl:message name="VoiceMail_GetMessageSoapIn">
+    <wsdl:part name="parameters" element="tns:VoiceMail_GetMessage" />
+  </wsdl:message>
+  <wsdl:message name="VoiceMail_GetMessageSoapOut">
+    <wsdl:part name="parameters" element="tns:VoiceMail_GetMessageResponse" />
+  </wsdl:message>
+  <wsdl:message name="VoiceMail_DeleteMessageSoapIn">
+    <wsdl:part name="parameters" element="tns:VoiceMail_DeleteMessage" />
+  </wsdl:message>
+  <wsdl:message name="VoiceMail_DeleteMessageSoapOut">
+    <wsdl:part name="parameters" element="tns:VoiceMail_DeleteMessageResponse" />
+  </wsdl:message>
+  <wsdl:message name="VoiceMail_ArchiveMessageSoapIn">
+    <wsdl:part name="parameters" element="tns:VoiceMail_ArchiveMessage" />
+  </wsdl:message>
+  <wsdl:message name="VoiceMail_ArchiveMessageSoapOut">
+    <wsdl:part name="parameters" element="tns:VoiceMail_ArchiveMessageResponse" />
+  </wsdl:message>
+  <wsdl:portType name="ServiceSoap">
+    <wsdl:operation name="VoiceMail_GetMessageList">
+      <wsdl:input message="tns:VoiceMail_GetMessageListSoapIn" />
+      <wsdl:output message="tns:VoiceMail_GetMessageListSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="VoiceMail_GetMessage">
+      <wsdl:input message="tns:VoiceMail_GetMessageSoapIn" />
+      <wsdl:output message="tns:VoiceMail_GetMessageSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="VoiceMail_DeleteMessage">
+      <wsdl:input message="tns:VoiceMail_DeleteMessageSoapIn" />
+      <wsdl:output message="tns:VoiceMail_DeleteMessageSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="VoiceMail_ArchiveMessage">
+      <wsdl:input message="tns:VoiceMail_ArchiveMessageSoapIn" />
+      <wsdl:output message="tns:VoiceMail_ArchiveMessageSoapOut" />
+    </wsdl:operation>
+  </wsdl:portType>
+  <wsdl:binding name="ServiceSoap" type="tns:ServiceSoap">
+    <soap:binding transport="http://schemas.xmlsoap.org/soap/http" />
+    <wsdl:operation name="VoiceMail_GetMessageList">
+      <soap:operation soapAction="http://vmservice.remwave.com/VoiceMail_GetMessageList" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="VoiceMail_GetMessage">
+      <soap:operation soapAction="http://vmservice.remwave.com/VoiceMail_GetMessage" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="VoiceMail_DeleteMessage">
+      <soap:operation soapAction="http://vmservice.remwave.com/VoiceMail_DeleteMessage" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="VoiceMail_ArchiveMessage">
+      <soap:operation soapAction="http://vmservice.remwave.com/VoiceMail_ArchiveMessage" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+  </wsdl:binding>
+  <wsdl:binding name="ServiceSoap12" type="tns:ServiceSoap">
+    <soap12:binding transport="http://schemas.xmlsoap.org/soap/http" />
+    <wsdl:operation name="VoiceMail_GetMessageList">
+      <soap12:operation soapAction="http://vmservice.remwave.com/VoiceMail_GetMessageList" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="VoiceMail_GetMessage">
+      <soap12:operation soapAction="http://vmservice.remwave.com/VoiceMail_GetMessage" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="VoiceMail_DeleteMessage">
+      <soap12:operation soapAction="http://vmservice.remwave.com/VoiceMail_DeleteMessage" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="VoiceMail_ArchiveMessage">
+      <soap12:operation soapAction="http://vmservice.remwave.com/VoiceMail_ArchiveMessage" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+  </wsdl:binding>
+  <wsdl:service name="Service">
+    <wsdl:port name="ServiceSoap" binding="tns:ServiceSoap">
+      <soap:address location="http://63.214.186.103/TerraMailWebService/Service.asmx" />
+    </wsdl:port>
+    <wsdl:port name="ServiceSoap12" binding="tns:ServiceSoap12">
+      <soap12:address location="http://63.214.186.103/TerraMailWebService/Service.asmx" />
+    </wsdl:port>
+  </wsdl:service>
+</wsdl:definitions>

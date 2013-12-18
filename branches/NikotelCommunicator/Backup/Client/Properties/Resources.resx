@@ -1,0 +1,580 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<root>
+  <!-- 
+    Microsoft ResX Schema 
+    
+    Version 2.0
+    
+    The primary goals of this format is to allow a simple XML format 
+    that is mostly human readable. The generation and parsing of the 
+    various data types are done through the TypeConverter classes 
+    associated with the data types.
+    
+    Example:
+    
+    ... ado.net/XML headers & schema ...
+    <resheader name="resmimetype">text/microsoft-resx</resheader>
+    <resheader name="version">2.0</resheader>
+    <resheader name="reader">System.Resources.ResXResourceReader, System.Windows.Forms, ...</resheader>
+    <resheader name="writer">System.Resources.ResXResourceWriter, System.Windows.Forms, ...</resheader>
+    <data name="Name1"><value>this is my long string</value><comment>this is a comment</comment></data>
+    <data name="Color1" type="System.Drawing.Color, System.Drawing">Blue</data>
+    <data name="Bitmap1" mimetype="application/x-microsoft.net.object.binary.base64">
+        <value>[base64 mime encoded serialized .NET Framework object]</value>
+    </data>
+    <data name="Icon1" type="System.Drawing.Icon, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+        <value>[base64 mime encoded string representing a byte array form of the .NET Framework object]</value>
+        <comment>This is a comment</comment>
+    </data>
+                
+    There are any number of "resheader" rows that contain simple 
+    name/value pairs.
+    
+    Each data row contains a name, and value. The row also contains a 
+    type or mimetype. Type corresponds to a .NET class that support 
+    text/value conversion through the TypeConverter architecture. 
+    Classes that don't support this are serialized and stored with the 
+    mimetype set.
+    
+    The mimetype is used for serialized objects, and tells the 
+    ResXResourceReader how to depersist the object. This is currently not 
+    extensible. For a given mimetype the value must be set accordingly:
+    
+    Note - application/x-microsoft.net.object.binary.base64 is the format 
+    that the ResXResourceWriter will generate, however the reader can 
+    read any of the formats listed below.
+    
+    mimetype: application/x-microsoft.net.object.binary.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Binary.BinaryFormatter
+            : and then encoded with base64 encoding.
+    
+    mimetype: application/x-microsoft.net.object.soap.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Soap.SoapFormatter
+            : and then encoded with base64 encoding.
+
+    mimetype: application/x-microsoft.net.object.bytearray.base64
+    value   : The object must be serialized into a byte array 
+            : using a System.ComponentModel.TypeConverter
+            : and then encoded with base64 encoding.
+    -->
+  <xsd:schema id="root" xmlns="" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+    <xsd:import namespace="http://www.w3.org/XML/1998/namespace" />
+    <xsd:element name="root" msdata:IsDataSet="true">
+      <xsd:complexType>
+        <xsd:choice maxOccurs="unbounded">
+          <xsd:element name="metadata">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" />
+              </xsd:sequence>
+              <xsd:attribute name="name" use="required" type="xsd:string" />
+              <xsd:attribute name="type" type="xsd:string" />
+              <xsd:attribute name="mimetype" type="xsd:string" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="assembly">
+            <xsd:complexType>
+              <xsd:attribute name="alias" type="xsd:string" />
+              <xsd:attribute name="name" type="xsd:string" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="data">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+                <xsd:element name="comment" type="xsd:string" minOccurs="0" msdata:Ordinal="2" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" msdata:Ordinal="1" />
+              <xsd:attribute name="type" type="xsd:string" msdata:Ordinal="3" />
+              <xsd:attribute name="mimetype" type="xsd:string" msdata:Ordinal="4" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="resheader">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" />
+            </xsd:complexType>
+          </xsd:element>
+        </xsd:choice>
+      </xsd:complexType>
+    </xsd:element>
+  </xsd:schema>
+  <resheader name="resmimetype">
+    <value>text/microsoft-resx</value>
+  </resheader>
+  <resheader name="version">
+    <value>2.0</value>
+  </resheader>
+  <resheader name="reader">
+    <value>System.Resources.ResXResourceReader, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <resheader name="writer">
+    <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <assembly alias="System.Windows.Forms" name="System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" />
+  <data name="networkDisconnected" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\networkDisconnected.png;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="statusAway" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\statusAway.png;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="DialPad_2" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\DialPad_2.png;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="iconMagnifier" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\iconMagnifier.png;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="listIconNotFound" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\listIconNotFound.png;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="DialPad_6" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\DialPad_6.png;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="NikotalkieButtonDone" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\NikotalkieButtonDone.png;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="NikotalkieButtonContactsPressed" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\NikotalkieButtonContactsPressed.png;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="NikotalkieButtonDoneOver" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\NikotalkieButtonDoneOver.png;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="fbDDL_1_0_2" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\fbDDL_1_0_2.sql;System.String, mscorlib, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089;Windows-1252</value>
+  </data>
+  <data name="CallCancelButtonDown" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\CallCancelButtonDown.png;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="NikotalkieButtonSend" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\NikotalkieButtonSend.png;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="NikotalkieButtonStopPressed" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\NikotalkieButtonStopPressed.png;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="CallReceived" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\CallReceived.png;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="listBackgroundSelected39" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\listBackgroundSelected39.png;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="listBackgroundSelected39TextBox" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\listBackgroundSelected39TextBox.png;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="im_gadugadu_offline" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\im-gadugadu-offline.png;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="iconRefresh" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\iconRefresh.png;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="listIconEmailOpen" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\listIconEmailOpen.png;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="DialPad_0" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\DialPad_0.png;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="NikotalkieButtonTalkOver" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\NikotalkieButtonTalkOver.png;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="emoticonSurprised" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\emoticonSurprised.png;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="DialPad_3" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\DialPad_3.png;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="fbDDL_1_0_5" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\fbDDL_1_0_5.sql;System.String, mscorlib, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089;Windows-1252</value>
+  </data>
+  <data name="emoticonTongue" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\emoticonTongue.png;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="emoticonWaii" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\emoticonWaii.png;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="im_default" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\im-default.png;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="CallAnswerButtonDown" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\CallAnswerButtonDown.png;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="splashImage" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\splashImage.png;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="im_icq_offline" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\im-icq-offline.png;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="NikotalkieButtonStop" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\NikotalkieButtonStop.png;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="CallAnswerButtonOver" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\CallAnswerButtonOver.png;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="emoticonWink" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\emoticonWink.png;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="buttonContacts" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\buttonContacts.png;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="im_irc_offline" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\im-irc-offline.png;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="statusTyping" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\statusTyping.png;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="emoticonHappy" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\emoticonHappy.png;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="im_default_offline" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\im-default-offline.png;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="listIconInstantMessage" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\listIconInstantMessage.png;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="CallDialed" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\CallDialed.png;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="statusOffline" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\statusOffline.png;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="SearchUser" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\SearchUser.png;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="NikotalkieButtonInbox" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\NikotalkieButtonInbox.png;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="emoticonUnhappy" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\emoticonUnhappy.png;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="NikotalkieButtonPlayDown" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\NikotalkieButtonPlayDown.png;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="im_yahoo_offline" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\im-yahoo-offline.png;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="im_aim_offline" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\im-aim-offline.png;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="fbDDL_1_0_1" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\fbDDL_1_0_1.sql;System.String, mscorlib, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089;Windows-1252</value>
+  </data>
+  <data name="CallAnswerButton" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\CallAnswerButton.png;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="desktop" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\desktop.ico;System.Drawing.Icon, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="NikotalkieButtonTalkDown" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\NikotalkieButtonTalkDown.png;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="networkConnected" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\networkConnected.png;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="listIconWebcam" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\listIconWebcam.png;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="im_yahoo" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\im-yahoo.png;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="listIconEmail" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\listIconEmail.png;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="NodeIconSelected" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\NodeIconSelected.png;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="iconArchive" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\iconArchive.png;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="DialPad_Ast" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\DialPad_Ast.png;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="cancel" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\cancel.png;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="listIconScreenSharing" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\listIconScreenSharing.png;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="iconMessage" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\iconMessage.png;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="CallCancelButton" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\CallCancelButton.png;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="NodeIconOpened" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\NodeIconOpened.png;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="NikotalkieItemBackgroundWhite" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\NikotalkieItemBackgroundWhite.png;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="messageIn" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\messageIn.ico;System.Drawing.Icon, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="DialPad_9" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\DialPad_9.png;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="im_aim" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\im-aim.png;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="CallMissed" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\CallMissed.png;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="listBackgroundNormal39" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\listBackgroundNormal39.png;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="iconContactAddSmall" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\iconContactAddSmall.png;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="emoticonEvilgrin" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\emoticonEvilgrin.png;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="NikotalkieButtonSendPressed" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\NikotalkieButtonSendPressed.png;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="NikotalkieButtonOutbox" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\NikotalkieButtonOutbox.png;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="listIconVcard" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\listIconVcard.png;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="NikotalkieRecordingIcon" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\NikotalkieRecordingIcon.png;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="im_irc" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\im-irc.png;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="iconFont" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\iconFont.png;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="im_gadugadu" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\im-gadugadu.png;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="NikotalkieButtonTalkPresed" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\NikotalkieButtonTalkPresed.png;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="CallCancelButtonOver" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\CallCancelButtonOver.png;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="NikotalkieButtonReviewDown" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\NikotalkieButtonReviewDown.png;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="NikotalkieButtonCancelOver" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\NikotalkieButtonCancelOver.png;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="fbDDL_1_0_3" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\fbDDL_1_0_3.sql;System.String, mscorlib, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089;Windows-1252</value>
+  </data>
+  <data name="magnifier" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\magnifier.png;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="NikotalkieItemBackgroundBlackSelected" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\NikotalkieItemBackgroundBlackSelected.png;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="ButtonOff" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\ButtonOff.png;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="NikotalkieButtonInboxPressed" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\NikotalkieButtonInboxPressed.png;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="fbDDL_1_0_4" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\fbDDL_1_0_4.sql;System.String, mscorlib, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089;Windows-1252</value>
+  </data>
+  <data name="NikotalkieButtonReplyDown" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\NikotalkieButtonReplyDown.png;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="NikotalkieItemBackgroundBlack" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\NikotalkieItemBackgroundBlack.png;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="NikotalkieButtonSendOver" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\NikotalkieButtonSendOver.png;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="emoticonSmile" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\emoticonSmile.png;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="fbDDL_1_0_0" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\fbDDL_1_0_0.sql;System.String, mscorlib, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089;Windows-1252</value>
+  </data>
+  <data name="DialPad_8" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\DialPad_8.png;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="NodeIconClosed" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\NodeIconClosed.png;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="NikotalkieButtonReplyOver" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\NikotalkieButtonReplyOver.png;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="listIconComputer" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\listIconComputer.png;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="NikotalkieControlBackground" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\NikotalkieControlBackground.png;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="NikotalkieButtonOutboxPressed" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\NikotalkieButtonOutboxPressed.png;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="NikotalkieButtonSendDown" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\NikotalkieButtonSendDown.png;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="statusExtAway" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\statusExtAway.png;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="NikotalkieButtonCancel" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\NikotalkieButtonCancel.png;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="NikotalkieButtonPlayOver" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\NikotalkieButtonPlayOver.png;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="emoticonGrin" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\emoticonGrin.png;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="im_icq" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\im-icq.png;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Phone2PhoneHead" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Phone2PhoneHead.png;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="NikotalkieButtonDoneDown" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\NikotalkieButtonDoneDown.png;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="DialPad_5" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\DialPad_5.png;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="NikotalkieButtonDelete" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\NikotalkieButtonDelete.png;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="NikotalkieButtonCancelDown" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\NikotalkieButtonCancelDown.png;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="DialPad_Pnd" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\DialPad_Pnd.png;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="DialPad_1" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\DialPad_1.png;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="NikotalkieButtonPlay" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\NikotalkieButtonPlay.png;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="NikotalkieButtonReply" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\NikotalkieButtonReply.png;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="phone2phone" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\phone2phone.png;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="NikotalkieIconMessage20" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\NikotalkieIconMessage20.png;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="iconContacts" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\iconContacts.png;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="iconContactSearchSmall" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\iconContactSearchSmall.png;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="NikotalkieButtonStopDown" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\NikotalkieButtonStopDown.png;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="iconSync" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\iconSync.png;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="NikotalkieButtonSentbox" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\NikotalkieButtonSentbox.png;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="iconCross" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\iconCross.png;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="UserSearchHead" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\UserSearchHead.png;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="DialPad_4" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\DialPad_4.png;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="im_msn" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\im-msn.png;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="DialPadBackgroundSmall" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\DialPadBackgroundSmall.png;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="ContactBlank" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\ContactBlank.png;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="statusOnline" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\statusOnline.png;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="NikotalkieButtonContacts" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\NikotalkieButtonContacts.png;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="iconNudge" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\iconNudge.png;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="NikotalkieFormBackground" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\NikotalkieFormBackground.png;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="UserAddHead" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\UserAddHead.png;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="NikotalkieButtonSentboxPressed" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\NikotalkieButtonSentboxPressed.png;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="NikotalkieButtonDeleteOver" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\NikotalkieButtonDeleteOver.png;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="RectangleClientShape" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\RectangleClientShape.png;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="ButtonOn" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\ButtonOn.png;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="fbDDL_1_0_6" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\fbDDL_1_0_6.sql;System.String, mscorlib, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089;Windows-1252</value>
+  </data>
+  <data name="listIconPhone" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\listIconPhone.png;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="NikotalkieButtonDeleteDown" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\NikotalkieButtonDeleteDown.png;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="NikotalkieButtonReviewOver" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\NikotalkieButtonReviewOver.png;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="listIconVcardAdd" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\listIconVcardAdd.png;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="DialPadBackground" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\DialPadBackground.png;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="phone" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\phone.png;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="attach" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\attach.png;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="NikotalkieButtonStopOver" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\NikotalkieButtonStopOver.png;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="im_msn_offline" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\im-msn-offline.png;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="iconColorSwatch" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\iconColorSwatch.png;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="listIconEmailNew" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\listIconEmailNew.png;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="NikotalkieButtonReview" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\NikotalkieButtonReview.png;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="statusBusy" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\statusBusy.png;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="NikotalkieButtonTalk" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\NikotalkieButtonTalk.png;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="DialPad_7" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\DialPad_7.png;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="logo" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\logo.png;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+</root>

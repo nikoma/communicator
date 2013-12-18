@@ -1,0 +1,131 @@
+K 25
+svn:wc:ra_dav:version-url
+V 61
+/svn/REMWAVE%20Communication%20Suite/!svn/ver/85/trunk/Common
+END
+XMPPIQ.cs
+K 25
+svn:wc:ra_dav:version-url
+V 71
+/svn/REMWAVE%20Communication%20Suite/!svn/ver/85/trunk/Common/XMPPIQ.cs
+END
+AudioPlayer.cs
+K 25
+svn:wc:ra_dav:version-url
+V 76
+/svn/REMWAVE%20Communication%20Suite/!svn/ver/85/trunk/Common/AudioPlayer.cs
+END
+ImageProcessing.cs
+K 25
+svn:wc:ra_dav:version-url
+V 80
+/svn/REMWAVE%20Communication%20Suite/!svn/ver/81/trunk/Common/ImageProcessing.cs
+END
+PhoneLineState.cs
+K 25
+svn:wc:ra_dav:version-url
+V 79
+/svn/REMWAVE%20Communication%20Suite/!svn/ver/58/trunk/Common/PhoneLineState.cs
+END
+Services.cs
+K 25
+svn:wc:ra_dav:version-url
+V 73
+/svn/REMWAVE%20Communication%20Suite/!svn/ver/85/trunk/Common/Services.cs
+END
+ChatController.cs
+K 25
+svn:wc:ra_dav:version-url
+V 79
+/svn/REMWAVE%20Communication%20Suite/!svn/ver/85/trunk/Common/ChatController.cs
+END
+FileTransfer.cs
+K 25
+svn:wc:ra_dav:version-url
+V 77
+/svn/REMWAVE%20Communication%20Suite/!svn/ver/49/trunk/Common/FileTransfer.cs
+END
+VideoPlugin.cs
+K 25
+svn:wc:ra_dav:version-url
+V 76
+/svn/REMWAVE%20Communication%20Suite/!svn/ver/49/trunk/Common/VideoPlugin.cs
+END
+FirewallSetup.cs
+K 25
+svn:wc:ra_dav:version-url
+V 78
+/svn/REMWAVE%20Communication%20Suite/!svn/ver/85/trunk/Common/FirewallSetup.cs
+END
+MAPI.cs
+K 25
+svn:wc:ra_dav:version-url
+V 69
+/svn/REMWAVE%20Communication%20Suite/!svn/ver/85/trunk/Common/MAPI.cs
+END
+ContactsBook.cs
+K 25
+svn:wc:ra_dav:version-url
+V 77
+/svn/REMWAVE%20Communication%20Suite/!svn/ver/85/trunk/Common/ContactsBook.cs
+END
+InfoFile.cs
+K 25
+svn:wc:ra_dav:version-url
+V 73
+/svn/REMWAVE%20Communication%20Suite/!svn/ver/58/trunk/Common/InfoFile.cs
+END
+ContactContainer.cs
+K 25
+svn:wc:ra_dav:version-url
+V 81
+/svn/REMWAVE%20Communication%20Suite/!svn/ver/85/trunk/Common/ContactContainer.cs
+END
+ClientSettings.cs
+K 25
+svn:wc:ra_dav:version-url
+V 79
+/svn/REMWAVE%20Communication%20Suite/!svn/ver/71/trunk/Common/ClientSettings.cs
+END
+Emoticons.cs
+K 25
+svn:wc:ra_dav:version-url
+V 74
+/svn/REMWAVE%20Communication%20Suite/!svn/ver/13/trunk/Common/Emoticons.cs
+END
+ClientEvents.cs
+K 25
+svn:wc:ra_dav:version-url
+V 77
+/svn/REMWAVE%20Communication%20Suite/!svn/ver/85/trunk/Common/ClientEvents.cs
+END
+Storage.cs
+K 25
+svn:wc:ra_dav:version-url
+V 72
+/svn/REMWAVE%20Communication%20Suite/!svn/ver/85/trunk/Common/Storage.cs
+END
+Serializable.cs
+K 25
+svn:wc:ra_dav:version-url
+V 77
+/svn/REMWAVE%20Communication%20Suite/!svn/ver/85/trunk/Common/Serializable.cs
+END
+QualityAgentLogger.cs
+K 25
+svn:wc:ra_dav:version-url
+V 83
+/svn/REMWAVE%20Communication%20Suite/!svn/ver/81/trunk/Common/QualityAgentLogger.cs
+END
+IQ.cs
+K 25
+svn:wc:ra_dav:version-url
+V 67
+/svn/REMWAVE%20Communication%20Suite/!svn/ver/81/trunk/Common/IQ.cs
+END
+ContactsList.cs
+K 25
+svn:wc:ra_dav:version-url
+V 77
+/svn/REMWAVE%20Communication%20Suite/!svn/ver/85/trunk/Common/ContactsList.cs
+END

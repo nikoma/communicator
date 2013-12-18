@@ -1,0 +1,11 @@
+LIBRARY      "libamr.dll"
+
+EXPORTS
+    ; Explicit exports can go here
+
+AMR_Encoder_Init         @1
+AMR_Encoder_Destroy      @2
+AMR_Encoder_Encode       @3
+AMR_Decoder_Init         @4
+AMR_Decoder_Destroy      @5
+AMR_Decoder_Decode       @6

@@ -1,0 +1,89 @@
+K 25
+svn:wc:ra_dav:version-url
+V 63
+/svn/REMWAVE%20Communication%20Suite/!svn/ver/85/trunk/RVoIPLib
+END
+IpAddress.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 76
+/svn/REMWAVE%20Communication%20Suite/!svn/ver/2/trunk/RVoIPLib/IpAddress.cpp
+END
+Stdafx.h
+K 25
+svn:wc:ra_dav:version-url
+V 71
+/svn/REMWAVE%20Communication%20Suite/!svn/ver/2/trunk/RVoIPLib/Stdafx.h
+END
+app.aps
+K 25
+svn:wc:ra_dav:version-url
+V 70
+/svn/REMWAVE%20Communication%20Suite/!svn/ver/2/trunk/RVoIPLib/app.aps
+END
+SipTelephonyApi.h
+K 25
+svn:wc:ra_dav:version-url
+V 81
+/svn/REMWAVE%20Communication%20Suite/!svn/ver/85/trunk/RVoIPLib/SipTelephonyApi.h
+END
+app.rc
+K 25
+svn:wc:ra_dav:version-url
+V 69
+/svn/REMWAVE%20Communication%20Suite/!svn/ver/2/trunk/RVoIPLib/app.rc
+END
+IpAddress.h
+K 25
+svn:wc:ra_dav:version-url
+V 74
+/svn/REMWAVE%20Communication%20Suite/!svn/ver/2/trunk/RVoIPLib/IpAddress.h
+END
+RVoIPLib.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 76
+/svn/REMWAVE%20Communication%20Suite/!svn/ver/85/trunk/RVoIPLib/RVoIPLib.cpp
+END
+RVoIPLib.vcproj
+K 25
+svn:wc:ra_dav:version-url
+V 78
+/svn/REMWAVE%20Communication%20Suite/!svn/ver/9/trunk/RVoIPLib/RVoIPLib.vcproj
+END
+app.ico
+K 25
+svn:wc:ra_dav:version-url
+V 70
+/svn/REMWAVE%20Communication%20Suite/!svn/ver/2/trunk/RVoIPLib/app.ico
+END
+Stdafx.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 73
+/svn/REMWAVE%20Communication%20Suite/!svn/ver/2/trunk/RVoIPLib/Stdafx.cpp
+END
+ReadMe.txt
+K 25
+svn:wc:ra_dav:version-url
+V 73
+/svn/REMWAVE%20Communication%20Suite/!svn/ver/2/trunk/RVoIPLib/ReadMe.txt
+END
+AssemblyInfo.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 79
+/svn/REMWAVE%20Communication%20Suite/!svn/ver/2/trunk/RVoIPLib/AssemblyInfo.cpp
+END
+RVoIPLib.h
+K 25
+svn:wc:ra_dav:version-url
+V 74
+/svn/REMWAVE%20Communication%20Suite/!svn/ver/85/trunk/RVoIPLib/RVoIPLib.h
+END
+resource.h
+K 25
+svn:wc:ra_dav:version-url
+V 73
+/svn/REMWAVE%20Communication%20Suite/!svn/ver/2/trunk/RVoIPLib/resource.h
+END

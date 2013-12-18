@@ -1,0 +1,34 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 9.00
+# Visual Studio 2005
+Project("{E24C65DC-7377-472B-9ABA-BC803B73C61A}") = "C:\...\FileTransferWS\", ".", "{5365406B-3B6F-4BE2-91AB-9B0EA4023CA7}"
+	ProjectSection(WebsiteProperties) = preProject
+		Debug.AspNetCompiler.VirtualPath = "/FileTransferWS"
+		Debug.AspNetCompiler.PhysicalPath = "..\..\..\Remwave\REMWAVE Communication Suite\trunk\FileTransferWS\"
+		Debug.AspNetCompiler.TargetPath = "PrecompiledWeb\FileTransferWS\"
+		Debug.AspNetCompiler.Updateable = "true"
+		Debug.AspNetCompiler.ForceOverwrite = "true"
+		Debug.AspNetCompiler.FixedNames = "false"
+		Debug.AspNetCompiler.Debug = "True"
+		Release.AspNetCompiler.VirtualPath = "/FileTransferWS"
+		Release.AspNetCompiler.PhysicalPath = "..\..\..\Remwave\REMWAVE Communication Suite\trunk\FileTransferWS\"
+		Release.AspNetCompiler.TargetPath = "PrecompiledWeb\FileTransferWS\"
+		Release.AspNetCompiler.Updateable = "true"
+		Release.AspNetCompiler.ForceOverwrite = "true"
+		Release.AspNetCompiler.FixedNames = "false"
+		Release.AspNetCompiler.Debug = "False"
+		VWDPort = "3061"
+	EndProjectSection
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|.NET = Debug|.NET
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{5365406B-3B6F-4BE2-91AB-9B0EA4023CA7}.Debug|.NET.ActiveCfg = Debug|.NET
+		{5365406B-3B6F-4BE2-91AB-9B0EA4023CA7}.Debug|.NET.Build.0 = Debug|.NET
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal

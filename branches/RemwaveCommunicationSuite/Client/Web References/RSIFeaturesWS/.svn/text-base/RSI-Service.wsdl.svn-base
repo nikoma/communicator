@@ -1,0 +1,2298 @@
+<?xml version="1.0" encoding="utf-8"?>
+<wsdl:definitions xmlns:soap="http://schemas.xmlsoap.org/wsdl/soap/" xmlns:tm="http://microsoft.com/wsdl/mime/textMatching/" xmlns:soapenc="http://schemas.xmlsoap.org/soap/encoding/" xmlns:mime="http://schemas.xmlsoap.org/wsdl/mime/" xmlns:tns="http://rsi.remwave.com/" xmlns:s="http://www.w3.org/2001/XMLSchema" xmlns:soap12="http://schemas.xmlsoap.org/wsdl/soap12/" xmlns:http="http://schemas.xmlsoap.org/wsdl/http/" targetNamespace="http://rsi.remwave.com/" xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">
+  <wsdl:types>
+    <s:schema elementFormDefault="qualified" targetNamespace="http://rsi.remwave.com/">
+      <s:element name="clientPrepaidAmount">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="IN_USERNAME" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="IN_PASSWORD" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="clientPrepaidAmountResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="clientPrepaidAmountResult" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="clientCallNow">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="IN_USERNAME" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="IN_PASSWORD" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="IN_CALL_FROM" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="IN_CALL_TO" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="clientCallNowResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="clientCallNowResult" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="accountCreate">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="IN_SECRET" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="IN_CPID" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="IN_USERNAME_NEW" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="IN_PASSWORD_NEW" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="accountCreateResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="accountCreateResult">
+              <s:complexType>
+                <s:sequence>
+                  <s:element ref="s:schema" />
+                  <s:any />
+                </s:sequence>
+              </s:complexType>
+            </s:element>
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="accountUpdate">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="IN_SECRET" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="IN_CPID" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="IN_CUSTOMERID" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="IN_USERNAME" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="IN_PASSWORD" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="IN_COMPANY" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="IN_FIRST_NAME" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="IN_LAST_NAME" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="IN_STREET" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="IN_HOUSENR" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="IN_ZIP_CODE" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="IN_CITY" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="IN_STATE" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="IN_COUNTRY_ID" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="IN_PHONE" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="IN_PHONE_WORK" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="IN_FAX" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="IN_EMAIL" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="IN_GENDER" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="IN_USTIDNR" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="accountUpdateResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="accountUpdateResult">
+              <s:complexType>
+                <s:sequence>
+                  <s:element ref="s:schema" />
+                  <s:any />
+                </s:sequence>
+              </s:complexType>
+            </s:element>
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="accountCustomer">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="IN_SECRET" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="IN_CPID" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="IN_CUSTOMERID" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="IN_USERNAME" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="IN_PASSWORD" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="accountCustomerResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="accountCustomerResult">
+              <s:complexType>
+                <s:sequence>
+                  <s:element ref="s:schema" />
+                  <s:any />
+                </s:sequence>
+              </s:complexType>
+            </s:element>
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="accountRemove">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="IN_SECRET" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="IN_CPID" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="IN_CUSTOMERID" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="IN_USERNAME" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="IN_PASSWORD" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="accountRemoveResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="accountRemoveResult">
+              <s:complexType>
+                <s:sequence>
+                  <s:element ref="s:schema" />
+                  <s:any />
+                </s:sequence>
+              </s:complexType>
+            </s:element>
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="accountPreferedLanguageUpdate">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="IN_SECRET" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="IN_CPID" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="IN_CUSTOMERID" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="IN_USERNAME" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="IN_PASSWORD" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="IN_PREFERED_LANGUAGE" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="accountPreferedLanguageUpdateResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="accountPreferedLanguageUpdateResult">
+              <s:complexType>
+                <s:sequence>
+                  <s:element ref="s:schema" />
+                  <s:any />
+                </s:sequence>
+              </s:complexType>
+            </s:element>
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="accountTimeZoneUpdate">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="IN_SECRET" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="IN_CPID" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="IN_CUSTOMERID" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="IN_USERNAME" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="IN_PASSWORD" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="IN_TZ_GMT_DIFF" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="IN_USERNAME_ACT" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="accountTimeZoneUpdateResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="accountTimeZoneUpdateResult">
+              <s:complexType>
+                <s:sequence>
+                  <s:element ref="s:schema" />
+                  <s:any />
+                </s:sequence>
+              </s:complexType>
+            </s:element>
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="accountAuthentication">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="IN_SECRET" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="IN_CPID" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="IN_USERNAME" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="IN_PASSWORD" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="accountAuthenticationResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="accountAuthenticationResult">
+              <s:complexType>
+                <s:sequence>
+                  <s:element ref="s:schema" />
+                  <s:any />
+                </s:sequence>
+              </s:complexType>
+            </s:element>
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="accountUsers">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="IN_SECRET" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="IN_CPID" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="IN_CUSTOMERID" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="IN_USERNAME" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="IN_PASSWORD" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="accountUsersResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="accountUsersResult">
+              <s:complexType>
+                <s:sequence>
+                  <s:element ref="s:schema" />
+                  <s:any />
+                </s:sequence>
+              </s:complexType>
+            </s:element>
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="accountUserAdd">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="IN_SECRET" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="IN_CPID" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="IN_CUSTOMERID" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="IN_USERNAME" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="IN_PASSWORD" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="IN_USERNAME_NEW" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="IN_PASSWORD_NEW" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="accountUserAddResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="accountUserAddResult">
+              <s:complexType>
+                <s:sequence>
+                  <s:element ref="s:schema" />
+                  <s:any />
+                </s:sequence>
+              </s:complexType>
+            </s:element>
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="accountUserUpdate">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="IN_SECRET" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="IN_CPID" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="IN_CUSTOMERID" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="IN_USERNAME" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="IN_PASSWORD" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="IN_PASSWORD_NEW" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="accountUserUpdateResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="accountUserUpdateResult">
+              <s:complexType>
+                <s:sequence>
+                  <s:element ref="s:schema" />
+                  <s:any />
+                </s:sequence>
+              </s:complexType>
+            </s:element>
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="accountUserRemove">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="IN_SECRET" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="IN_CPID" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="IN_CUSTOMERID" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="IN_USERNAME" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="IN_PASSWORD" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="IN_USERNAME_ACT" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="accountUserRemoveResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="accountUserRemoveResult">
+              <s:complexType>
+                <s:sequence>
+                  <s:element ref="s:schema" />
+                  <s:any />
+                </s:sequence>
+              </s:complexType>
+            </s:element>
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="accountUserOnlineStatus">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="IN_SECRET" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="IN_CPID" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="IN_CUSTOMERID" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="IN_USERNAME" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="IN_PASSWORD" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="IN_SEARCH" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="accountUserOnlineStatusResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="accountUserOnlineStatusResult">
+              <s:complexType>
+                <s:sequence>
+                  <s:element ref="s:schema" />
+                  <s:any />
+                </s:sequence>
+              </s:complexType>
+            </s:element>
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="accountPrepaid">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="IN_SECRET" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="IN_CPID" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="IN_CUSTOMERID" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="IN_USERNAME" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="IN_PASSWORD" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="accountPrepaidResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="accountPrepaidResult">
+              <s:complexType>
+                <s:sequence>
+                  <s:element ref="s:schema" />
+                  <s:any />
+                </s:sequence>
+              </s:complexType>
+            </s:element>
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="accountPrepaidAlertUpdate">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="IN_SECRET" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="IN_CPID" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="IN_CUSTOMERID" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="IN_USERNAME" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="IN_PASSWORD" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="IN_AMOUNT" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="accountPrepaidAlertUpdateResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="accountPrepaidAlertUpdateResult">
+              <s:complexType>
+                <s:sequence>
+                  <s:element ref="s:schema" />
+                  <s:any />
+                </s:sequence>
+              </s:complexType>
+            </s:element>
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="accountPrepaidMasterAdd">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="IN_SECRET" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="IN_SECRET2" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="IN_CPID" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="IN_CUSTOMERID" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="IN_USERNAME" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="IN_PASSWORD" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="IN_CUSTOMERID_RECIPIENT" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="IN_AMOUNT" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="accountPrepaidMasterAddResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="accountPrepaidMasterAddResult">
+              <s:complexType>
+                <s:sequence>
+                  <s:element ref="s:schema" />
+                  <s:any />
+                </s:sequence>
+              </s:complexType>
+            </s:element>
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="accountMinutes">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="IN_SECRET" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="IN_CPID" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="IN_CUSTOMERID" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="IN_USERNAME" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="IN_PASSWORD" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="accountMinutesResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="accountMinutesResult">
+              <s:complexType>
+                <s:sequence>
+                  <s:element ref="s:schema" />
+                  <s:any />
+                </s:sequence>
+              </s:complexType>
+            </s:element>
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="serviceDialPlan">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="IN_SECRET" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="IN_CPID" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="IN_CUSTOMERID" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="IN_USERNAME" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="IN_PASSWORD" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="IN_USERNAME_ACT" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="serviceDialPlanResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="serviceDialPlanResult">
+              <s:complexType>
+                <s:sequence>
+                  <s:element ref="s:schema" />
+                  <s:any />
+                </s:sequence>
+              </s:complexType>
+            </s:element>
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="serviceDialPlanUpdate">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="IN_SECRET" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="IN_CPID" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="IN_CUSTOMERID" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="IN_USERNAME" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="IN_PASSWORD" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="IN_USERNAME_ACT" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="IN_NATIONAL_EXIT_CODE" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="IN_INTERNATIONAL_EXIT_CODE" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="IN_COUNTRY_CODE" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="IN_CITY_CODE" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="IN_DIALPLAN_ACTIVE" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="serviceDialPlanUpdateResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="serviceDialPlanUpdateResult">
+              <s:complexType>
+                <s:sequence>
+                  <s:element ref="s:schema" />
+                  <s:any />
+                </s:sequence>
+              </s:complexType>
+            </s:element>
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="serviceLocalNumbersAreas">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="IN_SECRET" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="IN_CPID" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="IN_CUSTOMERID" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="IN_USERNAME" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="IN_PASSWORD" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="serviceLocalNumbersAreasResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="serviceLocalNumbersAreasResult">
+              <s:complexType>
+                <s:sequence>
+                  <s:element ref="s:schema" />
+                  <s:any />
+                </s:sequence>
+              </s:complexType>
+            </s:element>
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="serviceLocalNumbers">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="IN_SECRET" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="IN_CPID" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="IN_CUSTOMERID" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="IN_USERNAME" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="IN_PASSWORD" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="serviceLocalNumbersResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="serviceLocalNumbersResult">
+              <s:complexType>
+                <s:sequence>
+                  <s:element ref="s:schema" />
+                  <s:any />
+                </s:sequence>
+              </s:complexType>
+            </s:element>
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="serviceLocalNumberPhoneAdd">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="IN_SECRET" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="IN_CPID" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="IN_CUSTOMERID" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="IN_USERNAME" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="IN_PASSWORD" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="IN_NIKOTALK_PREFIX" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="IN_USERNAME_NEW" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="serviceLocalNumberPhoneAddResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="serviceLocalNumberPhoneAddResult">
+              <s:complexType>
+                <s:sequence>
+                  <s:element ref="s:schema" />
+                  <s:any />
+                </s:sequence>
+              </s:complexType>
+            </s:element>
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="serviceLocalNumberFaxAdd">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="IN_SECRET" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="IN_CPID" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="IN_CUSTOMERID" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="IN_USERNAME" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="IN_PASSWORD" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="IN_NIKOFAX_PREFIX" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="IN_EMAIL" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="serviceLocalNumberFaxAddResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="serviceLocalNumberFaxAddResult">
+              <s:complexType>
+                <s:sequence>
+                  <s:element ref="s:schema" />
+                  <s:any />
+                </s:sequence>
+              </s:complexType>
+            </s:element>
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="serviceLocalNumberPhoneUpdate">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="IN_SECRET" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="IN_CPID" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="IN_CUSTOMERID" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="IN_USERNAME" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="IN_PASSWORD" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="IN_NIKOTALK_NUMBER" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="IN_USERNAME_NEW" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="serviceLocalNumberPhoneUpdateResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="serviceLocalNumberPhoneUpdateResult">
+              <s:complexType>
+                <s:sequence>
+                  <s:element ref="s:schema" />
+                  <s:any />
+                </s:sequence>
+              </s:complexType>
+            </s:element>
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="serviceLocalNumberFaxUpdate">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="IN_SECRET" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="IN_CPID" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="IN_CUSTOMERID" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="IN_USERNAME" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="IN_PASSWORD" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="IN_NIKOFAX_NUMBER" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="IN_EMAIL" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="serviceLocalNumberFaxUpdateResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="serviceLocalNumberFaxUpdateResult">
+              <s:complexType>
+                <s:sequence>
+                  <s:element ref="s:schema" />
+                  <s:any />
+                </s:sequence>
+              </s:complexType>
+            </s:element>
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="serviceLocalNumberRemove">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="IN_SECRET" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="IN_CPID" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="IN_CUSTOMERID" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="IN_USERNAME" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="IN_PASSWORD" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="IN_PERIODICAL_PAYMENT" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="serviceLocalNumberRemoveResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="serviceLocalNumberRemoveResult">
+              <s:complexType>
+                <s:sequence>
+                  <s:element ref="s:schema" />
+                  <s:any />
+                </s:sequence>
+              </s:complexType>
+            </s:element>
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="serviceMailboxes">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="IN_SECRET" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="IN_CPID" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="IN_CUSTOMERID" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="IN_USERNAME" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="IN_PASSWORD" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="IN_USERNAME_ACT" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="serviceMailboxesResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="serviceMailboxesResult">
+              <s:complexType>
+                <s:sequence>
+                  <s:element ref="s:schema" />
+                  <s:any />
+                </s:sequence>
+              </s:complexType>
+            </s:element>
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="serviceMailboxesUpdate">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="IN_SECRET" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="IN_CPID" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="IN_CUSTOMERID" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="IN_USERNAME" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="IN_PASSWORD" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="IN_USERNAME_ACT" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="IN_FORWARD_BUSY" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="IN_FORWARD_UNAVAILABLE" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="IN_FORWARD_UNAVAILABLE_TTL" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="IN_EMAIL_ACT" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="IN_PIN" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="serviceMailboxesUpdateResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="serviceMailboxesUpdateResult">
+              <s:complexType>
+                <s:sequence>
+                  <s:element ref="s:schema" />
+                  <s:any />
+                </s:sequence>
+              </s:complexType>
+            </s:element>
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="service99Numbers">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="IN_SECRET" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="IN_CPID" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="IN_CUSTOMERID" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="IN_USERNAME" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="IN_PASSWORD" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="service99NumbersResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="service99NumbersResult">
+              <s:complexType>
+                <s:sequence>
+                  <s:element ref="s:schema" />
+                  <s:any />
+                </s:sequence>
+              </s:complexType>
+            </s:element>
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="service99NumberAdd">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="IN_SECRET" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="IN_CPID" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="IN_CUSTOMERID" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="IN_USERNAME" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="IN_PASSWORD" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="IN_VANITY_NUMBER" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="IN_USERNAME_ACT" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="service99NumberAddResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="service99NumberAddResult">
+              <s:complexType>
+                <s:sequence>
+                  <s:element ref="s:schema" />
+                  <s:any />
+                </s:sequence>
+              </s:complexType>
+            </s:element>
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="service99NumberRemove">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="IN_SECRET" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="IN_CPID" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="IN_CUSTOMERID" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="IN_USERNAME" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="IN_PASSWORD" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="IN_VANITY_NUMBER" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="service99NumberRemoveResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="service99NumberRemoveResult">
+              <s:complexType>
+                <s:sequence>
+                  <s:element ref="s:schema" />
+                  <s:any />
+                </s:sequence>
+              </s:complexType>
+            </s:element>
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="serviceSpeedDials">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="IN_SECRET" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="IN_CPID" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="IN_CUSTOMERID" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="IN_USERNAME" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="IN_PASSWORD" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="IN_USERNAME_ACT" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="serviceSpeedDialsResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="serviceSpeedDialsResult">
+              <s:complexType>
+                <s:sequence>
+                  <s:element ref="s:schema" />
+                  <s:any />
+                </s:sequence>
+              </s:complexType>
+            </s:element>
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="serviceSpeedDialsAdd">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="IN_SECRET" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="IN_CPID" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="IN_CUSTOMERID" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="IN_USERNAME" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="IN_PASSWORD" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="IN_SPEEDDIAL_NUMBER" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="IN_USERNAME_ACT" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="IN_TRANSLATION" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="IN_DESCRIPTION" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="serviceSpeedDialsAddResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="serviceSpeedDialsAddResult">
+              <s:complexType>
+                <s:sequence>
+                  <s:element ref="s:schema" />
+                  <s:any />
+                </s:sequence>
+              </s:complexType>
+            </s:element>
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="serviceSpeedDialRemove">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="IN_SECRET" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="IN_CPID" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="IN_CUSTOMERID" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="IN_USERNAME" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="IN_PASSWORD" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="IN_SPEEDDIAL_NUMBER" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="IN_USERNAME_ACT" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="serviceSpeedDialRemoveResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="serviceSpeedDialRemoveResult">
+              <s:complexType>
+                <s:sequence>
+                  <s:element ref="s:schema" />
+                  <s:any />
+                </s:sequence>
+              </s:complexType>
+            </s:element>
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="serviceCallNow">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="IN_SECRET" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="IN_CPID" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="IN_CUSTOMERID" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="IN_USERNAME" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="IN_PASSWORD" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="IN_CALL_FROM" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="IN_CALL_TO" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="serviceCallNowResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="serviceCallNowResult">
+              <s:complexType>
+                <s:sequence>
+                  <s:element ref="s:schema" />
+                  <s:any />
+                </s:sequence>
+              </s:complexType>
+            </s:element>
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="serviceCallBacks">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="IN_SECRET" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="IN_CPID" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="IN_CUSTOMERID" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="IN_USERNAME" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="IN_PASSWORD" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="IN_CALL_BACK_ACT" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="serviceCallBacksResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="serviceCallBacksResult">
+              <s:complexType>
+                <s:sequence>
+                  <s:element ref="s:schema" />
+                  <s:any />
+                </s:sequence>
+              </s:complexType>
+            </s:element>
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="serviceCallBackAdd">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="IN_SECRET" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="IN_CPID" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="IN_CUSTOMERID" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="IN_USERNAME" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="IN_PASSWORD" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="IN_CALL_BACK" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="IN_USERNAME_ACT" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="IN_CALL_BACK_ALT" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="serviceCallBackAddResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="serviceCallBackAddResult">
+              <s:complexType>
+                <s:sequence>
+                  <s:element ref="s:schema" />
+                  <s:any />
+                </s:sequence>
+              </s:complexType>
+            </s:element>
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="serviceCallBackRemove">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="IN_SECRET" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="IN_CPID" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="IN_CUSTOMERID" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="IN_USERNAME" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="IN_PASSWORD" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="IN_CALL_BACK_ACT" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="serviceCallBackRemoveResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="serviceCallBackRemoveResult">
+              <s:complexType>
+                <s:sequence>
+                  <s:element ref="s:schema" />
+                  <s:any />
+                </s:sequence>
+              </s:complexType>
+            </s:element>
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="billingCDR">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="IN_SECRET" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="IN_CPID" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="IN_CUSTOMERID" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="IN_USERNAME" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="IN_PASSWORD" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="IN_USERNAME_ACT" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="IN_DATE_FROM" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="IN_DATE_TO" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="billingCDRResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="billingCDRResult">
+              <s:complexType>
+                <s:sequence>
+                  <s:element ref="s:schema" />
+                  <s:any />
+                </s:sequence>
+              </s:complexType>
+            </s:element>
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="billingOverview">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="IN_SECRET" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="IN_CPID" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="IN_CUSTOMERID" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="IN_USERNAME" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="IN_PASSWORD" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="billingOverviewResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="billingOverviewResult">
+              <s:complexType>
+                <s:sequence>
+                  <s:element ref="s:schema" />
+                  <s:any />
+                </s:sequence>
+              </s:complexType>
+            </s:element>
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="utilsRates">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="IN_SECRET" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="IN_CPID" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="IN_TARIFFID" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="IN_SEARCH" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="utilsRatesResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="utilsRatesResult">
+              <s:complexType>
+                <s:sequence>
+                  <s:element ref="s:schema" />
+                  <s:any />
+                </s:sequence>
+              </s:complexType>
+            </s:element>
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+    </s:schema>
+  </wsdl:types>
+  <wsdl:message name="clientPrepaidAmountSoapIn">
+    <wsdl:part name="parameters" element="tns:clientPrepaidAmount" />
+  </wsdl:message>
+  <wsdl:message name="clientPrepaidAmountSoapOut">
+    <wsdl:part name="parameters" element="tns:clientPrepaidAmountResponse" />
+  </wsdl:message>
+  <wsdl:message name="clientCallNowSoapIn">
+    <wsdl:part name="parameters" element="tns:clientCallNow" />
+  </wsdl:message>
+  <wsdl:message name="clientCallNowSoapOut">
+    <wsdl:part name="parameters" element="tns:clientCallNowResponse" />
+  </wsdl:message>
+  <wsdl:message name="accountCreateSoapIn">
+    <wsdl:part name="parameters" element="tns:accountCreate" />
+  </wsdl:message>
+  <wsdl:message name="accountCreateSoapOut">
+    <wsdl:part name="parameters" element="tns:accountCreateResponse" />
+  </wsdl:message>
+  <wsdl:message name="accountUpdateSoapIn">
+    <wsdl:part name="parameters" element="tns:accountUpdate" />
+  </wsdl:message>
+  <wsdl:message name="accountUpdateSoapOut">
+    <wsdl:part name="parameters" element="tns:accountUpdateResponse" />
+  </wsdl:message>
+  <wsdl:message name="accountCustomerSoapIn">
+    <wsdl:part name="parameters" element="tns:accountCustomer" />
+  </wsdl:message>
+  <wsdl:message name="accountCustomerSoapOut">
+    <wsdl:part name="parameters" element="tns:accountCustomerResponse" />
+  </wsdl:message>
+  <wsdl:message name="accountRemoveSoapIn">
+    <wsdl:part name="parameters" element="tns:accountRemove" />
+  </wsdl:message>
+  <wsdl:message name="accountRemoveSoapOut">
+    <wsdl:part name="parameters" element="tns:accountRemoveResponse" />
+  </wsdl:message>
+  <wsdl:message name="accountPreferedLanguageUpdateSoapIn">
+    <wsdl:part name="parameters" element="tns:accountPreferedLanguageUpdate" />
+  </wsdl:message>
+  <wsdl:message name="accountPreferedLanguageUpdateSoapOut">
+    <wsdl:part name="parameters" element="tns:accountPreferedLanguageUpdateResponse" />
+  </wsdl:message>
+  <wsdl:message name="accountTimeZoneUpdateSoapIn">
+    <wsdl:part name="parameters" element="tns:accountTimeZoneUpdate" />
+  </wsdl:message>
+  <wsdl:message name="accountTimeZoneUpdateSoapOut">
+    <wsdl:part name="parameters" element="tns:accountTimeZoneUpdateResponse" />
+  </wsdl:message>
+  <wsdl:message name="accountAuthenticationSoapIn">
+    <wsdl:part name="parameters" element="tns:accountAuthentication" />
+  </wsdl:message>
+  <wsdl:message name="accountAuthenticationSoapOut">
+    <wsdl:part name="parameters" element="tns:accountAuthenticationResponse" />
+  </wsdl:message>
+  <wsdl:message name="accountUsersSoapIn">
+    <wsdl:part name="parameters" element="tns:accountUsers" />
+  </wsdl:message>
+  <wsdl:message name="accountUsersSoapOut">
+    <wsdl:part name="parameters" element="tns:accountUsersResponse" />
+  </wsdl:message>
+  <wsdl:message name="accountUserAddSoapIn">
+    <wsdl:part name="parameters" element="tns:accountUserAdd" />
+  </wsdl:message>
+  <wsdl:message name="accountUserAddSoapOut">
+    <wsdl:part name="parameters" element="tns:accountUserAddResponse" />
+  </wsdl:message>
+  <wsdl:message name="accountUserUpdateSoapIn">
+    <wsdl:part name="parameters" element="tns:accountUserUpdate" />
+  </wsdl:message>
+  <wsdl:message name="accountUserUpdateSoapOut">
+    <wsdl:part name="parameters" element="tns:accountUserUpdateResponse" />
+  </wsdl:message>
+  <wsdl:message name="accountUserRemoveSoapIn">
+    <wsdl:part name="parameters" element="tns:accountUserRemove" />
+  </wsdl:message>
+  <wsdl:message name="accountUserRemoveSoapOut">
+    <wsdl:part name="parameters" element="tns:accountUserRemoveResponse" />
+  </wsdl:message>
+  <wsdl:message name="accountUserOnlineStatusSoapIn">
+    <wsdl:part name="parameters" element="tns:accountUserOnlineStatus" />
+  </wsdl:message>
+  <wsdl:message name="accountUserOnlineStatusSoapOut">
+    <wsdl:part name="parameters" element="tns:accountUserOnlineStatusResponse" />
+  </wsdl:message>
+  <wsdl:message name="accountPrepaidSoapIn">
+    <wsdl:part name="parameters" element="tns:accountPrepaid" />
+  </wsdl:message>
+  <wsdl:message name="accountPrepaidSoapOut">
+    <wsdl:part name="parameters" element="tns:accountPrepaidResponse" />
+  </wsdl:message>
+  <wsdl:message name="accountPrepaidAlertUpdateSoapIn">
+    <wsdl:part name="parameters" element="tns:accountPrepaidAlertUpdate" />
+  </wsdl:message>
+  <wsdl:message name="accountPrepaidAlertUpdateSoapOut">
+    <wsdl:part name="parameters" element="tns:accountPrepaidAlertUpdateResponse" />
+  </wsdl:message>
+  <wsdl:message name="accountPrepaidMasterAddSoapIn">
+    <wsdl:part name="parameters" element="tns:accountPrepaidMasterAdd" />
+  </wsdl:message>
+  <wsdl:message name="accountPrepaidMasterAddSoapOut">
+    <wsdl:part name="parameters" element="tns:accountPrepaidMasterAddResponse" />
+  </wsdl:message>
+  <wsdl:message name="accountMinutesSoapIn">
+    <wsdl:part name="parameters" element="tns:accountMinutes" />
+  </wsdl:message>
+  <wsdl:message name="accountMinutesSoapOut">
+    <wsdl:part name="parameters" element="tns:accountMinutesResponse" />
+  </wsdl:message>
+  <wsdl:message name="serviceDialPlanSoapIn">
+    <wsdl:part name="parameters" element="tns:serviceDialPlan" />
+  </wsdl:message>
+  <wsdl:message name="serviceDialPlanSoapOut">
+    <wsdl:part name="parameters" element="tns:serviceDialPlanResponse" />
+  </wsdl:message>
+  <wsdl:message name="serviceDialPlanUpdateSoapIn">
+    <wsdl:part name="parameters" element="tns:serviceDialPlanUpdate" />
+  </wsdl:message>
+  <wsdl:message name="serviceDialPlanUpdateSoapOut">
+    <wsdl:part name="parameters" element="tns:serviceDialPlanUpdateResponse" />
+  </wsdl:message>
+  <wsdl:message name="serviceLocalNumbersAreasSoapIn">
+    <wsdl:part name="parameters" element="tns:serviceLocalNumbersAreas" />
+  </wsdl:message>
+  <wsdl:message name="serviceLocalNumbersAreasSoapOut">
+    <wsdl:part name="parameters" element="tns:serviceLocalNumbersAreasResponse" />
+  </wsdl:message>
+  <wsdl:message name="serviceLocalNumbersSoapIn">
+    <wsdl:part name="parameters" element="tns:serviceLocalNumbers" />
+  </wsdl:message>
+  <wsdl:message name="serviceLocalNumbersSoapOut">
+    <wsdl:part name="parameters" element="tns:serviceLocalNumbersResponse" />
+  </wsdl:message>
+  <wsdl:message name="serviceLocalNumberPhoneAddSoapIn">
+    <wsdl:part name="parameters" element="tns:serviceLocalNumberPhoneAdd" />
+  </wsdl:message>
+  <wsdl:message name="serviceLocalNumberPhoneAddSoapOut">
+    <wsdl:part name="parameters" element="tns:serviceLocalNumberPhoneAddResponse" />
+  </wsdl:message>
+  <wsdl:message name="serviceLocalNumberFaxAddSoapIn">
+    <wsdl:part name="parameters" element="tns:serviceLocalNumberFaxAdd" />
+  </wsdl:message>
+  <wsdl:message name="serviceLocalNumberFaxAddSoapOut">
+    <wsdl:part name="parameters" element="tns:serviceLocalNumberFaxAddResponse" />
+  </wsdl:message>
+  <wsdl:message name="serviceLocalNumberPhoneUpdateSoapIn">
+    <wsdl:part name="parameters" element="tns:serviceLocalNumberPhoneUpdate" />
+  </wsdl:message>
+  <wsdl:message name="serviceLocalNumberPhoneUpdateSoapOut">
+    <wsdl:part name="parameters" element="tns:serviceLocalNumberPhoneUpdateResponse" />
+  </wsdl:message>
+  <wsdl:message name="serviceLocalNumberFaxUpdateSoapIn">
+    <wsdl:part name="parameters" element="tns:serviceLocalNumberFaxUpdate" />
+  </wsdl:message>
+  <wsdl:message name="serviceLocalNumberFaxUpdateSoapOut">
+    <wsdl:part name="parameters" element="tns:serviceLocalNumberFaxUpdateResponse" />
+  </wsdl:message>
+  <wsdl:message name="serviceLocalNumberRemoveSoapIn">
+    <wsdl:part name="parameters" element="tns:serviceLocalNumberRemove" />
+  </wsdl:message>
+  <wsdl:message name="serviceLocalNumberRemoveSoapOut">
+    <wsdl:part name="parameters" element="tns:serviceLocalNumberRemoveResponse" />
+  </wsdl:message>
+  <wsdl:message name="serviceMailboxesSoapIn">
+    <wsdl:part name="parameters" element="tns:serviceMailboxes" />
+  </wsdl:message>
+  <wsdl:message name="serviceMailboxesSoapOut">
+    <wsdl:part name="parameters" element="tns:serviceMailboxesResponse" />
+  </wsdl:message>
+  <wsdl:message name="serviceMailboxesUpdateSoapIn">
+    <wsdl:part name="parameters" element="tns:serviceMailboxesUpdate" />
+  </wsdl:message>
+  <wsdl:message name="serviceMailboxesUpdateSoapOut">
+    <wsdl:part name="parameters" element="tns:serviceMailboxesUpdateResponse" />
+  </wsdl:message>
+  <wsdl:message name="service99NumbersSoapIn">
+    <wsdl:part name="parameters" element="tns:service99Numbers" />
+  </wsdl:message>
+  <wsdl:message name="service99NumbersSoapOut">
+    <wsdl:part name="parameters" element="tns:service99NumbersResponse" />
+  </wsdl:message>
+  <wsdl:message name="service99NumberAddSoapIn">
+    <wsdl:part name="parameters" element="tns:service99NumberAdd" />
+  </wsdl:message>
+  <wsdl:message name="service99NumberAddSoapOut">
+    <wsdl:part name="parameters" element="tns:service99NumberAddResponse" />
+  </wsdl:message>
+  <wsdl:message name="service99NumberRemoveSoapIn">
+    <wsdl:part name="parameters" element="tns:service99NumberRemove" />
+  </wsdl:message>
+  <wsdl:message name="service99NumberRemoveSoapOut">
+    <wsdl:part name="parameters" element="tns:service99NumberRemoveResponse" />
+  </wsdl:message>
+  <wsdl:message name="serviceSpeedDialsSoapIn">
+    <wsdl:part name="parameters" element="tns:serviceSpeedDials" />
+  </wsdl:message>
+  <wsdl:message name="serviceSpeedDialsSoapOut">
+    <wsdl:part name="parameters" element="tns:serviceSpeedDialsResponse" />
+  </wsdl:message>
+  <wsdl:message name="serviceSpeedDialsAddSoapIn">
+    <wsdl:part name="parameters" element="tns:serviceSpeedDialsAdd" />
+  </wsdl:message>
+  <wsdl:message name="serviceSpeedDialsAddSoapOut">
+    <wsdl:part name="parameters" element="tns:serviceSpeedDialsAddResponse" />
+  </wsdl:message>
+  <wsdl:message name="serviceSpeedDialRemoveSoapIn">
+    <wsdl:part name="parameters" element="tns:serviceSpeedDialRemove" />
+  </wsdl:message>
+  <wsdl:message name="serviceSpeedDialRemoveSoapOut">
+    <wsdl:part name="parameters" element="tns:serviceSpeedDialRemoveResponse" />
+  </wsdl:message>
+  <wsdl:message name="serviceCallNowSoapIn">
+    <wsdl:part name="parameters" element="tns:serviceCallNow" />
+  </wsdl:message>
+  <wsdl:message name="serviceCallNowSoapOut">
+    <wsdl:part name="parameters" element="tns:serviceCallNowResponse" />
+  </wsdl:message>
+  <wsdl:message name="serviceCallBacksSoapIn">
+    <wsdl:part name="parameters" element="tns:serviceCallBacks" />
+  </wsdl:message>
+  <wsdl:message name="serviceCallBacksSoapOut">
+    <wsdl:part name="parameters" element="tns:serviceCallBacksResponse" />
+  </wsdl:message>
+  <wsdl:message name="serviceCallBackAddSoapIn">
+    <wsdl:part name="parameters" element="tns:serviceCallBackAdd" />
+  </wsdl:message>
+  <wsdl:message name="serviceCallBackAddSoapOut">
+    <wsdl:part name="parameters" element="tns:serviceCallBackAddResponse" />
+  </wsdl:message>
+  <wsdl:message name="serviceCallBackRemoveSoapIn">
+    <wsdl:part name="parameters" element="tns:serviceCallBackRemove" />
+  </wsdl:message>
+  <wsdl:message name="serviceCallBackRemoveSoapOut">
+    <wsdl:part name="parameters" element="tns:serviceCallBackRemoveResponse" />
+  </wsdl:message>
+  <wsdl:message name="billingCDRSoapIn">
+    <wsdl:part name="parameters" element="tns:billingCDR" />
+  </wsdl:message>
+  <wsdl:message name="billingCDRSoapOut">
+    <wsdl:part name="parameters" element="tns:billingCDRResponse" />
+  </wsdl:message>
+  <wsdl:message name="billingOverviewSoapIn">
+    <wsdl:part name="parameters" element="tns:billingOverview" />
+  </wsdl:message>
+  <wsdl:message name="billingOverviewSoapOut">
+    <wsdl:part name="parameters" element="tns:billingOverviewResponse" />
+  </wsdl:message>
+  <wsdl:message name="utilsRatesSoapIn">
+    <wsdl:part name="parameters" element="tns:utilsRates" />
+  </wsdl:message>
+  <wsdl:message name="utilsRatesSoapOut">
+    <wsdl:part name="parameters" element="tns:utilsRatesResponse" />
+  </wsdl:message>
+  <wsdl:portType name="ServiceSoap">
+    <wsdl:operation name="clientPrepaidAmount">
+      <wsdl:input message="tns:clientPrepaidAmountSoapIn" />
+      <wsdl:output message="tns:clientPrepaidAmountSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="clientCallNow">
+      <wsdl:input message="tns:clientCallNowSoapIn" />
+      <wsdl:output message="tns:clientCallNowSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="accountCreate">
+      <wsdl:input message="tns:accountCreateSoapIn" />
+      <wsdl:output message="tns:accountCreateSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="accountUpdate">
+      <wsdl:input message="tns:accountUpdateSoapIn" />
+      <wsdl:output message="tns:accountUpdateSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="accountCustomer">
+      <wsdl:input message="tns:accountCustomerSoapIn" />
+      <wsdl:output message="tns:accountCustomerSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="accountRemove">
+      <wsdl:input message="tns:accountRemoveSoapIn" />
+      <wsdl:output message="tns:accountRemoveSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="accountPreferedLanguageUpdate">
+      <wsdl:input message="tns:accountPreferedLanguageUpdateSoapIn" />
+      <wsdl:output message="tns:accountPreferedLanguageUpdateSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="accountTimeZoneUpdate">
+      <wsdl:input message="tns:accountTimeZoneUpdateSoapIn" />
+      <wsdl:output message="tns:accountTimeZoneUpdateSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="accountAuthentication">
+      <wsdl:input message="tns:accountAuthenticationSoapIn" />
+      <wsdl:output message="tns:accountAuthenticationSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="accountUsers">
+      <wsdl:input message="tns:accountUsersSoapIn" />
+      <wsdl:output message="tns:accountUsersSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="accountUserAdd">
+      <wsdl:input message="tns:accountUserAddSoapIn" />
+      <wsdl:output message="tns:accountUserAddSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="accountUserUpdate">
+      <wsdl:input message="tns:accountUserUpdateSoapIn" />
+      <wsdl:output message="tns:accountUserUpdateSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="accountUserRemove">
+      <wsdl:input message="tns:accountUserRemoveSoapIn" />
+      <wsdl:output message="tns:accountUserRemoveSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="accountUserOnlineStatus">
+      <wsdl:input message="tns:accountUserOnlineStatusSoapIn" />
+      <wsdl:output message="tns:accountUserOnlineStatusSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="accountPrepaid">
+      <wsdl:input message="tns:accountPrepaidSoapIn" />
+      <wsdl:output message="tns:accountPrepaidSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="accountPrepaidAlertUpdate">
+      <wsdl:input message="tns:accountPrepaidAlertUpdateSoapIn" />
+      <wsdl:output message="tns:accountPrepaidAlertUpdateSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="accountPrepaidMasterAdd">
+      <wsdl:input message="tns:accountPrepaidMasterAddSoapIn" />
+      <wsdl:output message="tns:accountPrepaidMasterAddSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="accountMinutes">
+      <wsdl:input message="tns:accountMinutesSoapIn" />
+      <wsdl:output message="tns:accountMinutesSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="serviceDialPlan">
+      <wsdl:input message="tns:serviceDialPlanSoapIn" />
+      <wsdl:output message="tns:serviceDialPlanSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="serviceDialPlanUpdate">
+      <wsdl:input message="tns:serviceDialPlanUpdateSoapIn" />
+      <wsdl:output message="tns:serviceDialPlanUpdateSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="serviceLocalNumbersAreas">
+      <wsdl:input message="tns:serviceLocalNumbersAreasSoapIn" />
+      <wsdl:output message="tns:serviceLocalNumbersAreasSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="serviceLocalNumbers">
+      <wsdl:input message="tns:serviceLocalNumbersSoapIn" />
+      <wsdl:output message="tns:serviceLocalNumbersSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="serviceLocalNumberPhoneAdd">
+      <wsdl:input message="tns:serviceLocalNumberPhoneAddSoapIn" />
+      <wsdl:output message="tns:serviceLocalNumberPhoneAddSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="serviceLocalNumberFaxAdd">
+      <wsdl:input message="tns:serviceLocalNumberFaxAddSoapIn" />
+      <wsdl:output message="tns:serviceLocalNumberFaxAddSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="serviceLocalNumberPhoneUpdate">
+      <wsdl:input message="tns:serviceLocalNumberPhoneUpdateSoapIn" />
+      <wsdl:output message="tns:serviceLocalNumberPhoneUpdateSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="serviceLocalNumberFaxUpdate">
+      <wsdl:input message="tns:serviceLocalNumberFaxUpdateSoapIn" />
+      <wsdl:output message="tns:serviceLocalNumberFaxUpdateSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="serviceLocalNumberRemove">
+      <wsdl:input message="tns:serviceLocalNumberRemoveSoapIn" />
+      <wsdl:output message="tns:serviceLocalNumberRemoveSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="serviceMailboxes">
+      <wsdl:input message="tns:serviceMailboxesSoapIn" />
+      <wsdl:output message="tns:serviceMailboxesSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="serviceMailboxesUpdate">
+      <wsdl:input message="tns:serviceMailboxesUpdateSoapIn" />
+      <wsdl:output message="tns:serviceMailboxesUpdateSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="service99Numbers">
+      <wsdl:input message="tns:service99NumbersSoapIn" />
+      <wsdl:output message="tns:service99NumbersSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="service99NumberAdd">
+      <wsdl:input message="tns:service99NumberAddSoapIn" />
+      <wsdl:output message="tns:service99NumberAddSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="service99NumberRemove">
+      <wsdl:input message="tns:service99NumberRemoveSoapIn" />
+      <wsdl:output message="tns:service99NumberRemoveSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="serviceSpeedDials">
+      <wsdl:input message="tns:serviceSpeedDialsSoapIn" />
+      <wsdl:output message="tns:serviceSpeedDialsSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="serviceSpeedDialsAdd">
+      <wsdl:input message="tns:serviceSpeedDialsAddSoapIn" />
+      <wsdl:output message="tns:serviceSpeedDialsAddSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="serviceSpeedDialRemove">
+      <wsdl:input message="tns:serviceSpeedDialRemoveSoapIn" />
+      <wsdl:output message="tns:serviceSpeedDialRemoveSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="serviceCallNow">
+      <wsdl:input message="tns:serviceCallNowSoapIn" />
+      <wsdl:output message="tns:serviceCallNowSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="serviceCallBacks">
+      <wsdl:input message="tns:serviceCallBacksSoapIn" />
+      <wsdl:output message="tns:serviceCallBacksSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="serviceCallBackAdd">
+      <wsdl:input message="tns:serviceCallBackAddSoapIn" />
+      <wsdl:output message="tns:serviceCallBackAddSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="serviceCallBackRemove">
+      <wsdl:input message="tns:serviceCallBackRemoveSoapIn" />
+      <wsdl:output message="tns:serviceCallBackRemoveSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="billingCDR">
+      <wsdl:input message="tns:billingCDRSoapIn" />
+      <wsdl:output message="tns:billingCDRSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="billingOverview">
+      <wsdl:input message="tns:billingOverviewSoapIn" />
+      <wsdl:output message="tns:billingOverviewSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="utilsRates">
+      <wsdl:input message="tns:utilsRatesSoapIn" />
+      <wsdl:output message="tns:utilsRatesSoapOut" />
+    </wsdl:operation>
+  </wsdl:portType>
+  <wsdl:binding name="ServiceSoap" type="tns:ServiceSoap">
+    <soap:binding transport="http://schemas.xmlsoap.org/soap/http" />
+    <wsdl:operation name="clientPrepaidAmount">
+      <soap:operation soapAction="http://rsi.remwave.com/clientPrepaidAmount" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="clientCallNow">
+      <soap:operation soapAction="http://rsi.remwave.com/clientCallNow" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="accountCreate">
+      <soap:operation soapAction="http://rsi.remwave.com/accountCreate" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="accountUpdate">
+      <soap:operation soapAction="http://rsi.remwave.com/accountUpdate" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="accountCustomer">
+      <soap:operation soapAction="http://rsi.remwave.com/accountCustomer" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="accountRemove">
+      <soap:operation soapAction="http://rsi.remwave.com/accountRemove" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="accountPreferedLanguageUpdate">
+      <soap:operation soapAction="http://rsi.remwave.com/accountPreferedLanguageUpdate" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="accountTimeZoneUpdate">
+      <soap:operation soapAction="http://rsi.remwave.com/accountTimeZoneUpdate" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="accountAuthentication">
+      <soap:operation soapAction="http://rsi.remwave.com/accountAuthentication" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="accountUsers">
+      <soap:operation soapAction="http://rsi.remwave.com/accountUsers" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="accountUserAdd">
+      <soap:operation soapAction="http://rsi.remwave.com/accountUserAdd" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="accountUserUpdate">
+      <soap:operation soapAction="http://rsi.remwave.com/accountUserUpdate" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="accountUserRemove">
+      <soap:operation soapAction="http://rsi.remwave.com/accountUserRemove" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="accountUserOnlineStatus">
+      <soap:operation soapAction="http://rsi.remwave.com/accountUserOnlineStatus" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="accountPrepaid">
+      <soap:operation soapAction="http://rsi.remwave.com/accountPrepaid" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="accountPrepaidAlertUpdate">
+      <soap:operation soapAction="http://rsi.remwave.com/accountPrepaidAlertUpdate" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="accountPrepaidMasterAdd">
+      <soap:operation soapAction="http://rsi.remwave.com/accountPrepaidMasterAdd" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="accountMinutes">
+      <soap:operation soapAction="http://rsi.remwave.com/accountMinutes" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="serviceDialPlan">
+      <soap:operation soapAction="http://rsi.remwave.com/serviceDialPlan" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="serviceDialPlanUpdate">
+      <soap:operation soapAction="http://rsi.remwave.com/serviceDialPlanUpdate" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="serviceLocalNumbersAreas">
+      <soap:operation soapAction="http://rsi.remwave.com/serviceLocalNumbersAreas" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="serviceLocalNumbers">
+      <soap:operation soapAction="http://rsi.remwave.com/serviceLocalNumbers" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="serviceLocalNumberPhoneAdd">
+      <soap:operation soapAction="http://rsi.remwave.com/serviceLocalNumberPhoneAdd" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="serviceLocalNumberFaxAdd">
+      <soap:operation soapAction="http://rsi.remwave.com/serviceLocalNumberFaxAdd" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="serviceLocalNumberPhoneUpdate">
+      <soap:operation soapAction="http://rsi.remwave.com/serviceLocalNumberPhoneUpdate" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="serviceLocalNumberFaxUpdate">
+      <soap:operation soapAction="http://rsi.remwave.com/serviceLocalNumberFaxUpdate" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="serviceLocalNumberRemove">
+      <soap:operation soapAction="http://rsi.remwave.com/serviceLocalNumberRemove" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="serviceMailboxes">
+      <soap:operation soapAction="http://rsi.remwave.com/serviceMailboxes" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="serviceMailboxesUpdate">
+      <soap:operation soapAction="http://rsi.remwave.com/serviceMailboxesUpdate" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="service99Numbers">
+      <soap:operation soapAction="http://rsi.remwave.com/service99Numbers" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="service99NumberAdd">
+      <soap:operation soapAction="http://rsi.remwave.com/service99NumberAdd" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="service99NumberRemove">
+      <soap:operation soapAction="http://rsi.remwave.com/service99NumberRemove" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="serviceSpeedDials">
+      <soap:operation soapAction="http://rsi.remwave.com/serviceSpeedDials" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="serviceSpeedDialsAdd">
+      <soap:operation soapAction="http://rsi.remwave.com/serviceSpeedDialsAdd" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="serviceSpeedDialRemove">
+      <soap:operation soapAction="http://rsi.remwave.com/serviceSpeedDialRemove" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="serviceCallNow">
+      <soap:operation soapAction="http://rsi.remwave.com/serviceCallNow" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="serviceCallBacks">
+      <soap:operation soapAction="http://rsi.remwave.com/serviceCallBacks" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="serviceCallBackAdd">
+      <soap:operation soapAction="http://rsi.remwave.com/serviceCallBackAdd" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="serviceCallBackRemove">
+      <soap:operation soapAction="http://rsi.remwave.com/serviceCallBackRemove" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="billingCDR">
+      <soap:operation soapAction="http://rsi.remwave.com/billingCDR" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="billingOverview">
+      <soap:operation soapAction="http://rsi.remwave.com/billingOverview" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="utilsRates">
+      <soap:operation soapAction="http://rsi.remwave.com/utilsRates" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+  </wsdl:binding>
+  <wsdl:binding name="ServiceSoap12" type="tns:ServiceSoap">
+    <soap12:binding transport="http://schemas.xmlsoap.org/soap/http" />
+    <wsdl:operation name="clientPrepaidAmount">
+      <soap12:operation soapAction="http://rsi.remwave.com/clientPrepaidAmount" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="clientCallNow">
+      <soap12:operation soapAction="http://rsi.remwave.com/clientCallNow" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="accountCreate">
+      <soap12:operation soapAction="http://rsi.remwave.com/accountCreate" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="accountUpdate">
+      <soap12:operation soapAction="http://rsi.remwave.com/accountUpdate" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="accountCustomer">
+      <soap12:operation soapAction="http://rsi.remwave.com/accountCustomer" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="accountRemove">
+      <soap12:operation soapAction="http://rsi.remwave.com/accountRemove" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="accountPreferedLanguageUpdate">
+      <soap12:operation soapAction="http://rsi.remwave.com/accountPreferedLanguageUpdate" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="accountTimeZoneUpdate">
+      <soap12:operation soapAction="http://rsi.remwave.com/accountTimeZoneUpdate" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="accountAuthentication">
+      <soap12:operation soapAction="http://rsi.remwave.com/accountAuthentication" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="accountUsers">
+      <soap12:operation soapAction="http://rsi.remwave.com/accountUsers" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="accountUserAdd">
+      <soap12:operation soapAction="http://rsi.remwave.com/accountUserAdd" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="accountUserUpdate">
+      <soap12:operation soapAction="http://rsi.remwave.com/accountUserUpdate" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="accountUserRemove">
+      <soap12:operation soapAction="http://rsi.remwave.com/accountUserRemove" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="accountUserOnlineStatus">
+      <soap12:operation soapAction="http://rsi.remwave.com/accountUserOnlineStatus" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="accountPrepaid">
+      <soap12:operation soapAction="http://rsi.remwave.com/accountPrepaid" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="accountPrepaidAlertUpdate">
+      <soap12:operation soapAction="http://rsi.remwave.com/accountPrepaidAlertUpdate" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="accountPrepaidMasterAdd">
+      <soap12:operation soapAction="http://rsi.remwave.com/accountPrepaidMasterAdd" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="accountMinutes">
+      <soap12:operation soapAction="http://rsi.remwave.com/accountMinutes" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="serviceDialPlan">
+      <soap12:operation soapAction="http://rsi.remwave.com/serviceDialPlan" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="serviceDialPlanUpdate">
+      <soap12:operation soapAction="http://rsi.remwave.com/serviceDialPlanUpdate" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="serviceLocalNumbersAreas">
+      <soap12:operation soapAction="http://rsi.remwave.com/serviceLocalNumbersAreas" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="serviceLocalNumbers">
+      <soap12:operation soapAction="http://rsi.remwave.com/serviceLocalNumbers" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="serviceLocalNumberPhoneAdd">
+      <soap12:operation soapAction="http://rsi.remwave.com/serviceLocalNumberPhoneAdd" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="serviceLocalNumberFaxAdd">
+      <soap12:operation soapAction="http://rsi.remwave.com/serviceLocalNumberFaxAdd" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="serviceLocalNumberPhoneUpdate">
+      <soap12:operation soapAction="http://rsi.remwave.com/serviceLocalNumberPhoneUpdate" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="serviceLocalNumberFaxUpdate">
+      <soap12:operation soapAction="http://rsi.remwave.com/serviceLocalNumberFaxUpdate" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="serviceLocalNumberRemove">
+      <soap12:operation soapAction="http://rsi.remwave.com/serviceLocalNumberRemove" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="serviceMailboxes">
+      <soap12:operation soapAction="http://rsi.remwave.com/serviceMailboxes" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="serviceMailboxesUpdate">
+      <soap12:operation soapAction="http://rsi.remwave.com/serviceMailboxesUpdate" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="service99Numbers">
+      <soap12:operation soapAction="http://rsi.remwave.com/service99Numbers" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="service99NumberAdd">
+      <soap12:operation soapAction="http://rsi.remwave.com/service99NumberAdd" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="service99NumberRemove">
+      <soap12:operation soapAction="http://rsi.remwave.com/service99NumberRemove" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="serviceSpeedDials">
+      <soap12:operation soapAction="http://rsi.remwave.com/serviceSpeedDials" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="serviceSpeedDialsAdd">
+      <soap12:operation soapAction="http://rsi.remwave.com/serviceSpeedDialsAdd" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="serviceSpeedDialRemove">
+      <soap12:operation soapAction="http://rsi.remwave.com/serviceSpeedDialRemove" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="serviceCallNow">
+      <soap12:operation soapAction="http://rsi.remwave.com/serviceCallNow" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="serviceCallBacks">
+      <soap12:operation soapAction="http://rsi.remwave.com/serviceCallBacks" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="serviceCallBackAdd">
+      <soap12:operation soapAction="http://rsi.remwave.com/serviceCallBackAdd" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="serviceCallBackRemove">
+      <soap12:operation soapAction="http://rsi.remwave.com/serviceCallBackRemove" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="billingCDR">
+      <soap12:operation soapAction="http://rsi.remwave.com/billingCDR" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="billingOverview">
+      <soap12:operation soapAction="http://rsi.remwave.com/billingOverview" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="utilsRates">
+      <soap12:operation soapAction="http://rsi.remwave.com/utilsRates" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+  </wsdl:binding>
+  <wsdl:service name="Service">
+    <wsdl:port name="ServiceSoap" binding="tns:ServiceSoap">
+      <soap:address location="http://localhost:3412/Website/RSI-Service.asmx" />
+    </wsdl:port>
+    <wsdl:port name="ServiceSoap12" binding="tns:ServiceSoap12">
+      <soap12:address location="http://localhost:3412/Website/RSI-Service.asmx" />
+    </wsdl:port>
+  </wsdl:service>
+</wsdl:definitions>

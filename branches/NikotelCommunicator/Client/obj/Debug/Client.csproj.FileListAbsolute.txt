@@ -1,0 +1,5 @@
+C:\Users\nikolai\REMWAVE Communication Suite\branches\NikotelCommunicator\Client\bin\Debug\Nikotel.exe.config
+C:\Users\nikolai\REMWAVE Communication Suite\branches\NikotelCommunicator\Client\obj\Debug\Interop.NATUPNPLib.dll
+C:\Users\nikolai\REMWAVE Communication Suite\branches\NikotelCommunicator\Client\obj\Debug\Interop.NETCONLib.dll
+C:\Users\nikolai\REMWAVE Communication Suite\branches\NikotelCommunicator\Client\obj\Debug\Interop.NetFwTypeLib.dll
+C:\Users\nikolai\REMWAVE Communication Suite\branches\NikotelCommunicator\Client\obj\Debug\Client.csproj.ResolveComReference.cache

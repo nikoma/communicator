@@ -1,0 +1,394 @@
+﻿<Project DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>8.0.50727</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{301D3D4E-D6E9-4B2B-9A4E-8F69F631C684}</ProjectGuid>
+    <OutputType>Exe</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>Remwave.Client</RootNamespace>
+    <AssemblyName>RemwaveLite</AssemblyName>
+    <StartupObject>
+    </StartupObject>
+    <ApplicationIcon>remwave.ico</ApplicationIcon>
+    <IsWebBootstrapper>true</IsWebBootstrapper>
+    <ManifestCertificateThumbprint>BCD6A7BC37717D67845CC55740591D25ED10FFB0</ManifestCertificateThumbprint>
+    <ManifestKeyFile>Nikotel_TemporaryKey.pfx</ManifestKeyFile>
+    <GenerateManifests>true</GenerateManifests>
+    <SignManifests>true</SignManifests>
+    <PublishUrl>http://api.remwave.com/nikotel/</PublishUrl>
+    <Install>true</Install>
+    <InstallFrom>Web</InstallFrom>
+    <UpdateEnabled>true</UpdateEnabled>
+    <UpdateMode>Background</UpdateMode>
+    <UpdateInterval>7</UpdateInterval>
+    <UpdateIntervalUnits>Days</UpdateIntervalUnits>
+    <UpdatePeriodically>false</UpdatePeriodically>
+    <UpdateRequired>false</UpdateRequired>
+    <MapFileExtensions>true</MapFileExtensions>
+    <SupportUrl>http://www.nikotel.com</SupportUrl>
+    <ProductName>nikotel</ProductName>
+    <PublisherName>nikotel, Inc.</PublisherName>
+    <ApplicationVersion>1.0.0.%2a</ApplicationVersion>
+    <BootstrapperEnabled>true</BootstrapperEnabled>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>..\bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>..\bin\Release\</OutputPath>
+    <DefineConstants>
+    </DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <UseVSHostingProcess>true</UseVSHostingProcess>
+    <GenerateSerializationAssemblies>Off</GenerateSerializationAssemblies>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="nsoftware.IPWorks, Version=6.1.2658.0, Culture=neutral, PublicKeyToken=cdc168f89cffe9cf">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\..\..\..\..\..\..\Program Files\nsoftware\IPWorks V6 .NET Edition\lib\nsoftware.IPWorks.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Design" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.EnterpriseServices" />
+    <Reference Include="System.Security" />
+    <Reference Include="System.Web" />
+    <Reference Include="System.Web.Services" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+    <Reference Include="Telerik.WinControls, Version=2.0.0.0, Culture=neutral, PublicKeyToken=5bb2a467cbec794e, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\..\..\..\..\..\Program Files\telerik\r.a.d.controls for WinForms Q4 2006\bin\Telerik.WinControls.dll</HintPath>
+    </Reference>
+    <Reference Include="Telerik.WinControls.UI, Version=2.0.0.0, Culture=neutral, PublicKeyToken=5bb2a467cbec794e, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\..\..\..\..\..\Program Files\telerik\r.a.d.controls for WinForms Q4 2006\bin\Telerik.WinControls.UI.dll</HintPath>
+    </Reference>
+    <Reference Include="TelerikCommon, Version=2.0.0.0, Culture=neutral, PublicKeyToken=5bb2a467cbec794e, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\..\..\..\..\..\Program Files\telerik\r.a.d.controls for WinForms Q4 2006\bin\TelerikCommon.dll</HintPath>
+    </Reference>
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="AboutBox.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="AboutBox.Designer.cs">
+      <DependentUpon>AboutBox.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ChatController.cs" />
+    <Compile Include="ChatWindow.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ChatWindow.Designer.cs">
+      <DependentUpon>ChatWindow.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Common.cs" />
+    <Compile Include="ContactContainer.cs" />
+    <Compile Include="ContactsBook.cs" />
+    <Compile Include="ContactsList.cs" />
+    <Compile Include="ContactsWindow.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ContactsWindow.Designer.cs">
+      <DependentUpon>ContactsWindow.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Emoticons.cs" />
+    <Compile Include="FirewallSetup.cs" />
+    <Compile Include="Remwave.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Remwave.Designer.cs">
+      <DependentUpon>Remwave.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <None Include="app.config" />
+    <None Include="Properties\DataSources\Remwave.Client.NTContact.datasource" />
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+    <Compile Include="QualityAgentLogger.cs" />
+    <Compile Include="Serializable.cs" />
+    <Compile Include="Services.cs" />
+    <Compile Include="ConfigurationWindow.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ConfigurationWindow.Designer.cs">
+      <DependentUpon>ConfigurationWindow.cs</DependentUpon>
+    </Compile>
+    <Compile Include="SpeedDialMessageFilter.cs" />
+    <Compile Include="SpeedDialWindow.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="SpeedDialWindow.Designer.cs">
+      <DependentUpon>SpeedDialWindow.cs</DependentUpon>
+    </Compile>
+    <Compile Include="VideoPlugin.cs" />
+    <Compile Include="Web References\RemwaveLiteWS\Reference.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Reference.map</DependentUpon>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="AboutBox.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>AboutBox.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ChatWindow.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>ChatWindow.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ContactsWindow.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>ContactsWindow.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Remwave.resx">
+      <DependentUpon>Remwave.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\licenses.licx" />
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <SubType>Designer</SubType>
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ConfigurationWindow.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>ConfigurationWindow.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="SpeedDialWindow.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>SpeedDialWindow.cs</DependentUpon>
+    </EmbeddedResource>
+  </ItemGroup>
+  <ItemGroup>
+    <WebReferences Include="Web References\" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\ContactBlank.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Emoticons\emoticon_evilgrin.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Emoticons\emoticon_grin.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Emoticons\emoticon_happy.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Emoticons\emoticon_smile.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Emoticons\emoticon_surprised.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Emoticons\emoticon_tongue.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Emoticons\emoticon_unhappy.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Emoticons\emoticon_waii.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Emoticons\emoticon_wink.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="remwave.ico" />
+    <Content Include="nvideo.bmp">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <None Include="Resources\searchBoxBackground.png" />
+    <None Include="Resources\buttonIconContacts.png" />
+    <None Include="Resources\listIconVcardAdd.png" />
+    <None Include="Resources\listIconNotFound.png" />
+    <None Include="Resources\listIconVcard.png" />
+    <None Include="Resources\list36IconContact.png" />
+    <None Include="Resources\searchBoxBackground1.png" />
+    <None Include="Resources\listIconScreenSharing.png" />
+    <None Include="Resources\listIconPhone.png" />
+    <None Include="Resources\listIconInstantMessage.png" />
+    <None Include="Resources\listIconEmail.png" />
+    <None Include="Resources\listIconComputer.png" />
+    <None Include="Resources\listIconWebcam.png" />
+    <None Include="Resources\iconContacts.png" />
+    <None Include="Resources\iconMenuOnline.png" />
+    <None Include="Resources\iconContactsMenu.png" />
+    <None Include="Resources\iconSearch.png" />
+    <None Include="Resources\AltAltWindow.png" />
+    <None Include="Resources\iconContactSearch.png" />
+    <None Include="Resources\iconPhone.png" />
+    <None Include="Resources\iconIM.png" />
+    <None Include="Resources\contactAdd.png" />
+    <None Include="Resources\userOffline.png" />
+    <None Include="Resources\userExtendedAway.png" />
+    <None Include="Resources\userDND.png" />
+    <None Include="Resources\userAway.png" />
+    <None Include="Resources\userOnline.png" />
+    <None Include="Web References\RemwaveLiteWS\Reference.map">
+      <Generator>MSDiscoCodeGenerator</Generator>
+      <LastGenOutput>Reference.cs</LastGenOutput>
+    </None>
+    <None Include="Web References\RemwaveLiteWS\Service.disco" />
+    <None Include="Resources\dialPadFuncButton.png" />
+    <None Include="Resources\PhoneAnswerHangUp.png" />
+    <None Include="Resources\NumPound.png" />
+    <None Include="Resources\NumAst.png" />
+    <None Include="Resources\Num9.png" />
+    <None Include="Resources\Num8.png" />
+    <None Include="Resources\Num7.png" />
+    <None Include="Resources\Num6.png" />
+    <None Include="Resources\Num5.png" />
+    <None Include="Resources\Num4.png" />
+    <None Include="Resources\Num3.png" />
+    <None Include="Resources\Num2.png" />
+    <None Include="Resources\Num1.png" />
+    <None Include="Resources\Num0.png" />
+    <None Include="Resources\dialPadButtonOn.png" />
+    <None Include="Resources\dialPadButton.png" />
+    <None Include="Resources\dialPadButtonOver.png" />
+    <None Include="Resources\buttonPhoneOn.png" />
+    <None Include="Resources\buttonPhone.png" />
+    <None Include="Resources\buttonOnlineOver.png" />
+    <None Include="Resources\buttonOnlineOn.png" />
+    <None Include="Resources\buttonOnline.png" />
+    <None Include="Resources\buttonContactsOver.png" />
+    <None Include="Resources\buttonContactsOn.png" />
+    <None Include="Resources\buttonContacts.png" />
+    <None Include="Resources\buttonPhoneOver.png" />
+    <None Include="Resources\SkinBGSettings.png" />
+    <None Include="Resources\iconPhoneAnswer.png" />
+    <None Include="Resources\iconPhoneHangup.png" />
+    <None Include="Resources\phone2phone.png" />
+    <None Include="Resources\CallMissed.png" />
+    <None Include="Resources\CallDialed.png" />
+    <None Include="Resources\CallReceived.png" />
+    <None Include="Resources\phone.png" />
+    <None Include="Web References\RemwaveLiteWS\Service.wsdl" />
+    <None Include="Web References\RemwaveLiteWS\ServiceProvider.datasource">
+      <DependentUpon>Reference.map</DependentUpon>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <BootstrapperPackage Include="Microsoft.Net.Framework.2.0">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 2.0</ProductName>
+      <Install>true</Install>
+    </BootstrapperPackage>
+  </ItemGroup>
+  <ItemGroup>
+    <PublishFile Include="Telerik.WinControls">
+      <Visible>False</Visible>
+      <Group>
+      </Group>
+      <TargetPath>
+      </TargetPath>
+      <PublishState>Include</PublishState>
+      <FileType>Assembly</FileType>
+    </PublishFile>
+    <PublishFile Include="Telerik.WinControls.UI">
+      <Visible>False</Visible>
+      <Group>
+      </Group>
+      <TargetPath>
+      </TargetPath>
+      <PublishState>Include</PublishState>
+      <FileType>Assembly</FileType>
+    </PublishFile>
+    <PublishFile Include="TelerikCommon">
+      <Visible>False</Visible>
+      <Group>
+      </Group>
+      <TargetPath>
+      </TargetPath>
+      <PublishState>Include</PublishState>
+      <FileType>Assembly</FileType>
+    </PublishFile>
+  </ItemGroup>
+  <ItemGroup>
+    <COMReference Include="NATUPNPLib">
+      <Guid>{1C565858-F302-471E-B409-F180AA4ABEC6}</Guid>
+      <VersionMajor>1</VersionMajor>
+      <VersionMinor>0</VersionMinor>
+      <Lcid>0</Lcid>
+      <WrapperTool>tlbimp</WrapperTool>
+      <Isolated>False</Isolated>
+    </COMReference>
+    <COMReference Include="NETCONLib">
+      <Guid>{43E734CA-043D-4A70-9A2C-A8F254063D91}</Guid>
+      <VersionMajor>1</VersionMajor>
+      <VersionMinor>0</VersionMinor>
+      <Lcid>0</Lcid>
+      <WrapperTool>tlbimp</WrapperTool>
+      <Isolated>False</Isolated>
+    </COMReference>
+    <COMReference Include="NetFwTypeLib">
+      <Guid>{58FBCF7C-E7A9-467C-80B3-FC65E8FCCA08}</Guid>
+      <VersionMajor>1</VersionMajor>
+      <VersionMinor>0</VersionMinor>
+      <Lcid>0</Lcid>
+      <WrapperTool>tlbimp</WrapperTool>
+      <Isolated>False</Isolated>
+    </COMReference>
+  </ItemGroup>
+  <ItemGroup>
+    <WebReferenceUrl Include="http://api.remwave.com/RemwaveLiteWS/Service.asmx">
+      <UrlBehavior>Static</UrlBehavior>
+      <RelPath>Web References\RemwaveLiteWS\</RelPath>
+      <UpdateFromURL>http://api.remwave.com/RemwaveLiteWS/Service.asmx</UpdateFromURL>
+      <ServiceLocationURL>
+      </ServiceLocationURL>
+      <CachedDynamicPropName>
+      </CachedDynamicPropName>
+      <CachedAppSettingsObjectName>Settings</CachedAppSettingsObjectName>
+      <CachedSettingsPropName>RemwaveLite_RemwaveLiteWS_Service</CachedSettingsPropName>
+    </WebReferenceUrl>
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\..\..\trunk\RVoIPLib\RVoIPLib.vcproj">
+      <Project>{0F7ED67B-A25D-4F9B-B36C-D18704A44AAA}</Project>
+      <Name>RVoIPLib</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+  <PropertyGroup>
+    <PostBuildEvent>
+    </PostBuildEvent>
+    <PreBuildEvent>
+    </PreBuildEvent>
+  </PropertyGroup>
+</Project>

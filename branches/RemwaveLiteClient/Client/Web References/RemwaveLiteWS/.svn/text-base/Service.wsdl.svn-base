@@ -1,0 +1,203 @@
+<?xml version="1.0" encoding="utf-8"?>
+<wsdl:definitions xmlns:soap="http://schemas.xmlsoap.org/wsdl/soap/" xmlns:tm="http://microsoft.com/wsdl/mime/textMatching/" xmlns:soapenc="http://schemas.xmlsoap.org/soap/encoding/" xmlns:mime="http://schemas.xmlsoap.org/wsdl/mime/" xmlns:tns="http://lite.remwave.com/" xmlns:s="http://www.w3.org/2001/XMLSchema" xmlns:soap12="http://schemas.xmlsoap.org/wsdl/soap12/" xmlns:http="http://schemas.xmlsoap.org/wsdl/http/" targetNamespace="http://lite.remwave.com/" xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">
+  <wsdl:types>
+    <s:schema elementFormDefault="qualified" targetNamespace="http://lite.remwave.com/">
+      <s:element name="Version">
+        <s:complexType />
+      </s:element>
+      <s:element name="VersionResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="VersionResult" type="tns:ArrayOfString" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:complexType name="ArrayOfString">
+        <s:sequence>
+          <s:element minOccurs="0" maxOccurs="unbounded" name="string" nillable="true" type="s:string" />
+        </s:sequence>
+      </s:complexType>
+      <s:element name="Software">
+        <s:complexType />
+      </s:element>
+      <s:element name="SoftwareResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="SoftwareResult" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="News">
+        <s:complexType />
+      </s:element>
+      <s:element name="NewsResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="NewsResult" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="ServiceProviders">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="version" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="ServiceProvidersResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="ServiceProvidersResult" type="tns:ArrayOfServiceProvider" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:complexType name="ArrayOfServiceProvider">
+        <s:sequence>
+          <s:element minOccurs="0" maxOccurs="unbounded" name="ServiceProvider" nillable="true" type="tns:ServiceProvider" />
+        </s:sequence>
+      </s:complexType>
+      <s:complexType name="ServiceProvider">
+        <s:sequence>
+          <s:element minOccurs="0" maxOccurs="1" name="Name" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="Description" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="IMServerAddress" type="s:string" />
+          <s:element minOccurs="1" maxOccurs="1" name="IMServerPort" type="s:int" />
+          <s:element minOccurs="0" maxOccurs="1" name="SIPProxyRealm" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="SIPProxyAddress" type="s:string" />
+          <s:element minOccurs="1" maxOccurs="1" name="SIPProxyPort" type="s:int" />
+          <s:element minOccurs="0" maxOccurs="1" name="VideoProxyAddress" type="s:string" />
+          <s:element minOccurs="1" maxOccurs="1" name="VideoProxyPort" type="s:int" />
+          <s:element minOccurs="0" maxOccurs="1" name="SignupLink" type="s:string" />
+        </s:sequence>
+      </s:complexType>
+    </s:schema>
+  </wsdl:types>
+  <wsdl:message name="VersionSoapIn">
+    <wsdl:part name="parameters" element="tns:Version" />
+  </wsdl:message>
+  <wsdl:message name="VersionSoapOut">
+    <wsdl:part name="parameters" element="tns:VersionResponse" />
+  </wsdl:message>
+  <wsdl:message name="SoftwareSoapIn">
+    <wsdl:part name="parameters" element="tns:Software" />
+  </wsdl:message>
+  <wsdl:message name="SoftwareSoapOut">
+    <wsdl:part name="parameters" element="tns:SoftwareResponse" />
+  </wsdl:message>
+  <wsdl:message name="NewsSoapIn">
+    <wsdl:part name="parameters" element="tns:News" />
+  </wsdl:message>
+  <wsdl:message name="NewsSoapOut">
+    <wsdl:part name="parameters" element="tns:NewsResponse" />
+  </wsdl:message>
+  <wsdl:message name="ServiceProvidersSoapIn">
+    <wsdl:part name="parameters" element="tns:ServiceProviders" />
+  </wsdl:message>
+  <wsdl:message name="ServiceProvidersSoapOut">
+    <wsdl:part name="parameters" element="tns:ServiceProvidersResponse" />
+  </wsdl:message>
+  <wsdl:portType name="ServiceSoap">
+    <wsdl:operation name="Version">
+      <wsdl:input message="tns:VersionSoapIn" />
+      <wsdl:output message="tns:VersionSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="Software">
+      <wsdl:input message="tns:SoftwareSoapIn" />
+      <wsdl:output message="tns:SoftwareSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="News">
+      <wsdl:input message="tns:NewsSoapIn" />
+      <wsdl:output message="tns:NewsSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="ServiceProviders">
+      <wsdl:input message="tns:ServiceProvidersSoapIn" />
+      <wsdl:output message="tns:ServiceProvidersSoapOut" />
+    </wsdl:operation>
+  </wsdl:portType>
+  <wsdl:binding name="ServiceSoap" type="tns:ServiceSoap">
+    <soap:binding transport="http://schemas.xmlsoap.org/soap/http" />
+    <wsdl:operation name="Version">
+      <soap:operation soapAction="http://lite.remwave.com/Version" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="Software">
+      <soap:operation soapAction="http://lite.remwave.com/Software" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="News">
+      <soap:operation soapAction="http://lite.remwave.com/News" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="ServiceProviders">
+      <soap:operation soapAction="http://lite.remwave.com/ServiceProviders" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+  </wsdl:binding>
+  <wsdl:binding name="ServiceSoap12" type="tns:ServiceSoap">
+    <soap12:binding transport="http://schemas.xmlsoap.org/soap/http" />
+    <wsdl:operation name="Version">
+      <soap12:operation soapAction="http://lite.remwave.com/Version" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="Software">
+      <soap12:operation soapAction="http://lite.remwave.com/Software" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="News">
+      <soap12:operation soapAction="http://lite.remwave.com/News" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="ServiceProviders">
+      <soap12:operation soapAction="http://lite.remwave.com/ServiceProviders" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+  </wsdl:binding>
+  <wsdl:service name="Service">
+    <wsdl:port name="ServiceSoap" binding="tns:ServiceSoap">
+      <soap:address location="http://api.remwave.com/RemwaveLiteWS/Service.asmx" />
+    </wsdl:port>
+    <wsdl:port name="ServiceSoap12" binding="tns:ServiceSoap12">
+      <soap12:address location="http://api.remwave.com/RemwaveLiteWS/Service.asmx" />
+    </wsdl:port>
+  </wsdl:service>
+</wsdl:definitions>

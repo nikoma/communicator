@@ -1,0 +1,59 @@
+K 25
+svn:wc:ra_dav:version-url
+V 67
+/svn/REMWAVE%20Communication%20Suite/!svn/ver/16/trunk/AMRCodec/src
+END
+amrencoder.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 82
+/svn/REMWAVE%20Communication%20Suite/!svn/ver/16/trunk/AMRCodec/src/amrencoder.cpp
+END
+interf_dec.c
+K 25
+svn:wc:ra_dav:version-url
+V 80
+/svn/REMWAVE%20Communication%20Suite/!svn/ver/16/trunk/AMRCodec/src/interf_dec.c
+END
+amrdecoder.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 82
+/svn/REMWAVE%20Communication%20Suite/!svn/ver/16/trunk/AMRCodec/src/amrdecoder.cpp
+END
+rom_enc.h
+K 25
+svn:wc:ra_dav:version-url
+V 77
+/svn/REMWAVE%20Communication%20Suite/!svn/ver/16/trunk/AMRCodec/src/rom_enc.h
+END
+sp_enc.c
+K 25
+svn:wc:ra_dav:version-url
+V 76
+/svn/REMWAVE%20Communication%20Suite/!svn/ver/16/trunk/AMRCodec/src/sp_enc.c
+END
+interf_rom.h
+K 25
+svn:wc:ra_dav:version-url
+V 80
+/svn/REMWAVE%20Communication%20Suite/!svn/ver/16/trunk/AMRCodec/src/interf_rom.h
+END
+interf_enc.c
+K 25
+svn:wc:ra_dav:version-url
+V 80
+/svn/REMWAVE%20Communication%20Suite/!svn/ver/16/trunk/AMRCodec/src/interf_enc.c
+END
+rom_dec.h
+K 25
+svn:wc:ra_dav:version-url
+V 77
+/svn/REMWAVE%20Communication%20Suite/!svn/ver/16/trunk/AMRCodec/src/rom_dec.h
+END
+sp_dec.c
+K 25
+svn:wc:ra_dav:version-url
+V 76
+/svn/REMWAVE%20Communication%20Suite/!svn/ver/16/trunk/AMRCodec/src/sp_dec.c
+END

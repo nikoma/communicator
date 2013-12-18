@@ -1,0 +1,8 @@
+cd "C:\Documents and Settings\Andrzej Dzius\My Documents\Remwave\REMWAVE Communication Suite\branches\NikotelCommunicator"
+XBuild.exe "C:\Documents and Settings\Andrzej Dzius\My Documents\Remwave\REMWAVE Communication Suite\branches\NikotelCommunicator\NikotelCommunicator.postbuild"
+copy "C:\Documents and Settings\Andrzej Dzius\My Documents\Remwave\REMWAVE Communication Suite\branches\NikotelCommunicator\bin-xenocode\Nikotel.exe"  "C:\Documents and Settings\Andrzej Dzius\My Documents\Remwave\REMWAVE Communication Suite\branches\NikotelCommunicator\Client\obj\Release\Nikotel.exe"
+copy "C:\Documents and Settings\Andrzej Dzius\My Documents\Remwave\REMWAVE Communication Suite\branches\NikotelCommunicator\bin-xenocode\RVoIPLib.dll"  "C:\Documents and Settings\Andrzej Dzius\My Documents\Remwave\REMWAVE Communication Suite\branches\NikotelCommunicator\bin\Release\RVoIPLib.dll"
+copy "C:\Documents and Settings\Andrzej Dzius\My Documents\Remwave\REMWAVE Communication Suite\branches\NikotelCommunicator\bin-xenocode\QualityAgent.exe"  "C:\Documents and Settings\Andrzej Dzius\My Documents\Remwave\REMWAVE Communication Suite\trunk\QualityAgent\obj\Release\QualityAgent.exe"
+del "C:\Documents and Settings\Andrzej Dzius\My Documents\Remwave\REMWAVE Communication Suite\branches\NikotelCommunicator\bin-xenocode\Nikotel.exe"
+del "C:\Documents and Settings\Andrzej Dzius\My Documents\Remwave\REMWAVE Communication Suite\branches\NikotelCommunicator\bin-xenocode\RVoIPLib.dll"
+del "C:\Documents and Settings\Andrzej Dzius\My Documents\Remwave\REMWAVE Communication Suite\branches\NikotelCommunicator\bin-xenocode\QualityAgent.exe"
